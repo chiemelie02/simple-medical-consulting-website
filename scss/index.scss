@@ -7,6 +7,10 @@
 header{
     @include NavBar($blue, $textcolor1);
 }
+
+.section-1{
+    @include Section1($secondary, $textcolor1);
+}
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
 }

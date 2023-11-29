@@ -69,7 +69,7 @@ header .cta .signup a {
 }
 header .cta .signup:hover {
   background-color: white;
-  border: 2px solid #2C97FD;
+  border: 1.5px solid #2C97FD;
 }
 header .cta .signup:hover a {
   color: #2C97FD;
@@ -97,6 +97,274 @@ header .cta .login:hover {
 }
 header .cta .login:hover a {
   color: white;
+}
+
+.section-1 {
+  width: 100%;
+  height: 90vh;
+  background-color: #dde8ff;
+  padding-inline: 6rem;
+  padding-block: 3rem;
+}
+.section-1 .div-s1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-1 .div-s1 .textarea-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1rem;
+  width: 500px;
+}
+.section-1 .div-s1 .textarea-1 p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #999999;
+  line-height: 1.5;
+  letter-spacing: 0.6px;
+}
+.section-1 .div-s1 .textarea-1 p .ri-heart-fill {
+  color: red;
+  font-size: 1.2rem;
+  margin-right: 0.2rem;
+}
+.section-1 .div-s1 .textarea-1 h1 {
+  font-size: 2.6rem;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+.section-1 .div-s1 .textarea-1 .second-p {
+  width: 80%;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 {
+  margin-bottom: 1rem;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1 {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  padding-block: 8px;
+  padding-inline: 25px;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1:hover a {
+  color: #2C97FD;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1 p a {
+  font-size: 0.85rem;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1 p i {
+  color: white;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1:hover i {
+  color: #2C97FD;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1 {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: white;
+  border: 2px solid #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  padding-block: 8px;
+  padding-inline: 25px;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1 a {
+  text-decoration: none;
+  color: #2C97FD;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1:hover {
+  background-color: #2C97FD;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1:hover a {
+  color: white;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1 p a {
+  font-size: 0.85rem;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1 p i {
+  color: #2C97FD;
+}
+.section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1:hover i {
+  color: white;
+}
+.section-1 .div-s1 .textarea-1 .grid-s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1.5rem;
+}
+.section-1 .div-s1 .textarea-1 .grid-s1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.section-1 .div-s1 .textarea-1 .grid-s1 div h2 {
+  color: #2C97FD;
+  font-size: 1.3rem;
+}
+.section-1 .div-s1 .textarea-1 .grid-s1 div p {
+  font-size: 0.85rem;
+}
+.section-1 .div-s1 .imgwrap-s1 {
+  width: 700px;
+  height: 100%;
+  position: relative;
+}
+.section-1 .div-s1 .imgwrap-s1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea {
+  width: 260px;
+  height: 250px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  background-color: white;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  gap: 1rem;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.9rem;
+  width: 100%;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .icon-1, .section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .icon-1i, .section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .icon-1ii {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #C7D3F6;
+  color: #7B98E8;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .icon-1i {
+  background-color: #A1DED9;
+  color: #3DC0B6;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .icon-1ii {
+  background-color: #D2DAA9;
+  color: #A7AA47;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .text-s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.4rem;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .text-s1 h3 {
+  font-size: 0.75rem;
+  color: #333333;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 .text-s1 p {
+  font-size: 0.7rem;
+  color: #999999;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1 {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  padding-block: 8px;
+  padding-inline: 25px;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1:hover a {
+  color: #2C97FD;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1 p a {
+  font-size: 0.7rem;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1 p i {
+  color: white;
+}
+.section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1:hover i {
+  color: #2C97FD;
 }
 
 footer {
@@ -187,7 +455,7 @@ footer .cfooter .newsletter .subscribe .button-f a {
 }
 footer .cfooter .newsletter .subscribe .button-f:hover {
   background-color: white;
-  border: 2px solid #2C97FD;
+  border: 1.5px solid #2C97FD;
 }
 footer .cfooter .newsletter .subscribe .button-f:hover a {
   color: #2C97FD;
