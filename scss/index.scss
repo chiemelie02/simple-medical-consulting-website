@@ -19,6 +19,10 @@ header{
 .section-3{
     @include Section3($textcolor1, $textcolor2);
 }
+
+.section-4{
+    @include Section4($textcolor1, $textcolor2);
+}
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
 }
