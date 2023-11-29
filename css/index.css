@@ -282,6 +282,8 @@ header .cta .login:hover a {
           flex-direction: column;
   border-radius: 20px;
   gap: 1rem;
+  -webkit-box-shadow: 0px 0px 15px rgba(70, 93, 226, 0.6);
+          box-shadow: 0px 0px 15px rgba(70, 93, 226, 0.6);
 }
 .section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 {
   display: -webkit-box;
@@ -365,6 +367,121 @@ header .cta .login:hover a {
 }
 .section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1:hover i {
   color: #2C97FD;
+}
+
+.section-2 {
+  width: 100%;
+  height: 120vh;
+  padding-inline: 6rem;
+  padding-block: 2rem;
+}
+.section-2 .div-s2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.section-2 .div-s2 .textarea-2 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+.section-2 .div-s2 .textarea-2 h1 {
+  font-size: 3.3rem;
+  color: #333333;
+}
+.section-2 .div-s2 .textarea-2 p {
+  color: #999999;
+  font-weight: 700;
+  font-size: 0.9rem;
+  width: 60%;
+  line-height: 1.5;
+}
+.section-2 .div-s2 .grid-s2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.section-2 .div-s2 .grid-s2 .card-s2 {
+  width: 350px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-inline: 0.7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 8px rgba(70, 93, 226, 0.6);
+          box-shadow: 0px 0px 8px rgba(70, 93, 226, 0.6);
+}
+.section-2 .div-s2 .grid-s2 .card-s2 .imgwrap-s2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.section-2 .div-s2 .grid-s2 .card-s2 .imgwrap-s2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-2 .div-s2 .grid-s2 .card-s2 h3 {
+  font-size: 1.3rem;
+  color: #333333;
+  letter-spacing: 0.7px;
+}
+.section-2 .div-s2 .grid-s2 .card-s2 p {
+  font-size: 0.9rem;
+  color: #999999;
+}
+.section-2 .div-s2 .grid-s2 .card-s2 a button {
+  padding: 10px;
+  padding-inline: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #2C97FD;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+.section-2 .div-s2 .grid-s2 .card-s2 a button:hover {
+  background-color: white;
+  color: #2C97FD;
+  border: 1.5px solid #2C97FD;
 }
 
 footer {
