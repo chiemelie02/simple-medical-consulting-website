@@ -10,6 +10,10 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  min-height: 100vh;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
