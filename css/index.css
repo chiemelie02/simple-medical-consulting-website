@@ -1173,6 +1173,7 @@ header .cta .login:hover {
   -webkit-transition: 700ms;
   transition: 700ms;
   letter-spacing: 0.7px;
+  cursor: pointer;
 }
 .section-6 .div-s6 .grid-s6 .card-s6 .text-s6 h3:hover {
   color: #2C97FD;
@@ -1252,12 +1253,93 @@ header .cta .login:hover {
 }
 
 .section-7 {
+  height: 85vh;
+  width: 100%;
+}
+.section-7 .div-s7 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section-7 .div-s7 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-7 .div-s7 .cover-s7 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding-inline: 6rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 {
+  color: white;
+  height: 100%;
+  width: 50%;
+  padding-block: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 h1 {
+  font-size: 3rem;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 p {
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.8px;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 p span {
+  color: #2C97FD;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a {
+  margin-top: 1rem;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 14px;
+  padding-inline: 50px;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button p {
+  font-size: 1.1rem;
+  color: white;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button:hover p {
+  color: #2C97FD;
+}
+
+.section-8 {
   background-color: #dde8ff;
   padding-inline: 6rem;
   padding-block: 3rem;
   height: 80vh;
 }
-.section-7 .div-s7 {
+.section-8 .div-s8 {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1267,7 +1349,7 @@ header .cta .login:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.section-7 .div-s7 .textarea-s7 {
+.section-8 .div-s8 .textarea-s8 {
   width: 500px;
   height: 100%;
   display: -webkit-box;
@@ -1286,41 +1368,45 @@ header .cta .login:hover {
   gap: 2rem;
   padding-block: 2rem;
 }
-.section-7 .div-s7 .textarea-s7 h1 {
-  font-size: 3.8rem;
+.section-8 .div-s8 .textarea-s8 h1 {
+  font-size: 3.6rem;
   color: #333333;
 }
-.section-7 .div-s7 .textarea-s7 p {
+.section-8 .div-s8 .textarea-s8 p {
   font-size: 1.2rem;
   color: #999999;
   width: 70%;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
-.section-7 .div-s7 .textarea-s7 .download {
+.section-8 .div-s8 .textarea-s8 p a {
+  text-decoration: none;
+  color: #2C97FD;
+}
+.section-8 .div-s8 .textarea-s8 .download {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   gap: 2rem;
 }
-.section-7 .div-s7 .textarea-s7 .download div {
+.section-8 .div-s8 .textarea-s8 .download div {
   width: 185px;
-  height: 60px;
+  height: 50px;
   border-radius: 8px;
   overflow: hidden;
 }
-.section-7 .div-s7 .textarea-s7 .download div img {
+.section-8 .div-s8 .textarea-s8 .download div img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.section-7 .div-s7 .imgwrap-s7 {
+.section-8 .div-s8 .imgwrap-s8 {
   width: 500px;
   height: 100%;
 }
-.section-7 .div-s7 .imgwrap-s7 img {
+.section-8 .div-s8 .imgwrap-s8 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
