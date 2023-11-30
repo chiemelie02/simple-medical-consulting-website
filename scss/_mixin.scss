@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./base";
+@import "./mediaqueries";
 
 
 @mixin Button1($buttoncolor, $textcolor1){
