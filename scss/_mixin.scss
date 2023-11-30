@@ -28,7 +28,7 @@
     padding-inline: 35px;
     border-radius: 35px;
     background-color: white;
-    border: 2px solid $buttoncolor;
+    border: 1.5px solid $buttoncolor;
     transition: 500ms;
     cursor: pointer;
     text-decoration: none;
@@ -66,13 +66,14 @@
     .navlist{
         ul{
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
             list-style: none;
             li{
                 a{
                     text-decoration: none;
                     letter-spacing: 0.6px;
                     font-weight: 700;
+                    font-size: 0.88rem;
                     color: $textcolor1;
                     transition: 600ms;
                     &:hover{
@@ -87,7 +88,7 @@
             padding: 8px;
             width: 200px;
             outline: none;
-            border: 2px solid $buttoncolor;
+            border: 1.5px solid $buttoncolor;
             border-radius: 30px;
             font-size: 0.85rem;
             // font-style: italic;
@@ -97,9 +98,11 @@
     .cta{
         .signup{
             @include Button1($blue, $textcolor1);
+            font-size: 0.88rem;
         }
         .login{
             @include Button2($blue, $textcolor1);
+            font-size: 0.88rem;
         }
     }
 }
