@@ -50,6 +50,7 @@
     padding-inline: $inline;
     background-color: #f7f7f7;
     .logo{
+        // background-color: $blue;
         a{
             div{
                 width: 120px;
@@ -123,8 +124,8 @@
             width: 500px;
             p{
                 font-size: 1.3rem;
-                font-weight: 700;
-                color: $textcolor2;
+                font-weight: 200;
+                color: $textcolor1;
                 line-height: 1.5;
                 letter-spacing: 0.6px;
                 .ri-heart-fill{
@@ -134,7 +135,7 @@
                 }
             }
             h1{
-                font-size: 2.6rem;
+                font-size: 2.8rem;
                 color: $textcolor1;
                 margin-bottom: 1rem;
             }
@@ -145,7 +146,7 @@
                 margin-bottom: 0.5rem;
             }
             .cta-s1{
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
                 .button1-s1{
                     @include Button1($blue, $textcolor1);
                     padding-block: 8px;
@@ -300,7 +301,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
         .textarea-2{
             text-align: center;
             display: flex;
@@ -337,19 +338,19 @@
             gap: 2rem;
             .card-s2{
                 width: 350px;
-                height: 280px;
+                height: 250px;
                 display: flex;
                 flex-direction: column;
                 padding-inline: 0.7rem;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                gap: 1rem;
+                gap: 0.8rem;
                 border-radius: 20px;
                 box-shadow: 0px 0px 8px rgba(70, 93, 226, 0.6);
                 .imgwrap-s2{
-                    width: 100px;
-                    height: 100px;
+                    width: 80px;
+                    height: 80px;
                     border-radius: 50%;
                     box-shadow: 0 0 2px rgba(0,0,0,0.3);
                     overflow: hidden;
@@ -675,6 +676,7 @@
                             font-size: 0.9rem;
                             color: $textcolor2;
                             letter-spacing: 0.5px;
+                            font-weight: 100;
                         }
                         div{
                             display: flex;
@@ -693,13 +695,16 @@
                             font-size: 0.85rem;
                             color: $textcolor2;
                             letter-spacing: 0.3px;
+                            font-weight: 100;
                             i{
                                 font-size: 0.9rem;
                                 color: goldenrod;
                                 margin-right: 0.3rem;
+                                font-weight: 600;
                             }
                             span{
                                 color: $textcolor1;
+                                font-weight: 600;
                             }
                         }
                     }
@@ -833,7 +838,7 @@
 
 @mixin Section6($textcolor1, $textcolor2){
     width: 100%;
-    height: 172vh;
+    height: 231vh;
     padding-inline: $inline;
     padding-block: 3rem;
     .div-s6{
@@ -870,7 +875,8 @@
             p{
                 font-size: 1rem;
                 color: $textcolor2;
-                font-weight: 600;
+                font-weight: 200;
+                letter-spacing: 0.7px;
             }
             h3{
                 font-size: 1rem;
@@ -915,7 +921,7 @@
                     }
                 }
                 .text-s6{
-                    padding: 0.5rem;
+                    padding: 0.8rem;
                     display: flex;
                     flex-direction: column;
                     gap: 0.6rem;
@@ -986,6 +992,71 @@
     }
 }
 
+// Beginning of mixin for Download App section
+@mixin Section7($textcolor1, $textcolor2){
+    background-color: $secondary;
+    padding-inline: $inline;
+    padding-block: 3rem;
+    height: 80vh;
+    .div-s7{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .textarea-s7{
+            width: 500px;
+            // background-color: brown;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 2rem;
+            padding-block: 2rem;
+            h1{
+                font-size: 3.8rem;
+                // width: 60%;
+                color: $textcolor1;
+            }
+            p{
+                font-size: 1.2rem;
+                color: $textcolor2;
+                width: 70%;
+                // font-weight: 600;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+            }
+            .download{
+                display: flex;
+                width: 100%;
+                // justify-content: center;
+                gap: 2rem;
+                div{
+                    width:185px;
+                    height: 60px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        .imgwrap-s7{
+            width: 500px;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+} 
+// End of mixin for Download App section 
+
 @mixin Footer($bgcolor, $textcolor1, $textcolor2){
     background-color: $bgcolor;
     padding-inline: $inline;
@@ -1024,16 +1095,16 @@
             }
             p{
                 color: $textcolor2;
-                font-weight: 700;
+                // font-weight: 700;
                 letter-spacing: 0.6px;
-                line-height: 1.5;
-                font-size: 0.9rem;
+                line-height: 1.8;
+                font-size: 0.85rem;
                 // margin-top: 1rem;
             }
             h3{
                 font-size: 1.4rem;
                 color: $textcolor1;
-                margin-top: 1rem;
+                margin-top: 0.5rem;
             }
             .subscribe{
                 position: relative;
@@ -1045,14 +1116,15 @@
                     padding: 13px;
                     width: 350px;
                     font-size: 0.85rem;
-                    font-weight: 700;
+                    // font-weight: 700;
                     color: $textcolor1;
                 }
                 .button-f{
                     position: absolute;
                     right: 0;
-                    top: 1.5px;
+                    top: 1.3px;
                     color: $textcolor1;
+                    font-weight: 200;
                     @include Button1($blue, $textcolor1);
                     &:hover{
                         color: $blue;
@@ -1065,7 +1137,9 @@
             display: flex;
             width: 100%;
             justify-content: space-between;
+            // align-items: center;
             // background-color: brown;
+            padding-top: 2rem;
             .f-list{
                 display: flex;
                 flex-direction: column;
