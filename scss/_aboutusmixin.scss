@@ -2,3 +2,71 @@
 @import "./base";
 @import "./mediaqueries";
 @import "./mixin";
+
+// Beginning of mixin for About bhealth section
+@mixin Section-a-1 ($bgcolor, $textcolor1){
+    width: 100%;
+    height: 60vh;
+    background-color: $bgcolor;
+    padding-inline: $inline;
+    padding-block: 3rem;
+    .div-a-s1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        .textarea-a-s1{
+            width: 500px;
+            height: 100%;
+            // background-color: brown;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            h1{
+                font-size: 3rem;
+                color: $textcolor1;
+                position: relative;
+                &::before{
+                    content: "";
+                    color: brown;
+                    background-color: brown;
+                    width: 20%;
+                    height: 3px;
+                    border-radius: 2px;
+                    position: absolute;
+                    bottom: -0.7rem;
+                    left: 0;
+                }
+            }
+            p{
+                font-size: 1rem;
+                color: $textcolor1;
+                line-height: 2;
+                font-weight: 600;
+                span{
+                    color: $blue;
+                }
+            }
+        }
+        .imgwrap-a-s1{
+            width: 650px;
+            // background-color: cyan;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            div{
+                // background-color: brown;
+                width: 50%;
+                height: 80%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+// End of mixin for About bhealth section 

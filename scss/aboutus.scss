@@ -1,11 +1,18 @@
 @import "./variables";
 @import "./base";
 @import "./mediaqueries";
+@import "./aboutusmixin";
 @import "./mixin";
 
 header{
     @include NavBar($blue, $textcolor1);
 }
+
+// Beginning of style for About bhealth section  
+.section-a-1{
+    @include Section-a-1 ($secondary, $textcolor1);
+}
+// End of style for About bhealth section
 
 
 footer{

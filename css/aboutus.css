@@ -30,6 +30,38 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +155,85 @@ header .cta .login {
 header .cta .login:hover {
   background-color: #2C97FD;
   color: white;
+}
+
+.section-a-1 {
+  width: 100%;
+  height: 60vh;
+  background-color: #dde8ff;
+  padding-inline: 5rem;
+  padding-block: 3rem;
+}
+.section-a-1 .div-a-s1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-a-1 .div-a-s1 .textarea-a-s1 {
+  width: 500px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+.section-a-1 .div-a-s1 .textarea-a-s1 h1 {
+  font-size: 3rem;
+  color: #333333;
+  position: relative;
+}
+.section-a-1 .div-a-s1 .textarea-a-s1 h1::before {
+  content: "";
+  color: brown;
+  background-color: brown;
+  width: 20%;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+}
+.section-a-1 .div-a-s1 .textarea-a-s1 p {
+  font-size: 1rem;
+  color: #333333;
+  line-height: 2;
+  font-weight: 600;
+}
+.section-a-1 .div-a-s1 .textarea-a-s1 p span {
+  color: #2C97FD;
+}
+.section-a-1 .div-a-s1 .imgwrap-a-s1 {
+  width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.section-a-1 .div-a-s1 .imgwrap-a-s1 div {
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+}
+.section-a-1 .div-a-s1 .imgwrap-a-s1 div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
