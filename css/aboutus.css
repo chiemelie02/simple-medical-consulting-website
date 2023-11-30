@@ -236,6 +236,118 @@ header .cta .login:hover {
      object-fit: cover;
 }
 
+.section-a-2 {
+  width: 100%;
+  height: 95vh;
+  padding-block: 3rem;
+  position: relative;
+}
+.section-a-2 .div-a-s2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-inline: 5rem;
+  gap: 3rem;
+}
+.section-a-2 .div-a-s2 .textarea-a-s2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-a-2 .div-a-s2 .textarea-a-s2 h1 {
+  font-size: 3rem;
+  color: #333333;
+  position: relative;
+}
+.section-a-2 .div-a-s2 .textarea-a-s2 h1::before {
+  content: "";
+  color: brown;
+  background-color: brown;
+  width: 40%;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+}
+.section-a-2 .div-a-s2 .textarea-a-s2 p {
+  font-size: 1.2rem;
+  color: #999999;
+}
+.section-a-2 .div-a-s2 .M-V {
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  padding: 0.6rem;
+}
+.section-a-2 .div-a-s2 .M-V div {
+  background-color: #dde8ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+}
+.section-a-2 .div-a-s2 .M-V div h2 {
+  font-size: 2rem;
+  color: #333333;
+  position: relative;
+}
+.section-a-2 .div-a-s2 .M-V div h2::before {
+  content: "";
+  color: brown;
+  background-color: brown;
+  width: 40%;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+}
+.section-a-2 .div-a-s2 .M-V div p {
+  font-size: 0.98rem;
+  color: #999999;
+  line-height: 2;
+  font-weight: 600;
+}
+.section-a-2 .div-a-s2 .M-V div p span {
+  color: #2C97FD;
+}
+.section-a-2 svg {
+  position: absolute;
+  bottom: 0;
+}
+
 footer {
   background-color: #1B2433;
   padding-inline: 5rem;

@@ -14,6 +14,12 @@ header{
 }
 // End of style for About bhealth section
 
+// Beginning of style for mission and vision section
+.section-a-2{
+    @include Section-a-2 ($textcolor1, $textcolor2);
+}
+// End of style for mission and vision section
+
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);

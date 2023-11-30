@@ -402,12 +402,18 @@
 @mixin Section3($textcolor1, $textcolor2){
     background-color: $secondary;
     height: 100vh;
-    padding-inline: $inline;
+    // padding-inline: $inline;
     padding-block: 3rem;
+    position: relative;
+    svg{
+        position: absolute;
+        bottom: 0;
+    }
     .div-s3{
         width: 100%;
         height: 100%;
         display: flex;
+        padding-inline: $inline;
         justify-content: space-between;
         gap: 3rem;
         .imgwrap-s3{

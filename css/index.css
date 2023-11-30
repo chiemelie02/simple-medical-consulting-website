@@ -14,6 +14,22 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,8 +519,12 @@ header .cta .login:hover {
 .section-3 {
   background-color: #dde8ff;
   height: 100vh;
-  padding-inline: 5rem;
   padding-block: 3rem;
+  position: relative;
+}
+.section-3 svg {
+  position: absolute;
+  bottom: 0;
 }
 .section-3 .div-s3 {
   width: 100%;
@@ -512,6 +532,7 @@ header .cta .login:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-inline: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
