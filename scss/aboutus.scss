@@ -20,6 +20,12 @@ header{
 }
 // End of style for mission and vision section
 
+// Beginning of style for Meet our founders section 
+.section-a-3{
+    @include Section-a-3 ($textcolor1, $textcolor2);
+}
+// End of style for Meet our founders section 
+
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
