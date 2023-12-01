@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./aboutusmixin";
+@import "./mixin";
+
+header{
+    @include NavBar($blue, $textcolor1);
+}
+
+// Beginning of style for About bhealth section  
+.section-a-1{
+    @include Section-a-1 ($secondary, $textcolor1);
+}
+// End of style for About bhealth section
+
+// Beginning of style for mission and vision section
+.section-a-2{
+    @include Section-a-2 ($textcolor1, $textcolor2);
+}
+// End of style for mission and vision section
+
+// Beginning of style for Meet our founders section 
+.section-a-3{
+    @include Section-a-3 ($textcolor1, $textcolor2);
+}
+// End of style for Meet our founders section 
+
+
+footer{
+    @include Footer($darkblue, $primarycolor, #999999);
+}
