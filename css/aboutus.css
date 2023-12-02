@@ -466,10 +466,46 @@ header .cta .login:hover {
 }
 
 .section-a-4 {
-  height: 90vh;
+  height: 115vh;
   width: 100%;
   padding-inline: 5rem;
-  margin-top: 4rem;
+  padding-block: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.section-a-4 .contactus {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section-a-4 .contactus h1 {
+  font-size: 3rem;
+  color: #333333;
+  position: relative;
+}
+.section-a-4 .contactus h1::before {
+  content: "";
+  color: brown;
+  background-color: brown;
+  width: 40%;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
 }
 .section-a-4 .div-a-s4 {
   display: -webkit-box;
@@ -480,6 +516,10 @@ header .cta .login:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 .section-a-4 .div-a-s4 .form-a-s4 {
   display: -webkit-box;
@@ -490,6 +530,7 @@ header .cta .login:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
+  height: 100%;
   background: white;
   -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
@@ -578,9 +619,9 @@ header .cta .login:hover {
   width: 45%;
   background-color: #1B2433;
   height: 75%;
-  -ms-flex-item-align: last baseline;
-      -ms-grid-row-align: last baseline;
-      align-self: last baseline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   padding-inline: 2rem;
   padding-block: 3rem;
   display: -webkit-box;
