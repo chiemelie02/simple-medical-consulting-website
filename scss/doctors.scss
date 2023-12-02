@@ -14,6 +14,12 @@ header{
 }
 // End of style for find doctor section
 
+// Beginning of style for cardiologist section 
+.section-d-2{
+    @include Section-d-2;
+}
+// End of style for cardiologist section 
+
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
 }
