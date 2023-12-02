@@ -32,6 +32,12 @@ header{
 }
 // End of style for Contact us section 
 
+// Beginning of style for Bhealth in numbers section 
+.section-a-5{
+    @include Section-a-5($textcolor1, $textcolor2);
+}
+// End of style for Bhealth in numbers section 
+
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
