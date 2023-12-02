@@ -8,6 +8,11 @@ header{
     @include NavBar($blue, $textcolor1);
 }
 
+// Beginning of style for find doctor section
+.section-d-1{
+    @include Section-d-1($textcolor1, $textcolor2);
+}
+// End of style for find doctor section
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
