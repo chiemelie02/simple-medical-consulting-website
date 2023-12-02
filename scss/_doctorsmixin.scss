@@ -57,7 +57,7 @@
                 width: 100%;
                 select, input{
                     width: 270px;
-                    height: 45px;
+                    height: 42px;
                     border-radius: 10px;
                     border: 1px solid $blue;
                     outline: none;
@@ -107,6 +107,7 @@
                 cursor: pointer;
                 transition: 600ms;
                 text-decoration: none;
+                align-self: flex-start;
                 &:hover{
                     color: $blue;
                 }
@@ -137,7 +138,7 @@
                 font-weight: 100;
                 i{
                     font-size: 0.9rem;
-                    color: goldenrod;
+                    color: #f3b71e;
                     margin-right: 0.3rem;
                     font-weight: 600;
                 }
@@ -150,9 +151,9 @@
 // End of mixin for doctor card
 
 
-// Beginning of mixin for cardiologist section 
+// Beginning of mixin for sections 
 @mixin Section-d-2{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     padding-inline: $inline;
     padding-block: 2rem;
@@ -162,7 +163,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
         .textarea-d-s2{
             background-color: $blue;
             padding-left: 2rem;
@@ -178,6 +179,7 @@
             // background-color: brown;
             display: flex;
             justify-content: space-between;
+            margin-top: 2rem;
             .dcard-d-s2{
                 @include Doctorcard;
             }
@@ -209,4 +211,4 @@
         }
     }
 }
-// End of mixin for cardiologist section 
+// End of mixin for sections
