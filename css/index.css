@@ -10,6 +10,26 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +41,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 85px;
-  padding-inline: 6rem;
+  padding-inline: 5rem;
   background-color: #f7f7f7;
 }
 header .logo a div {
@@ -38,13 +58,14 @@ header .navlist ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 header .navlist ul li a {
   text-decoration: none;
   letter-spacing: 0.6px;
   font-weight: 700;
+  font-size: 0.88rem;
   color: #333333;
   -webkit-transition: 600ms;
   transition: 600ms;
@@ -56,7 +77,7 @@ header .searchbar input {
   padding: 8px;
   width: 200px;
   outline: none;
-  border: 2px solid #2C97FD;
+  border: 1.5px solid #2C97FD;
   border-radius: 30px;
   font-size: 0.85rem;
   letter-spacing: 0.5px;
@@ -75,6 +96,7 @@ header .cta .signup {
   color: white;
   font-size: 0.95rem;
   font-weight: 700;
+  font-size: 0.88rem;
 }
 header .cta .signup:hover {
   background-color: white;
@@ -88,7 +110,7 @@ header .cta .login {
   padding-inline: 35px;
   border-radius: 35px;
   background-color: white;
-  border: 2px solid #2C97FD;
+  border: 1.5px solid #2C97FD;
   -webkit-transition: 500ms;
   transition: 500ms;
   cursor: pointer;
@@ -96,6 +118,7 @@ header .cta .login {
   color: #2C97FD;
   font-size: 0.95rem;
   font-weight: 700;
+  font-size: 0.88rem;
 }
 header .cta .login:hover {
   background-color: #2C97FD;
@@ -106,7 +129,7 @@ header .cta .login:hover {
   width: 100%;
   height: 90vh;
   background-color: #dde8ff;
-  padding-inline: 6rem;
+  padding-inline: 5rem;
   padding-block: 3rem;
 }
 .section-1 .div-s1 {
@@ -135,8 +158,8 @@ header .cta .login:hover {
 }
 .section-1 .div-s1 .textarea-1 p {
   font-size: 1.3rem;
-  font-weight: 700;
-  color: #999999;
+  font-weight: 200;
+  color: #333333;
   line-height: 1.5;
   letter-spacing: 0.6px;
 }
@@ -146,7 +169,7 @@ header .cta .login:hover {
   margin-right: 0.2rem;
 }
 .section-1 .div-s1 .textarea-1 h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   color: #333333;
   margin-bottom: 1rem;
 }
@@ -157,7 +180,7 @@ header .cta .login:hover {
   margin-bottom: 0.5rem;
 }
 .section-1 .div-s1 .textarea-1 .cta-s1 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1 {
   border: none;
@@ -201,7 +224,7 @@ header .cta .login:hover {
   padding-inline: 35px;
   border-radius: 35px;
   background-color: white;
-  border: 2px solid #2C97FD;
+  border: 1.5px solid #2C97FD;
   -webkit-transition: 500ms;
   transition: 500ms;
   cursor: pointer;
@@ -369,7 +392,7 @@ header .cta .login:hover {
 .section-2 {
   width: 100%;
   height: 125vh;
-  padding-inline: 6rem;
+  padding-inline: 5rem;
   padding-block: 2rem;
 }
 .section-2 .div-s2 {
@@ -382,7 +405,7 @@ header .cta .login:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 .section-2 .div-s2 .textarea-2 {
   text-align: center;
@@ -430,7 +453,7 @@ header .cta .login:hover {
 }
 .section-2 .div-s2 .grid-s2 .card-s2 {
   width: 350px;
-  height: 280px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,14 +469,14 @@ header .cta .login:hover {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  gap: 1rem;
+  gap: 0.8rem;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 8px rgba(70, 93, 226, 0.6);
           box-shadow: 0px 0px 8px rgba(70, 93, 226, 0.6);
 }
 .section-2 .div-s2 .grid-s2 .card-s2 .imgwrap-s2 {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
@@ -496,8 +519,12 @@ header .cta .login:hover {
 .section-3 {
   background-color: #dde8ff;
   height: 100vh;
-  padding-inline: 6rem;
   padding-block: 3rem;
+  position: relative;
+}
+.section-3 svg {
+  position: absolute;
+  bottom: 0;
 }
 .section-3 .div-s3 {
   width: 100%;
@@ -505,6 +532,7 @@ header .cta .login:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-inline: 5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -716,7 +744,7 @@ header .cta .login:hover {
 }
 
 .section-4 {
-  padding-inline: 6rem;
+  padding-inline: 5rem;
   padding-block: 3rem;
   width: 100%;
   height: 100vh;
@@ -847,6 +875,7 @@ header .cta .login:hover {
   font-size: 0.9rem;
   color: #999999;
   letter-spacing: 0.5px;
+  font-weight: 100;
 }
 .section-4 .div-s4 .scroll-s4 .carousel-d-s4 .card-s4 .text-s4 div {
   display: -webkit-box;
@@ -865,14 +894,17 @@ header .cta .login:hover {
   font-size: 0.85rem;
   color: #999999;
   letter-spacing: 0.3px;
+  font-weight: 100;
 }
 .section-4 .div-s4 .scroll-s4 .carousel-d-s4 .card-s4 .text-s4 h5 i {
   font-size: 0.9rem;
   color: goldenrod;
   margin-right: 0.3rem;
+  font-weight: 600;
 }
 .section-4 .div-s4 .scroll-s4 .carousel-d-s4 .card-s4 .text-s4 h5 span {
   color: #333333;
+  font-weight: 600;
 }
 .section-4 .div-s4 .cta-s4 {
   -ms-flex-item-align: center;
@@ -913,7 +945,7 @@ header .cta .login:hover {
   height: 80vh;
   width: 100%;
   background-color: #dde8ff;
-  padding-inline: 6rem;
+  padding-inline: 5rem;
   padding-block: 3rem;
 }
 .section-5 .div-s5 {
@@ -1041,8 +1073,8 @@ header .cta .login:hover {
 
 .section-6 {
   width: 100%;
-  height: 172vh;
-  padding-inline: 6rem;
+  height: 231vh;
+  padding-inline: 5rem;
   padding-block: 3rem;
 }
 .section-6 .div-s6 {
@@ -1093,7 +1125,8 @@ header .cta .login:hover {
 .section-6 .div-s6 .textarea-s6 p {
   font-size: 1rem;
   color: #999999;
-  font-weight: 600;
+  font-weight: 200;
+  letter-spacing: 0.7px;
 }
 .section-6 .div-s6 .textarea-s6 h3 {
   font-size: 1rem;
@@ -1148,7 +1181,7 @@ header .cta .login:hover {
      object-fit: cover;
 }
 .section-6 .div-s6 .grid-s6 .card-s6 .text-s6 {
-  padding: 0.5rem;
+  padding: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1164,6 +1197,7 @@ header .cta .login:hover {
   -webkit-transition: 700ms;
   transition: 700ms;
   letter-spacing: 0.7px;
+  cursor: pointer;
 }
 .section-6 .div-s6 .grid-s6 .card-s6 .text-s6 h3:hover {
   color: #2C97FD;
@@ -1242,9 +1276,170 @@ header .cta .login:hover {
   color: #2C97FD;
 }
 
+.section-7 {
+  height: 85vh;
+  width: 100%;
+}
+.section-7 .div-s7 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section-7 .div-s7 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-7 .div-s7 .cover-s7 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding-inline: 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 {
+  color: white;
+  height: 100%;
+  width: 50%;
+  padding-block: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 h1 {
+  font-size: 3rem;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 p {
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.8px;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 p span {
+  color: #2C97FD;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a {
+  margin-top: 1rem;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 14px;
+  padding-inline: 50px;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button p {
+  font-size: 1.1rem;
+  color: white;
+}
+.section-7 .div-s7 .cover-s7 .textarea-s7 a button:hover p {
+  color: #2C97FD;
+}
+
+.section-8 {
+  background-color: #dde8ff;
+  padding-inline: 5rem;
+  padding-block: 3rem;
+  height: 80vh;
+}
+.section-8 .div-s8 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-8 .div-s8 .textarea-s8 {
+  width: 500px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  padding-block: 2rem;
+}
+.section-8 .div-s8 .textarea-s8 h1 {
+  font-size: 3.6rem;
+  color: #333333;
+}
+.section-8 .div-s8 .textarea-s8 p {
+  font-size: 1.2rem;
+  color: #999999;
+  width: 70%;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.section-8 .div-s8 .textarea-s8 p a {
+  text-decoration: none;
+  color: #2C97FD;
+}
+.section-8 .div-s8 .textarea-s8 .download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.section-8 .div-s8 .textarea-s8 .download div {
+  width: 185px;
+  height: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.section-8 .div-s8 .textarea-s8 .download div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-8 .div-s8 .imgwrap-s8 {
+  width: 500px;
+  height: 100%;
+}
+.section-8 .div-s8 .imgwrap-s8 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 footer {
   background-color: #1B2433;
-  padding-inline: 6rem;
+  padding-inline: 5rem;
   padding-block: 2rem;
   padding-bottom: 0;
   width: 100%;
@@ -1292,15 +1487,14 @@ footer .cfooter .newsletter .logo a div img {
 }
 footer .cfooter .newsletter p {
   color: #999999;
-  font-weight: 700;
   letter-spacing: 0.6px;
-  line-height: 1.5;
-  font-size: 0.9rem;
+  line-height: 1.8;
+  font-size: 0.85rem;
 }
 footer .cfooter .newsletter h3 {
   font-size: 1.4rem;
   color: white;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 footer .cfooter .newsletter .subscribe {
   position: relative;
@@ -1313,14 +1507,14 @@ footer .cfooter .newsletter .subscribe input {
   padding: 13px;
   width: 350px;
   font-size: 0.85rem;
-  font-weight: 700;
   color: white;
 }
 footer .cfooter .newsletter .subscribe .button-f {
   position: absolute;
   right: 0;
-  top: 1.5px;
+  top: 1.3px;
   color: white;
+  font-weight: 200;
   border: none;
   outline: none;
   padding: 12px;
@@ -1352,6 +1546,7 @@ footer .cfooter .footerlist {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 2rem;
 }
 footer .cfooter .footerlist .f-list {
   display: -webkit-box;

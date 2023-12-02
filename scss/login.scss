@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./mixin";
+
+header{
+    @include NavBar($blue, $textcolor1);
+}
+
+
+footer{
+    @include Footer($darkblue, $primarycolor, #999999);
+}

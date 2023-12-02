@@ -1,0 +1,417 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+  padding-inline: 5rem;
+  background-color: #f7f7f7;
+}
+header .logo a div {
+  width: 120px;
+  height: 70px;
+}
+header .logo a div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .navlist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+header .navlist ul li a {
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #333333;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+header .navlist ul li a:hover {
+  color: #2C97FD;
+}
+header .searchbar input {
+  padding: 8px;
+  width: 200px;
+  outline: none;
+  border: 1.5px solid #2C97FD;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+header .cta .signup {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+header .cta .signup:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+header .cta .login {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: #2C97FD;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+header .cta .login:hover {
+  background-color: #2C97FD;
+  color: white;
+}
+
+.section-d-1 {
+  width: 100%;
+  height: 50vh;
+  padding-inline: 5rem;
+  padding-block: 3rem;
+}
+.section-d-1 .div-d-s1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+.section-d-1 .div-d-s1 .textarea-d-s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.section-d-1 .div-d-s1 .textarea-d-s1 h1 {
+  font-size: 3rem;
+  color: #2C97FD;
+}
+.section-d-1 .div-d-s1 .textarea-d-s1 p {
+  font-size: 1.15rem;
+  color: #333333;
+}
+.section-d-1 .div-d-s1 .text-d-s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+.section-d-1 .div-d-s1 .text-d-s1 h3 {
+  color: #1B2433;
+  font-size: 2rem;
+}
+.section-d-1 .div-d-s1 .text-d-s1 .options-d-s1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.section-d-1 .div-d-s1 .text-d-s1 .options-d-s1 select, .section-d-1 .div-d-s1 .text-d-s1 .options-d-s1 input {
+  width: 270px;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #2C97FD;
+  outline: none;
+  padding: 10px;
+  font-size: 0.92rem;
+  color: #333333;
+}
+
+footer {
+  background-color: #1B2433;
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  padding-bottom: 0;
+  width: 100%;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .cfooter {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+footer .cfooter .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.2rem;
+  padding-right: 4rem;
+  width: 400px;
+}
+footer .cfooter .newsletter .logo a div {
+  width: 150px;
+  height: 50px;
+}
+footer .cfooter .newsletter .logo a div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .cfooter .newsletter p {
+  color: #999999;
+  letter-spacing: 0.6px;
+  line-height: 1.8;
+  font-size: 0.85rem;
+}
+footer .cfooter .newsletter h3 {
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+footer .cfooter .newsletter .subscribe {
+  position: relative;
+}
+footer .cfooter .newsletter .subscribe input {
+  background-color: #293241;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 13px;
+  width: 350px;
+  font-size: 0.85rem;
+  color: white;
+}
+footer .cfooter .newsletter .subscribe .button-f {
+  position: absolute;
+  right: 0;
+  top: 1.3px;
+  color: white;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+footer .cfooter .newsletter .subscribe .button-f:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+footer .cfooter .newsletter .subscribe .button-f:hover {
+  color: #2C97FD;
+  border: 1px;
+}
+footer .cfooter .footerlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+footer .cfooter .footerlist .f-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+footer .cfooter .footerlist .f-list h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  color: white;
+}
+footer .cfooter .footerlist .f-list ul {
+  list-style: none;
+}
+footer .cfooter .footerlist .f-list ul li {
+  margin-bottom: 1.5rem;
+}
+footer .cfooter .footerlist .f-list ul li a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+}
+footer .cfooter .footerlist .f-list ul li a:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  height: 100px;
+  border-top: 1.3px solid #3a4b6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1rem;
+}
+footer .copyright .copy-f p {
+  color: #999999;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+footer .copyright .socials-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  color: white;
+  font-size: 1.3rem;
+}
+footer .copyright .socials-f div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
