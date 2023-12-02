@@ -465,6 +465,274 @@ header .cta .login:hover {
   place-items: center;
 }
 
+.section-a-4 {
+  height: 90vh;
+  width: 100%;
+  padding-inline: 5rem;
+  margin-top: 4rem;
+}
+.section-a-4 .div-a-s4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-a-4 .div-a-s4 .form-a-s4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  background: white;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding-inline: 4rem;
+  padding-block: 3.5rem;
+  gap: 0.8rem;
+}
+.section-a-4 .div-a-s4 .form-a-s4 h1 {
+  font-size: 1.6rem;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.section-a-4 .div-a-s4 .form-a-s4 label {
+  font-size: 0.95rem;
+  color: #333333;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.section-a-4 .div-a-s4 .form-a-s4 input {
+  height: 44px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  color: #999999;
+  letter-spacing: 0.5px;
+}
+.section-a-4 .div-a-s4 .form-a-s4 textarea {
+  height: 42px;
+  font-size: 0.9rem;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  color: #999999;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.section-a-4 .div-a-s4 .form-a-s4 a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 1rem;
+}
+.section-a-4 .div-a-s4 .form-a-s4 a button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 15px;
+  padding-inline: 25px;
+  border-radius: 5px;
+}
+.section-a-4 .div-a-s4 .form-a-s4 a button:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .form-a-s4 a button p {
+  font-size: 0.85rem;
+  color: white;
+}
+.section-a-4 .div-a-s4 .form-a-s4 a button p i {
+  color: white;
+}
+.section-a-4 .div-a-s4 .form-a-s4 a button:hover i {
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .form-a-s4 a button:hover p {
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .needhelp {
+  width: 45%;
+  background-color: #1B2433;
+  height: 75%;
+  -ms-flex-item-align: last baseline;
+      -ms-grid-row-align: last baseline;
+      align-self: last baseline;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.8rem;
+  color: white;
+  border-radius: 2px;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 h3 {
+  font-size: 1.1rem;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-1 {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 14px;
+  padding-inline: 25px;
+  border-radius: 5px;
+  width: 200px;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-1:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-1 p {
+  font-size: 0.85rem;
+  color: white;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-1 p i {
+  color: white;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-1:hover i {
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-1:hover p {
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-2 {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: #2C97FD;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 14px;
+  padding-inline: 25px;
+  border-radius: 5px;
+  width: 200px;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-2:hover {
+  background-color: #2C97FD;
+  color: white;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-2 p {
+  font-size: 0.85rem;
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-2 p i {
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-2:hover i {
+  color: white;
+}
+.section-a-4 .div-a-s4 .needhelp .cta-a-s4 a .btn-2:hover p {
+  color: white;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus {
+  height: 60%;
+  border-top: 1px solid #3a4b6e;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus h1 {
+  font-size: 1.1rem;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus .list-a-s4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus .list-a-s4 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus .list-a-s4 div h4 {
+  font-size: 0.95rem;
+  color: #2C97FD;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus .list-a-s4 div h5 {
+  font-size: 0.95rem;
+  letter-spacing: 0.8px;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus .list-a-s4 div ul {
+  list-style: none;
+}
+.section-a-4 .div-a-s4 .needhelp .visitus .list-a-s4 div ul li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
 footer {
   background-color: #1B2433;
   padding-inline: 5rem;
