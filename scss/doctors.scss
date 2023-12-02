@@ -2,6 +2,7 @@
 @import "./base";
 @import "./mediaqueries";
 @import "./mixin";
+@import "./doctorsmixin";
 
 header{
     @include NavBar($blue, $textcolor1);
