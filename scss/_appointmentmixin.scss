@@ -2,3 +2,40 @@
 @import "./base";
 @import "./mediaqueries";
 @import "./mixin";
+
+
+// Beginning of mixin for back to doctor section
+@mixin Backbutton{
+    width: 100%;
+    height: 100px;
+    padding-inline: $inline;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid $textcolor2;
+    a{
+        button{
+            @include Button1($blue, $textcolor1);
+                    padding-block: 13px;
+                    padding-inline: 25px;
+                    border-radius: 5px;
+                    width: 200px;
+                    p{
+                        font-size: 0.85rem;
+                        color: white;
+                        i{
+                            color: white;
+                        }
+                    }
+                    &:hover{
+                        i{
+                            color: $blue;
+                        }
+                        p{
+                            color: $blue;
+                        }
+                    }
+        }
+    }
+}
+// End of mixin for back to doctor section
