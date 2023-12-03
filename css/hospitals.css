@@ -307,3 +307,7 @@ footer .copyright .socials-f div {
   place-items: center;
   cursor: pointer;
 }
+.image-B {
+  background-image: url(../img/pexels-jonathan-meyer-668298.jpg);
+
+}

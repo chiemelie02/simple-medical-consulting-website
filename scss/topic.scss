@@ -36,17 +36,9 @@ footer {
     border-radius: 50%;
     position: relative;
     animation: bounce 2s infinite;
-    margin-right: -14rem;
+    // margin-right: -14rem;
 }
-.circle-ball-1{
-    width: 50px;
-    height: 50px;
-    background-image: linear-gradient(orange,yellow);
-    border-radius: 50%;
-    position: relative;
-    animation: bounce 2s infinite;
-    margin-right: 14rem;
-}
+
 .card-img-top {
     transition: transform 0.3s; /* Add a smooth transition effect */
 }
@@ -66,4 +58,10 @@ footer {
 }
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media screen{
+    header {
+        display: flex;
+    }
 }
