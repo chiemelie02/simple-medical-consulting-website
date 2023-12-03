@@ -8,8 +8,12 @@ header{
     @include NavBar($blue, $textcolor1);
 }
 
-.back-ap{
+.section-ap-1{
     @include Backbutton;
+}
+
+.section-ap-2{
+    @include Docdetail;
 }
 
 footer{

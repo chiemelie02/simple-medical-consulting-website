@@ -157,10 +157,14 @@ header .cta .login:hover {
   color: white;
 }
 
-.back-ap {
-  width: 100%;
+.section-ap-1 {
   height: 100px;
+  width: 100%;
   padding-inline: 5rem;
+}
+.section-ap-1 .back-ap {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +176,7 @@ header .cta .login:hover {
           align-items: center;
   border-bottom: 1px solid #999999;
 }
-.back-ap a button {
+.section-ap-1 a button {
   border: none;
   outline: none;
   padding: 12px;
@@ -191,23 +195,139 @@ header .cta .login:hover {
   border-radius: 5px;
   width: 200px;
 }
-.back-ap a button:hover {
+.section-ap-1 a button:hover {
   background-color: white;
   border: 1.5px solid #2C97FD;
   color: #2C97FD;
 }
-.back-ap a button p {
+.section-ap-1 a button p {
   font-size: 0.85rem;
   color: white;
 }
-.back-ap a button p i {
+.section-ap-1 a button p i {
   color: white;
 }
-.back-ap a button:hover i {
+.section-ap-1 a button:hover i {
   color: #2C97FD;
 }
-.back-ap a button:hover p {
+.section-ap-1 a button:hover p {
   color: #2C97FD;
+}
+
+.section-ap-2 {
+  height: 95vh;
+  width: 100%;
+  padding-inline: 5rem;
+  padding-block: 3rem;
+}
+.section-ap-2 .div-ap-s2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 {
+  height: 400px;
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 .imgwrap-ap-s2 {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #2C97FD;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 .imgwrap-ap-s2 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 a button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 13px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  width: 200px;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 a button:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 a button p {
+  font-size: 0.85rem;
+  color: white;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 a button p i {
+  color: white;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 a button:hover i {
+  color: #2C97FD;
+}
+.section-ap-2 .div-ap-s2 .dp-ap-s2 a button:hover p {
+  color: #2C97FD;
+}
+.section-ap-2 .div-ap-s2 .textarea-ap-s2 {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3rem;
+}
+.section-ap-2 .div-ap-s2 .textarea-ap-s2 h1 {
+  font-size: 2rem;
+  color: #2C97FD;
+  margin-bottom: 1rem;
+}
+.section-ap-2 .div-ap-s2 .textarea-ap-s2 h3 {
+  font-size: 1.1rem;
+  color: #333333;
+  margin-bottom: 1.6rem;
+}
+.section-ap-2 .div-ap-s2 .textarea-ap-s2 p {
+  font-size: 0.98rem;
+  color: #999999;
+  line-height: 1.5rem;
+}
+.section-ap-2 .div-ap-s2 .textarea-ap-s2 h4 {
+  color: #2C97FD;
+  font-size: 1rem;
+  margin-top: 1rem;
 }
 
 footer {
