@@ -219,6 +219,7 @@ header .cta .login:hover {
   width: 100%;
   padding-inline: 5rem;
   padding-block: 3rem;
+  padding-bottom: 0rem;
 }
 .section-ap-2 .div-ap-s2 {
   width: 100%;
@@ -229,6 +230,7 @@ header .cta .login:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid #999999;
 }
 .section-ap-2 .div-ap-s2 .dp-ap-s2 {
   height: 400px;
@@ -330,6 +332,266 @@ header .cta .login:hover {
   margin-top: 1rem;
 }
 
+.section-ap-3 {
+  height: 110vh;
+  width: 100%;
+  padding-inline: 5rem;
+  padding-block: 3rem;
+}
+.section-ap-3 .div-ap-s3 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 {
+  width: 400px;
+  height: 86%;
+  position: relative;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 p {
+  font-size: 0.9rem;
+  color: #333333;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 a button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 13px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  width: 200px;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 a button:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 a button p {
+  font-size: 0.85rem;
+  color: white;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 a button p i {
+  color: white;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 a button:hover i {
+  color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 a button:hover p {
+  color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 form {
+  padding: 3rem;
+  padding-right: 1rem;
+  padding-left: 5rem;
+  width: 800px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+.section-ap-3 .div-ap-s3 form .formtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.section-ap-3 .div-ap-s3 form .formtitle h2 {
+  font-size: 1.5rem;
+  color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 form .formtitle h4 {
+  font-weight: 100;
+  font-size: 0.95rem;
+  color: #999999;
+}
+.section-ap-3 .div-ap-s3 form .formarea {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.section-ap-3 .div-ap-s3 form .formarea .label-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7rem;
+}
+.section-ap-3 .div-ap-s3 form .formarea .label-input label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1B2433;
+}
+.section-ap-3 .div-ap-s3 form .formarea .label-input .inputarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section-ap-3 .div-ap-s3 form .formarea .label-input .inputarea input, .section-ap-3 .div-ap-s3 form .formarea .label-input .inputarea textarea {
+  width: 310px;
+  height: 42px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #999999;
+  color: #333333;
+  font-size: 0.9rem;
+  padding: 10px;
+  padding-left: 0px;
+}
+.section-ap-3 .div-ap-s3 form .formarea .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-ap-3 .div-ap-s3 form .formarea .gender h6 {
+  font-size: 0.95rem;
+  color: #1B2433;
+  margin-right: 1rem;
+}
+.section-ap-3 .div-ap-s3 form .formarea .gender div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #1B2433;
+}
+.section-ap-3 .div-ap-s3 form .formarea .gender .check-f {
+  background-color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 form .formarea .gender p {
+  font-size: 0.95rem;
+  color: #999999;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 a button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 13px;
+  padding-inline: 15px;
+  border-radius: 5px;
+  width: 200px;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 a button:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 a button p {
+  font-size: 0.85rem;
+  color: white;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 a button p i {
+  color: white;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 a button:hover i {
+  color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 a button:hover p {
+  color: #2C97FD;
+}
+.section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 p {
+  font-size: 0.8rem;
+  color: #999999;
+}
+
 footer {
   background-color: #1B2433;
   padding-inline: 5rem;
@@ -385,7 +647,7 @@ footer .cfooter .newsletter p {
   font-size: 0.85rem;
 }
 footer .cfooter .newsletter h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: white;
   margin-top: 0.5rem;
 }
@@ -488,7 +750,6 @@ footer .copyright {
 footer .copyright .copy-f p {
   color: #999999;
   letter-spacing: 0.6px;
-  font-weight: 700;
   font-size: 0.8rem;
 }
 footer .copyright .socials-f {
@@ -503,12 +764,19 @@ footer .copyright .socials-f {
   font-size: 1.3rem;
 }
 footer .copyright .socials-f div {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 1px solid white;
   display: -ms-grid;
   display: grid;
   place-items: center;
   cursor: pointer;
+}
+footer .copyright .socials-f div i {
+  font-size: 0.8rem;
+}
+footer .copyright .socials-f div:hover {
+  background-color: white;
+  color: #2C97FD;
 }

@@ -16,6 +16,10 @@ header{
     @include Docdetail;
 }
 
+.section-ap-3{
+    @include Appointment;
+}
+
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
 }
