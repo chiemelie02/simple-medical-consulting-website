@@ -1729,3 +1729,37 @@
     }
 }
 // End of topics section media query for phone
+
+// Beginning of Are you a doctor section media query for ipad 
+@mixin Section-7-i{
+    height: 70vh;
+    .div-s7{
+        .cover-s7{
+            padding-inline: $inline-i;
+        }
+    }
+}
+// End of Are you a doctor section media query for ipad 
+
+// Beginning of Are you a doctor section media query for phone 
+@mixin Section-7-p{
+    height: 80vh;
+    .div-s7{
+        .cover-s7{
+            padding-inline: $inline-p;
+            .textarea-s7{
+                width: 100%;
+                padding-block: 3rem;
+                gap: 1.5rem;
+                h1{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 0.98rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+// End of Are you a doctor section media query for phone

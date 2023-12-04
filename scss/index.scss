@@ -70,6 +70,12 @@ header{
 
 .section-7{
     @include Section7($textcolor1, $textcolor2);
+    @include mediaQuery(1024px, 768px){
+        @include Section-7-i;
+    }
+    @include mediaQuery(767px){
+        @include Section-7-p;
+    }
 }
 
 .section-8{
