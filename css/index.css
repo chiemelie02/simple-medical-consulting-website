@@ -637,6 +637,40 @@ header .cta .login:hover {
     place-items: center;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-2 {
+    height: 237vh;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+  }
+  .section-2 .div-s2 {
+    gap: 1.5rem;
+  }
+  .section-2 .div-s2 .textarea-2 h1 {
+    font-size: 2.7rem;
+  }
+  .section-2 .div-s2 .textarea-2 p {
+    width: 100%;
+  }
+  .section-2 .div-s2 .grid-s2 {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  .section-2 .div-s2 .grid-s2 .card-s2 {
+    width: 280px;
+    height: 230px;
+  }
+  .section-2 .div-s2 .grid-s2 .card-s2 .imgwrap-s2 {
+    width: 50px;
+    height: 50px;
+  }
+  .section-2 .div-s2 .grid-s2 .card-s2 a button {
+    padding: 8px;
+    padding-inline: 30px;
+    font-size: 1.2rem;
+  }
+}
 
 .section-3 {
   background-color: #dde8ff;

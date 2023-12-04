@@ -23,6 +23,9 @@ header{
     @include mediaQuery(1024px, 768px){
         @include Section-2-i;
     }
+    @include mediaQuery(767px){
+        @include Section-2-p;
+    };
 }
 
 .section-3{

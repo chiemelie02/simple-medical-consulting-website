@@ -1404,7 +1404,7 @@
         }
     }
 }
-// End of media query
+// End of Section 1 media query for phone
 
 // Beginning of Section 2 media query for ipad
 @mixin Section-2-i{
@@ -1430,3 +1430,45 @@
     }
 }
 // End of Section 2 media query for ipad
+
+
+// Beginning of Section 2 media query for phone
+@mixin Section-2-p{
+    height: 237vh;
+    padding-inline: $inline-p;
+    padding-block: 1.5rem;
+    .div-s2{
+        gap: 1.5rem;
+        .textarea-2{
+            // gap: 1rem;
+            h1{
+                font-size: 2.7rem;
+            }
+            p{
+                width: 100%;
+                // line-height: 1;
+            }
+        }
+        .grid-s2{
+            grid-template-columns: repeat(1,1fr);
+            // gap: 1rem;
+            place-items: center;
+            .card-s2{
+                width: 280px;
+                height: 230px;
+                .imgwrap-s2{
+                    width: 50px;
+                    height: 50px;
+                }
+                a{
+                    button{
+                        padding: 8px;
+                        padding-inline: 30px;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of Section 2 media query for phone
