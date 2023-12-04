@@ -50,6 +50,9 @@ header{
 
 .section-5{
     @include Section5 ($textcolor1, $textcolor2);
+    @include mediaQuery(1024px, 768px){
+        @include Section-5-i;
+    }
 }
 
 .section-6{

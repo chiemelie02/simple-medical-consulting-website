@@ -1596,3 +1596,46 @@
     }
 }
 // End of doctor Carousel section media query for phone
+
+
+// Beginning of Testimonials section media query for ipad
+@mixin Section-5-i{
+    height: 50vh;
+    padding-inline: $inline-i;
+    padding-block: 2rem;
+    .div-s5{
+        gap: 3rem;
+        .textarea-s5{
+            h1{
+                font-size: 2.5rem;
+            }
+            h3{
+                font-size: 1.8rem;
+            }
+        }
+        .scroll-s5{
+            height: 280px;
+            .carousel-s5{
+                width: 350%;
+                .card-s5{
+                    width: 400px;
+                    justify-content: center;
+                    align-items: center;
+                    .text-s5{
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                    .text-i-s5{
+                        gap: 1rem;
+                        .icon-s5{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of Testimonials section media query for ipad
