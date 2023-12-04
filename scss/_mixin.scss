@@ -1434,11 +1434,12 @@
 
 // Beginning of Section 2 media query for phone
 @mixin Section-2-p{
-    height: 237vh;
+    height: 182vh;
     padding-inline: $inline-p;
-    padding-block: 1.5rem;
+    padding-block: 3rem;
+    padding-top: 3.5rem;
     .div-s2{
-        gap: 1.5rem;
+        gap: 2rem;
         .textarea-2{
             // gap: 1rem;
             h1{
@@ -1451,8 +1452,11 @@
         }
         .grid-s2{
             grid-template-columns: repeat(1,1fr);
-            // gap: 1rem;
+            gap: 3rem;
             place-items: center;
+            div:nth-child(5), div:nth-child(6){
+                display: none;
+            }
             .card-s2{
                 width: 280px;
                 height: 230px;
@@ -1502,3 +1506,20 @@
     }
 }
 // End of Section 3 media query for ipad
+
+// Beginning of Section 3 media query for phone
+@mixin Section-3-p{
+    height: 90vh;
+    padding-block: 1.5rem;
+    .div-s3{
+        padding-inline: $inline-p;
+        .imgwrap-s3{
+            display: none;
+        }
+        .textarea-s3{
+            gap: 1rem;
+            align-self: center;
+        }
+    }
+}
+// End of Section 3 media query for phone

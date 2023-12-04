@@ -639,12 +639,13 @@ header .cta .login:hover {
 }
 @media screen and (max-width: 767px) {
   .section-2 {
-    height: 237vh;
+    height: 182vh;
     padding-inline: 1.5rem;
-    padding-block: 1.5rem;
+    padding-block: 3rem;
+    padding-top: 3.5rem;
   }
   .section-2 .div-s2 {
-    gap: 1.5rem;
+    gap: 2rem;
   }
   .section-2 .div-s2 .textarea-2 h1 {
     font-size: 2.7rem;
@@ -653,9 +654,13 @@ header .cta .login:hover {
     width: 100%;
   }
   .section-2 .div-s2 .grid-s2 {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
     place-items: center;
+  }
+  .section-2 .div-s2 .grid-s2 div:nth-child(5), .section-2 .div-s2 .grid-s2 div:nth-child(6) {
+    display: none;
   }
   .section-2 .div-s2 .grid-s2 .card-s2 {
     width: 280px;
@@ -924,6 +929,24 @@ header .cta .login:hover {
     line-height: 1.5;
     font-weight: 300;
     font-size: 0.97rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-3 {
+    height: 90vh;
+    padding-block: 1.5rem;
+  }
+  .section-3 .div-s3 {
+    padding-inline: 1.5rem;
+  }
+  .section-3 .div-s3 .imgwrap-s3 {
+    display: none;
+  }
+  .section-3 .div-s3 .textarea-s3 {
+    gap: 1rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
