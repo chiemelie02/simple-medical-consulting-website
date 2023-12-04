@@ -35,6 +35,12 @@ header{
 // Beginning of style for Meet our founders section 
 .section-a-3{
     @include Section-a-3 ($textcolor1, $textcolor2);
+    @include mediaQuery(1024px, 768px){
+        @include Section-a-3-i;
+    }
+    @include mediaQuery(767px){
+        @include Section-a-3-p;
+    }
 }
 // End of style for Meet our founders section 
 

@@ -583,6 +583,56 @@ header .cta .login:hover {
   display: grid;
   place-items: center;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-a-3 {
+    padding-inline: 2rem;
+  }
+  .section-a-3 .div-a-s3 .grid-a-s3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 2rem;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-a-3 {
+    height: 195vh;
+    padding-inline: 1.5rem;
+  }
+  .section-a-3 .div-a-s3 {
+    gap: 3rem;
+  }
+  .section-a-3 .div-a-s3 .textarea-a-s3 {
+    gap: 1rem;
+    text-align: center;
+  }
+  .section-a-3 .div-a-s3 .textarea-a-s3 h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .section-a-3 .div-a-s3 .textarea-a-s3 h1::before {
+    bottom: -0.4rem;
+  }
+  .section-a-3 .div-a-s3 .grid-a-s3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 2rem;
+    height: 100%;
+  }
+  .section-a-3 .div-a-s3 .grid-a-s3 .card-a-s3 {
+    width: 100%;
+    height: 400px;
+  }
+  .section-a-3 .div-a-s3 .grid-a-s3 .card-a-s3 .imgwrap-a-s3 {
+    height: 57%;
+  }
+}
 
 .section-a-4 {
   height: 120vh;
