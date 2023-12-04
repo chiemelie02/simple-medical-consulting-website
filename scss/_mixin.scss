@@ -1535,7 +1535,7 @@
 // End of Why Choose Us section media query for phone
 
 
-// Beginning of Carousel section media query for ipad
+// Beginning of doctor Carousel section media query for ipad
 @mixin Section-4-i{
     padding-inline: $inline-i;
     height: 67vh;
@@ -1561,4 +1561,38 @@
         }
     }
 }
-// End of Carousel section media query for ipad
+// End of doctor Carousel section media query for ipad
+
+
+// Beginning of doctor Carousel section media query for phone
+@mixin Section-4-p{
+    padding-inline: $inline-p;
+    padding-block: 2rem;
+    height: 101vh;
+    .div-s4{
+        gap: 1.5rem;
+        .textarea-s4{
+            // gap: 1rem;
+            h1{
+                margin-bottom: 0;
+                font-size: 2rem;
+                &::before{
+                    display: none;
+                }
+            }
+            p{
+                width: 100%;
+            }
+        }
+        .scroll-s4{
+            height: 320px;
+            .carousel-d-s4{
+                width: 1150%;
+                .card-s4{
+                    width: 260px;
+                }
+            }
+        }
+    }
+}
+// End of doctor Carousel section media query for phone

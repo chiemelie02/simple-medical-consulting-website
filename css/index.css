@@ -1175,6 +1175,35 @@ header .cta .login:hover {
     width: 320px;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-4 {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    height: 101vh;
+  }
+  .section-4 .div-s4 {
+    gap: 1.5rem;
+  }
+  .section-4 .div-s4 .textarea-s4 h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+  .section-4 .div-s4 .textarea-s4 h1::before {
+    display: none;
+  }
+  .section-4 .div-s4 .textarea-s4 p {
+    width: 100%;
+  }
+  .section-4 .div-s4 .scroll-s4 {
+    height: 320px;
+  }
+  .section-4 .div-s4 .scroll-s4 .carousel-d-s4 {
+    width: 1150%;
+  }
+  .section-4 .div-s4 .scroll-s4 .carousel-d-s4 .card-s4 {
+    width: 260px;
+  }
+}
 
 .section-5 {
   height: 80vh;
