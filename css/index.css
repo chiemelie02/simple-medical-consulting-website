@@ -427,7 +427,7 @@ header .cta .login:hover {
     gap: 0.3rem;
   }
   .section-1 .div-s1 .imgwrap-s1 {
-    width: 400px;
+    width: 380px;
   }
   .section-1 .div-s1 .imgwrap-s1 .miniTextarea {
     top: 42%;
@@ -613,6 +613,29 @@ header .cta .login:hover {
   background-color: white;
   color: #2C97FD;
   border: 1.5px solid #2C97FD;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-2 {
+    padding-inline: 2rem;
+    height: 95vh;
+  }
+  .section-2 .div-s2 {
+    gap: 2rem;
+  }
+  .section-2 .div-s2 .textarea-2 {
+    gap: 1.5rem;
+  }
+  .section-2 .div-s2 .textarea-2 h1 {
+    font-size: 3rem;
+  }
+  .section-2 .div-s2 .textarea-2 p {
+    width: 100%;
+  }
+  .section-2 .div-s2 .grid-s2 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
 }
 
 .section-3 {

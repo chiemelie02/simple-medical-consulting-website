@@ -1344,7 +1344,7 @@
             }
         }
         .imgwrap-s1{
-            width: 400px;
+            width: 380px;
             .miniTextarea{
                 top: 42%;
                 left: -4.8rem;
@@ -1405,3 +1405,28 @@
     }
 }
 // End of media query
+
+// Beginning of Section 2 media query for ipad
+@mixin Section-2-i{
+    // background-color: brown;
+    padding-inline: $inline-i;
+    height: 95vh;
+    .div-s2{
+        gap: 2rem;
+        .textarea-2{
+            gap: 1.5rem;
+            h1{
+                font-size: 3rem;
+                // width: 100%;
+            }
+            p{
+                width: 100%;
+            }
+        }
+        .grid-s2{
+            grid-template-columns: repeat(2,1fr);
+            place-items: center;
+        }
+    }
+}
+// End of Section 2 media query for ipad
