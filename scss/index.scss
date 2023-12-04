@@ -10,6 +10,12 @@ header{
 
 .section-1{
     @include Section1($secondary, $textcolor1);
+    @include mediaQuery(1024px, 768px){
+        @include Section-1-i;
+    };
+    // @include mediaQuery(767px){
+    //     @include Section-1-p
+    // };
 }
 
 .section-2{
