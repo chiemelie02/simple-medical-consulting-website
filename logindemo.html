@@ -46,7 +46,7 @@
                 <div></div>
             </div>
         </div>
-        <div class="main">
+        <div class="login">
             <div class="left">
                 <div class="text-ls">
                     <h1>Your Health, Our Trusted Care.</h1>
@@ -111,7 +111,7 @@
                 <div class="circle-1"></div>
                 <div class="circle-2"></div>
             </div>
-            <form action="" class="login">
+            <form action="" class="login-m">
                 <div class="main-form">
                     <div class="title">
                         <div class="imgwrap">
@@ -150,13 +150,13 @@
                             <div><i class="ri-apple-fill"></i></div>
                         </div>
                         <div class="span">
-                            <p>Don't Have an Account? <span id="signupbtn">Sign Up</span></p>
+                            <p>Don't Have an Account? <a href="#">Sign up</a></p>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-        <!-- <div class="main-2">
+        <div class="signup">
             <div class="left">
                 <div class="text-ls">
                     <h1>Your Health, Our Trusted Care.</h1>
@@ -221,7 +221,7 @@
                 <div class="circle-1"></div>
                 <div class="circle-2"></div>
             </div>
-            <form action="" class="login">
+            <form action="" class="login-m">
                 <div class="main-form">
                     <div class="title">
                         <div class="imgwrap">
@@ -260,12 +260,12 @@
                             <div><i class="ri-apple-fill"></i></div>
                         </div>
                         <div class="span">
-                            <p>Already have an Account? <span id="loginbtn">Login</span></p>
+                            <p>Already have an Account? <a href="#">Login</a></p>
                         </div>
                     </div>
                 </div>
             </form>
-        </div> -->
+        </div>
     </section>
     <!-- End of login and sign up section  -->
 
@@ -335,25 +335,6 @@
     <!-- End of footer -->
 
     
-    <script>
-        const toggleLoginBtn = document.getElementById("loginbtn");
-        const toggleSignupBtn = document.getElementById("signupbtn");
-
-        const loginForm = document.querySelector(".main");
-        const signupForm = document.querySelector(".main-2");
-        
-        toggleLoginBtn.addEventListener('click', () =>{
-            signupForm.style.zIndex = "1";
-            loginForm.style.zIndex = "2";
-
-        });
-        toggleSignupBtn.addEventListener('click', () =>{
-            loginForm.style.zIndex = "1";
-            signupForm.style.zIndex = "2";
-
-        });
-        
-
-    </script>
+    <script src="js/form.js"></script>
 </body>
 </html>
