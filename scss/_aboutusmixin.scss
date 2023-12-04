@@ -630,3 +630,78 @@
     }
 }
 // End of About bhealth section media query for phone
+
+// Beginning of mission and vision section media query for ipad
+@mixin Section-a-2-i{
+    height: 52vh;
+    padding-block: 2rem;
+    .div-a-s2{
+        padding-inline: $inline-i;
+        gap: 4rem;
+        .textarea-a-s2{
+            gap: 1.5rem;
+            h1{
+                font-size: 2.8rem;
+            }
+        }
+        .M-V{
+            height: 250px;
+            padding: 0.3rem;
+            div{
+                gap: 0.8rem;
+                h2{
+                    font-size: 1.8rem;
+                    &::before{
+                        bottom: -0.4rem;
+                    }
+                }
+                p{
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+// End of mission and vision section media query for ipad
+
+
+// Beginning of mission and vision section media query for phone
+@mixin Section-a-2-p{
+    height: 105vh;
+    padding-block: 2rem;
+    .div-a-s2{
+        padding-inline: $inline-p;
+        gap: 3rem;
+        .textarea-a-s2{
+            gap: 1rem;
+            text-align: center;
+            h1{
+                font-size: 2.3rem;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        .M-V{
+            height: 250px;
+            width: 100%;
+            padding: 0.3rem;
+            flex-direction: column;
+            div{
+                gap: 0.8rem;
+                width: 100%;
+                h2{
+                    font-size: 1.5rem;
+                    &::before{
+                        bottom: -0.4rem;
+                    }
+                }
+                p{
+                    line-height: 1.5;
+                    font-size: 0.9r5em;
+                }
+            }
+        }
+    }
+}
+// End of mission and vision section media query for phone

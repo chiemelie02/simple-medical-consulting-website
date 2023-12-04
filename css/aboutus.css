@@ -390,6 +390,81 @@ header .cta .login:hover {
   position: absolute;
   bottom: 0;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-a-2 {
+    height: 52vh;
+    padding-block: 2rem;
+  }
+  .section-a-2 .div-a-s2 {
+    padding-inline: 2rem;
+    gap: 4rem;
+  }
+  .section-a-2 .div-a-s2 .textarea-a-s2 {
+    gap: 1.5rem;
+  }
+  .section-a-2 .div-a-s2 .textarea-a-s2 h1 {
+    font-size: 2.8rem;
+  }
+  .section-a-2 .div-a-s2 .M-V {
+    height: 250px;
+    padding: 0.3rem;
+  }
+  .section-a-2 .div-a-s2 .M-V div {
+    gap: 0.8rem;
+  }
+  .section-a-2 .div-a-s2 .M-V div h2 {
+    font-size: 1.8rem;
+  }
+  .section-a-2 .div-a-s2 .M-V div h2::before {
+    bottom: -0.4rem;
+  }
+  .section-a-2 .div-a-s2 .M-V div p {
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-a-2 {
+    height: 105vh;
+    padding-block: 2rem;
+  }
+  .section-a-2 .div-a-s2 {
+    padding-inline: 1.5rem;
+    gap: 3rem;
+  }
+  .section-a-2 .div-a-s2 .textarea-a-s2 {
+    gap: 1rem;
+    text-align: center;
+  }
+  .section-a-2 .div-a-s2 .textarea-a-s2 h1 {
+    font-size: 2.3rem;
+  }
+  .section-a-2 .div-a-s2 .textarea-a-s2 h1::before {
+    display: none;
+  }
+  .section-a-2 .div-a-s2 .M-V {
+    height: 250px;
+    width: 100%;
+    padding: 0.3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-a-2 .div-a-s2 .M-V div {
+    gap: 0.8rem;
+    width: 100%;
+  }
+  .section-a-2 .div-a-s2 .M-V div h2 {
+    font-size: 1.5rem;
+  }
+  .section-a-2 .div-a-s2 .M-V div h2::before {
+    bottom: -0.4rem;
+  }
+  .section-a-2 .div-a-s2 .M-V div p {
+    line-height: 1.5;
+    font-size: 0.9r5em;
+  }
+}
 
 .section-a-3 {
   width: 100%;

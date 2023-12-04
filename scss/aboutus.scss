@@ -23,6 +23,12 @@ header{
 // Beginning of style for mission and vision section
 .section-a-2{
     @include Section-a-2 ($textcolor1, $textcolor2);
+    @include mediaQuery(1024px, 768px){
+        @include Section-a-2-i;
+    }
+    @include mediaQuery(767px){
+        @include Section-a-2-p;
+    }
 }
 // End of style for mission and vision section
 
