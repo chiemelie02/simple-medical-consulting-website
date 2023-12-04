@@ -1499,6 +1499,7 @@ header .cta .login:hover {
   display: grid;
   -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr;
   grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   gap: 2rem;
 }
 .section-6 .div-s6 .grid-s6 .card-s6 {
@@ -1623,6 +1624,23 @@ header .cta .login:hover {
 }
 .section-6 .div-s6 .cta-s6 a button:hover p {
   color: #2C97FD;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-6 {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    height: 143vh;
+  }
+  .section-6 .div-s6 {
+    gap: 3rem;
+  }
+  .section-6 .div-s6 .grid-s6 {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-6 .div-s6 .grid-s6 div:nth-child(7), .section-6 .div-s6 .grid-s6 div:nth-child(8), .section-6 .div-s6 .grid-s6 div:nth-child(9) {
+    display: none;
+  }
 }
 
 .section-7 {

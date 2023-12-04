@@ -910,6 +910,7 @@
         .grid-s6{
             display: grid;
             grid-template-columns: repeat(3,1fr);
+            place-items: center;
             gap: 2rem;
             .card-s6{
                 display: flex;
@@ -1684,3 +1685,20 @@
 
 }
 // End of Testimonials section media query for phone
+
+// Beginning of topics section media query for ipad 
+@mixin Section-6-i{
+    padding-inline: $inline-i;
+    padding-block: 2rem;
+    height: 143vh;
+    .div-s6{
+        gap: 3rem;
+        .grid-s6{
+            grid-template-columns: repeat(2,1fr);
+            div:nth-child(7), div:nth-child(8), div:nth-child(9){
+                display: none;
+            }
+        }
+    }
+}
+// End of topics section media query for ipad 
