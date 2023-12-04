@@ -63,6 +63,9 @@ header{
     @include mediaQuery(1024px, 768px){
         @include Section-6-i;
     }
+    @include mediaQuery(767px){
+        @include Section-6-p;
+    }
 }
 
 .section-7{

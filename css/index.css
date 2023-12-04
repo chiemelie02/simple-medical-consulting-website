@@ -1642,6 +1642,33 @@ header .cta .login:hover {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-6 {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    height: 252vh;
+  }
+  .section-6 .div-s6 {
+    gap: 2rem;
+  }
+  .section-6 .div-s6 .textarea-s6 {
+    text-align: center;
+  }
+  .section-6 .div-s6 .grid-s6 {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-6 .div-s6 .grid-s6 div:nth-child(5), .section-6 .div-s6 .grid-s6 div:nth-child(6), .section-6 .div-s6 .grid-s6 div:nth-child(7), .section-6 .div-s6 .grid-s6 div:nth-child(8), .section-6 .div-s6 .grid-s6 div:nth-child(9) {
+    display: none;
+  }
+  .section-6 .div-s6 .grid-s6 .card-s6 {
+    height: 355px;
+    width: 320px;
+  }
+  .section-6 .div-s6 .grid-s6 .card-s6 .imgwrap-s6 {
+    height: 63%;
+  }
+}
 
 .section-7 {
   height: 85vh;

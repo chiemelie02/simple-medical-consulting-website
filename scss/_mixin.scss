@@ -1702,3 +1702,30 @@
     }
 }
 // End of topics section media query for ipad 
+
+// Beginning of topics section media query for phone 
+@mixin Section-6-p{
+    padding-inline: $inline-p;
+    padding-block: 2rem;
+    height: 252vh;
+    .div-s6{
+        gap: 2rem;
+        .textarea-s6{
+            text-align: center;
+        }
+        .grid-s6{
+            grid-template-columns: repeat(1,1fr);
+            div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8), div:nth-child(9){
+                display: none;
+            }
+            .card-s6{
+                height: 355px;
+                width: 320px;
+                .imgwrap-s6{
+                    height: 63%;
+                }
+            }
+        }
+    }
+}
+// End of topics section media query for phone
