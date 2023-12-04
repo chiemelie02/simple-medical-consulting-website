@@ -1375,6 +1375,50 @@ header .cta .login:hover {
     height: 40px;
   }
 }
+@media screen and (max-width: 767px) {
+  .section-5 {
+    height: 60vh;
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+  }
+  .section-5 .div-s5 {
+    gap: 2rem;
+  }
+  .section-5 .div-s5 .textarea-s5 {
+    gap: 1rem;
+  }
+  .section-5 .div-s5 .textarea-s5 h1 {
+    font-size: 2.3rem;
+  }
+  .section-5 .div-s5 .textarea-s5 h3 {
+    font-size: 1.6rem;
+  }
+  .section-5 .div-s5 .scroll-s5 {
+    height: 240px;
+  }
+  .section-5 .div-s5 .scroll-s5 .carousel-s5 {
+    width: 600%;
+  }
+  .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 {
+    width: 350px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 .text-s5 p {
+    font-size: 1rem;
+  }
+  .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 .text-i-s5 {
+    gap: 1rem;
+  }
+  .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 .text-i-s5 .icon-s5 {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .section-6 {
   width: 100%;
