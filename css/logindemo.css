@@ -1,0 +1,770 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+  padding-inline: 5rem;
+  background-color: #f7f7f7;
+}
+header .logo a div {
+  width: 120px;
+  height: 70px;
+}
+header .logo a div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .navlist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+header .navlist ul li a {
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #333333;
+  -webkit-transition: 600ms;
+  transition: 600ms;
+}
+header .navlist ul li a:hover {
+  color: #2C97FD;
+}
+header .searchbar input {
+  padding: 8px;
+  width: 200px;
+  outline: none;
+  border: 1.5px solid #2C97FD;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+header .cta .signup {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+header .cta .signup:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+header .cta .login {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: #2C97FD;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+header .cta .login:hover {
+  background-color: #2C97FD;
+  color: white;
+}
+
+.login-signup {
+  height: 95vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.login-signup .blue {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+.login-signup .white {
+  width: 50%;
+  height: 100%;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.login-signup .white .right {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.login-signup .white .right div {
+  width: 300px;
+  height: 200px;
+  background-color: #2C97FD;
+  border-radius: 50% 30%;
+  opacity: 0.6;
+}
+.login-signup .main {
+  width: 65%;
+  height: 85%;
+  z-index: 2;
+  border-radius: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.login-signup .main .left {
+  width: 50%;
+  background-color: #2C97FD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.login-signup .main .left .text-ls {
+  text-align: center;
+  width: 70%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.login-signup .main .left .text-ls h1 {
+  font-size: 2rem;
+}
+.login-signup .main .left .text-ls p {
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+}
+.login-signup .main .left .dots-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.8rem 1fr 0.8rem 1fr 0.8rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.login-signup .main .left .dots-1 div {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+}
+.login-signup .main .left .dots-2 {
+  bottom: 2rem;
+  left: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.8rem 1fr 0.8rem 1fr 0.8rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  position: absolute;
+}
+.login-signup .main .left .dots-2 div {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+}
+.login-signup .main .left .dots-3 {
+  bottom: 2rem;
+  right: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.8rem 1fr 0.8rem 1fr 0.8rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  position: absolute;
+}
+.login-signup .main .left .dots-3 div {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+}
+.login-signup .main .left .dots-4 {
+  top: 2rem;
+  right: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.8rem 1fr 0.8rem 1fr 0.8rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  position: absolute;
+}
+.login-signup .main .left .dots-4 div {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+}
+.login-signup .main .left .circle-1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 20%;
+  left: 44%;
+}
+.login-signup .main .login {
+  width: 50%;
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-signup .main .login .main-form {
+  height: 100%;
+  width: 80%;
+  padding-block: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.login-signup .main .login .main-form .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+.login-signup .main .login .main-form .title .imgwrap {
+  width: 100px;
+  height: 65px;
+  background-color: #ececec;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+.login-signup .main .login .main-form .title .imgwrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.login-signup .main .login .main-form .title h3 {
+  font-size: 1.15rem;
+  color: #333333;
+  letter-spacing: 0.6px;
+}
+.login-signup .main .login .main-form .label-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+.login-signup .main .login .main-form .label-input label {
+  font-size: 0.95rem;
+  color: #333333;
+  font-weight: 600;
+}
+.login-signup .main .login .main-form .label-input input {
+  height: 42px;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 0.86rem;
+  padding: 10px;
+  color: #333333;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.login-signup .main .login .main-form .checkboxarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-signup .main .login .main-form .checkboxarea .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+.login-signup .main .login .main-form .checkboxarea .check label {
+  font-size: 0.9rem;
+  color: #333333;
+}
+.login-signup .main .login .main-form .checkboxarea p {
+  color: #2C97FD;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.login-signup .main .login .main-form .checkboxarea p:hover {
+  text-decoration: underline;
+}
+.login-signup .main .login .main-form .cta-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.login-signup .main .login .main-form .cta-section a {
+  width: 100%;
+}
+.login-signup .main .login .main-form .cta-section a button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding-block: 11px;
+  padding-inline: 25px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.login-signup .main .login .main-form .cta-section a button:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+.login-signup .main .login .main-form .cta-section .line-or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.8rem;
+}
+.login-signup .main .login .main-form .cta-section .line-or div {
+  height: 0.8px;
+  width: 50%;
+  background-color: #999999;
+}
+.login-signup .main .login .main-form .cta-section .line-or p {
+  font-size: 0.9rem;
+  color: #999999;
+}
+.login-signup .main .login .main-form .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.login-signup .main .login .main-form .foot .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+.login-signup .main .login .main-form .foot .icon div {
+  width: 55px;
+  height: 45px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.login-signup .main .login .main-form .foot .icon div:hover i {
+  color: #2C97FD;
+}
+.login-signup .main .login .main-form .foot .icon div:hover .ri-facebook-circle-fill {
+  color: black;
+}
+.login-signup .main .login .main-form .foot .icon div i {
+  color: #2C97FD;
+  font-size: 1.5rem;
+}
+.login-signup .main .login .main-form .foot .icon div .ri-google-fill, .login-signup .main .login .main-form .foot .icon div .ri-apple-fill {
+  color: black;
+}
+.login-signup .main .login .main-form .foot .span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login-signup .main .login .main-form .foot .span p {
+  font-size: 0.8rem;
+  color: #999999;
+}
+.login-signup .main .login .main-form .foot .span p span {
+  color: #2C97FD;
+  cursor: pointer;
+}
+.login-signup .main .login .main-form .foot .span p span:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1B2433;
+  padding-inline: 5rem;
+  padding-block: 2rem;
+  padding-bottom: 0;
+  width: 100%;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .cfooter {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+footer .cfooter .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.2rem;
+  padding-right: 4rem;
+  width: 400px;
+}
+footer .cfooter .newsletter .logo a div {
+  width: 150px;
+  height: 50px;
+}
+footer .cfooter .newsletter .logo a div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .cfooter .newsletter p {
+  color: #999999;
+  letter-spacing: 0.6px;
+  line-height: 1.8;
+  font-size: 0.85rem;
+}
+footer .cfooter .newsletter h3 {
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+footer .cfooter .newsletter .subscribe {
+  position: relative;
+}
+footer .cfooter .newsletter .subscribe input {
+  background-color: #293241;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 13px;
+  width: 350px;
+  font-size: 0.85rem;
+  color: white;
+}
+footer .cfooter .newsletter .subscribe .button-f {
+  position: absolute;
+  right: 0;
+  top: 1.3px;
+  color: white;
+  font-weight: 200;
+  border: none;
+  outline: none;
+  padding: 12px;
+  padding-inline: 35px;
+  border-radius: 35px;
+  background-color: #2C97FD;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+footer .cfooter .newsletter .subscribe .button-f:hover {
+  background-color: white;
+  border: 1.5px solid #2C97FD;
+  color: #2C97FD;
+}
+footer .cfooter .newsletter .subscribe .button-f:hover {
+  color: #2C97FD;
+  border: 1px;
+}
+footer .cfooter .footerlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+footer .cfooter .footerlist .f-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+footer .cfooter .footerlist .f-list h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  color: white;
+}
+footer .cfooter .footerlist .f-list ul {
+  list-style: none;
+}
+footer .cfooter .footerlist .f-list ul li {
+  margin-bottom: 1.5rem;
+}
+footer .cfooter .footerlist .f-list ul li a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+}
+footer .cfooter .footerlist .f-list ul li a:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  height: 100px;
+  border-top: 1.3px solid #3a4b6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1rem;
+}
+footer .copyright .copy-f p {
+  color: #999999;
+  letter-spacing: 0.6px;
+  font-size: 0.8rem;
+}
+footer .copyright .socials-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  color: white;
+  font-size: 1.3rem;
+}
+footer .copyright .socials-f div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+footer .copyright .socials-f div i {
+  font-size: 0.8rem;
+}
+footer .copyright .socials-f div:hover {
+  background-color: white;
+  color: #2C97FD;
+}

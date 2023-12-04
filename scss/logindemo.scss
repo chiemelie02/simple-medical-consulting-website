@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./mixin";
+@import "./logindemomixins";
+
+header{
+    @include NavBar($blue, $textcolor1);
+}
+
+.login-signup{
+    @include section;
+}
+
+
+footer{
+    @include Footer($darkblue, $primarycolor, #999999);
+}
