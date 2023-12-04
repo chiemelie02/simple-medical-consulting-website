@@ -1140,6 +1140,7 @@
 } 
 // End of mixin for Download App section 
 
+// Beginning of mixin for footer 
 @mixin Footer($bgcolor, $textcolor1, $textcolor2){
     background-color: $bgcolor;
     padding-inline: $inline;
@@ -1293,6 +1294,7 @@
         }
     }
 }
+// End of mixin for footer 
 
 
 
@@ -1716,7 +1718,22 @@
     .div-s6{
         gap: 2rem;
         .textarea-s6{
-            text-align: center;
+            // text-align: center;
+            h1{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+            p{
+                width: 100%;
+                align-items: flex-start;
+                // background-color: brown;
+                font-size: 0.88rem;
+            }
+            h3{
+                text-align: center;
+            }
         }
         .grid-s6{
             grid-template-columns: repeat(1,1fr);
@@ -1797,13 +1814,13 @@
 
 // Beginning of Download App section media query for phone
 @mixin Section-8-p{
-    height: 50vh;
+    height: 43vh;
     padding-inline: $inline-p;
     padding-block: 2rem;
     .div-s8{
         .textarea-s8{
             width: 100%;
-            gap: 1.5rem;
+            gap: 1rem;
             // background-color: cyan;
             padding-block: 0;
             h1{
@@ -1825,3 +1842,80 @@
     }
 }
 // End of Download App section media query for phone
+
+// Beginning of ipad media query for footer 
+@mixin Footer-i{
+    padding-inline: $inline-i;
+    height: 38vh;
+    .cfooter{
+        gap: 0rem;
+        .newsletter{
+            padding-right: 1rem;
+            width: 390px;
+        }
+        .footerlist{
+            padding-top: 1rem;
+            .f-list{
+                // gap: 1.3rem;
+                ul{
+                    li{
+                        margin-bottom: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of ipad media query for footer 
+
+
+// Beginning of phone media query for footer 
+@mixin Footer-p{
+    height: 128vh;
+    padding-inline: $inline-p;
+    padding-block: 1.5rem;
+    padding-bottom: 0.8rem;
+    .cfooter{
+        flex-direction: column;
+        gap: 2rem;
+        .newsletter{
+            width: 100%;
+            padding-right: 0;
+            p{
+                width: 100%;
+                // background-color: brown;
+            }
+            h3{
+                width: 100%;
+            }
+            .subscribe{
+                width: 100%;
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        .footerlist{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 0.5rem;
+            padding-top: 0.4rem;
+        }
+    }
+    .copyright{
+        flex-direction: column-reverse;
+        padding-right: 0rem;
+        padding-block: 1rem;
+        justify-content: center;
+        gap: 1rem;
+        .socials-f{
+            // background-color: brown;
+        }
+        .copy-f{
+            p{
+                font-size: 0.78rem;
+            }
+        }
+    }
+}
+// End of phone media query for footer 

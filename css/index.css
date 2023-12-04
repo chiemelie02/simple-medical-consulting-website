@@ -1656,7 +1656,20 @@ header .cta .login:hover {
   .section-6 .div-s6 {
     gap: 2rem;
   }
-  .section-6 .div-s6 .textarea-s6 {
+  .section-6 .div-s6 .textarea-s6 h1 {
+    text-align: center;
+  }
+  .section-6 .div-s6 .textarea-s6 h2 {
+    text-align: center;
+  }
+  .section-6 .div-s6 .textarea-s6 p {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 0.88rem;
+  }
+  .section-6 .div-s6 .textarea-s6 h3 {
     text-align: center;
   }
   .section-6 .div-s6 .grid-s6 {
@@ -1886,13 +1899,13 @@ header .cta .login:hover {
 }
 @media screen and (max-width: 767px) {
   .section-8 {
-    height: 50vh;
+    height: 43vh;
     padding-inline: 1.5rem;
     padding-block: 2rem;
   }
   .section-8 .div-s8 .textarea-s8 {
     width: 100%;
-    gap: 1.5rem;
+    gap: 1rem;
     padding-block: 0;
   }
   .section-8 .div-s8 .textarea-s8 h1 {
@@ -2098,4 +2111,77 @@ footer .copyright .socials-f div i {
 footer .copyright .socials-f div:hover {
   background-color: white;
   color: #2C97FD;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  footer {
+    padding-inline: 2rem;
+    height: 38vh;
+  }
+  footer .cfooter {
+    gap: 0rem;
+  }
+  footer .cfooter .newsletter {
+    padding-right: 1rem;
+    width: 390px;
+  }
+  footer .cfooter .footerlist {
+    padding-top: 1rem;
+  }
+  footer .cfooter .footerlist .f-list ul li {
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    height: 128vh;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+    padding-bottom: 0.8rem;
+  }
+  footer .cfooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  footer .cfooter .newsletter {
+    width: 100%;
+    padding-right: 0;
+  }
+  footer .cfooter .newsletter p {
+    width: 100%;
+  }
+  footer .cfooter .newsletter h3 {
+    width: 100%;
+  }
+  footer .cfooter .newsletter .subscribe {
+    width: 100%;
+  }
+  footer .cfooter .newsletter .subscribe input {
+    width: 100%;
+  }
+  footer .cfooter .footerlist {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding-top: 0.4rem;
+  }
+  footer .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-right: 0rem;
+    padding-block: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+  }
+  footer .copyright .copy-f p {
+    font-size: 0.78rem;
+  }
 }

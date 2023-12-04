@@ -89,4 +89,10 @@ header{
 }
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
+    @include mediaQuery(1024px, 768px){
+        @include Footer-i;
+    }
+    @include mediaQuery(767px){
+        @include Footer-p;
+    }
 }
