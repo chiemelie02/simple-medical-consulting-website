@@ -11,6 +11,12 @@ header{
 // Beginning of style for About bhealth section  
 .section-a-1{
     @include Section-a-1 ($secondary, $textcolor1);
+    @include mediaQuery(1024px, 768px){
+        @include Section-a-1-i;
+    }
+    @include mediaQuery(767px){
+        @include Section-a-1-p;
+    }
 }
 // End of style for About bhealth section
 
@@ -41,4 +47,10 @@ header{
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
+    @include mediaQuery(1024px, 768px){
+        @include Footer-i;
+    }
+    @include mediaQuery(767px){
+        @include Footer-p;
+    }
 }
