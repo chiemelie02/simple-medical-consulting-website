@@ -1406,7 +1406,7 @@
 }
 // End of Section 1 media query for phone
 
-// Beginning of Section 2 media query for ipad
+// Beginning of What We Do section media query for ipad
 @mixin Section-2-i{
     // background-color: brown;
     padding-inline: $inline-i;
@@ -1429,10 +1429,10 @@
         }
     }
 }
-// End of Section 2 media query for ipad
+// End of What We Do section media query for ipad
 
 
-// Beginning of Section 2 media query for phone
+// Beginning of What We Do section media query for phone
 @mixin Section-2-p{
     height: 182vh;
     padding-inline: $inline-p;
@@ -1475,9 +1475,9 @@
         }
     }
 }
-// End of Section 2 media query for phone
+// End of What We Do section media query for phone
 
-// Beginning of Section 3 media query for ipad
+// Beginning of Why Choose Us section media query for ipad
 @mixin Section-3-i{
     height: 60vh;
     // padding-inline: $inline-i;
@@ -1505,9 +1505,9 @@
         }
     }
 }
-// End of Section 3 media query for ipad
+// End of Why Choose Us section media query for ipad
 
-// Beginning of Section 3 media query for phone
+// Beginning of Why Choose Us section media query for phone
 @mixin Section-3-p{
     height: 90vh;
     padding-block: 1.5rem;
@@ -1519,7 +1519,46 @@
         .textarea-s3{
             gap: 1rem;
             align-self: center;
+            h1{
+                &::before{
+                    bottom: 0rem;
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 0.2rem;
+                }
+            }
         }
     }
 }
-// End of Section 3 media query for phone
+// End of Why Choose Us section media query for phone
+
+
+// Beginning of Carousel section media query for ipad
+@mixin Section-4-i{
+    padding-inline: $inline-i;
+    height: 67vh;
+    // background-color: brown;
+    .div-s4{
+        .textarea-s4{
+            h1{
+                margin-bottom: 0.3rem;
+            }
+            p{
+                width: 100%;
+                font-size: 0.98rem;
+            }
+        }
+        .scroll-s4{
+            height: 350px;
+            .carousel-d-s4{
+                width: 580%;
+                .card-s4{
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+// End of Carousel section media query for ipad

@@ -948,6 +948,12 @@ header .cta .login:hover {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .section-3 .div-s3 .textarea-s3 h1::before {
+    bottom: 0rem;
+  }
+  .section-3 .div-s3 .textarea-s3 ul li {
+    margin-bottom: 0.2rem;
+  }
 }
 
 .section-4 {
@@ -1146,6 +1152,28 @@ header .cta .login:hover {
 }
 .section-4 .div-s4 .cta-s4 a button:hover p {
   color: #2C97FD;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-4 {
+    padding-inline: 2rem;
+    height: 67vh;
+  }
+  .section-4 .div-s4 .textarea-s4 h1 {
+    margin-bottom: 0.3rem;
+  }
+  .section-4 .div-s4 .textarea-s4 p {
+    width: 100%;
+    font-size: 0.98rem;
+  }
+  .section-4 .div-s4 .scroll-s4 {
+    height: 350px;
+  }
+  .section-4 .div-s4 .scroll-s4 .carousel-d-s4 {
+    width: 580%;
+  }
+  .section-4 .div-s4 .scroll-s4 .carousel-d-s4 .card-s4 {
+    width: 320px;
+  }
 }
 
 .section-5 {
