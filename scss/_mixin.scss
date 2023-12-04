@@ -1472,3 +1472,33 @@
     }
 }
 // End of Section 2 media query for phone
+
+// Beginning of Section 3 media query for ipad
+@mixin Section-3-i{
+    height: 60vh;
+    // padding-inline: $inline-i;
+    padding-block: 1.5rem;
+    .div-s3{
+        padding-inline: $inline-i;
+        gap: 2rem;
+        .imgwrap-s3{
+            width: 380px;
+            .minitext-s3{
+                left: 0;
+                width: 270px;
+                height: 255px;
+            }
+        }
+        .textarea-s3{
+            // width: 400px;
+            // gap: 1.7rem;
+            align-self: center;
+            p{
+                line-height: 1.5;
+                font-weight: 300;
+                font-size: 0.97rem;
+            }
+        }
+    }
+}
+// End of Section 3 media query for ipad

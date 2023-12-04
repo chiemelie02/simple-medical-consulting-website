@@ -898,6 +898,34 @@ header .cta .login:hover {
 .section-3 .div-s3 .textarea-s3 .button-s3:hover p {
   color: #2C97FD;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-3 {
+    height: 60vh;
+    padding-block: 1.5rem;
+  }
+  .section-3 .div-s3 {
+    padding-inline: 2rem;
+    gap: 2rem;
+  }
+  .section-3 .div-s3 .imgwrap-s3 {
+    width: 380px;
+  }
+  .section-3 .div-s3 .imgwrap-s3 .minitext-s3 {
+    left: 0;
+    width: 270px;
+    height: 255px;
+  }
+  .section-3 .div-s3 .textarea-s3 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .section-3 .div-s3 .textarea-s3 p {
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 0.97rem;
+  }
+}
 
 .section-4 {
   padding-inline: 5rem;
