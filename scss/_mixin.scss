@@ -1358,7 +1358,7 @@
 
 // Beginning of Section 1 media query for phone
 @mixin Section-1-p{
-    height: 155vh;
+    height: 145vh;
     // background-color: brown;
     padding-inline: $inline-p;
     padding-bottom: 2rem;
@@ -1382,10 +1382,15 @@
             width: 100%;
             p{
                 font-size: 1.2rem;
+                width: 100%;
             }
             h1{
-                font-size: 2.5rem;
+                font-size: 2.3rem;
                 margin-bottom: 0rem;
+                width: 100%;
+            }
+            .second-p{
+                width: 100%;
             }
             .cta-s1{
                 display: flex;
@@ -1763,3 +1768,60 @@
     }
 }
 // End of Are you a doctor section media query for phone
+
+// Beginning of Download App section media query for ipad
+@mixin Section-8-i{
+    height: 50vh;
+    padding-inline: $inline-i;
+    padding-block: 2rem;
+    .div-s8{
+        .textarea-s8{
+            width: 400px;
+            gap: 1.5rem;
+            // background-color: cyan;
+            h1{
+                font-size: 3rem;
+            }
+            .download{
+                gap: 0.8rem;
+                // background-color: brown;
+                width: 350px;
+            }
+        }
+        .imgwrap-s8{
+            width: 350px;
+        }
+    }
+}
+// End of Download App section media query for ipad
+
+// Beginning of Download App section media query for phone
+@mixin Section-8-p{
+    height: 50vh;
+    padding-inline: $inline-p;
+    padding-block: 2rem;
+    .div-s8{
+        .textarea-s8{
+            width: 100%;
+            gap: 1.5rem;
+            // background-color: cyan;
+            padding-block: 0;
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1rem;
+                width: 100%;
+            }
+            .download{
+                gap: 0.8rem;
+                // background-color: brown;
+                width: 100%;
+            }
+        }
+        .imgwrap-s8{
+            display: none;
+        }
+    }
+}
+// End of Download App section media query for phone

@@ -80,6 +80,12 @@ header{
 
 .section-8{
     @include Section8($textcolor1, $textcolor2);
+    @include mediaQuery(1024px, 768px){
+        @include Section-8-i;
+    }
+    @include mediaQuery(767px){
+        @include Section-8-p;
+    }
 }
 footer{
     @include Footer($darkblue, $primarycolor, #999999);

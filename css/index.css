@@ -436,7 +436,7 @@ header .cta .login:hover {
 }
 @media screen and (max-width: 767px) {
   .section-1 {
-    height: 155vh;
+    height: 145vh;
     padding-inline: 1.5rem;
     padding-bottom: 2rem;
     padding-top: 0;
@@ -462,10 +462,15 @@ header .cta .login:hover {
   }
   .section-1 .div-s1 .textarea-1 p {
     font-size: 1.2rem;
+    width: 100%;
   }
   .section-1 .div-s1 .textarea-1 h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 0rem;
+    width: 100%;
+  }
+  .section-1 .div-s1 .textarea-1 .second-p {
+    width: 100%;
   }
   .section-1 .div-s1 .textarea-1 .cta-s1 {
     display: -webkit-box;
@@ -1857,6 +1862,53 @@ header .cta .login:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-8 {
+    height: 50vh;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
+  .section-8 .div-s8 .textarea-s8 {
+    width: 400px;
+    gap: 1.5rem;
+  }
+  .section-8 .div-s8 .textarea-s8 h1 {
+    font-size: 3rem;
+  }
+  .section-8 .div-s8 .textarea-s8 .download {
+    gap: 0.8rem;
+    width: 350px;
+  }
+  .section-8 .div-s8 .imgwrap-s8 {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-8 {
+    height: 50vh;
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+  }
+  .section-8 .div-s8 .textarea-s8 {
+    width: 100%;
+    gap: 1.5rem;
+    padding-block: 0;
+  }
+  .section-8 .div-s8 .textarea-s8 h1 {
+    font-size: 2.5rem;
+  }
+  .section-8 .div-s8 .textarea-s8 p {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .section-8 .div-s8 .textarea-s8 .download {
+    gap: 0.8rem;
+    width: 100%;
+  }
+  .section-8 .div-s8 .imgwrap-s8 {
+    display: none;
+  }
 }
 
 footer {
