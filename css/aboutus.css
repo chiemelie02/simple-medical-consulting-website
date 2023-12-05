@@ -1163,6 +1163,63 @@ header .cta .login:hover {
 .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-2-s5 div p {
   font-size: 0.9rem;
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-a-5 {
+    height: 50vh;
+  }
+  .section-a-5 .div-a-s5 {
+    padding-inline: 2rem;
+    height: 50%;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-1-s5 {
+    gap: 3rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-1-s5 div h2 {
+    font-size: 2.3rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-2-s5 {
+    gap: 3rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-2-s5 div h2 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-a-5 {
+    height: 50vh;
+  }
+  .section-a-5 .div-a-s5 {
+    padding-inline: 2rem;
+    height: 50%;
+    gap: 0.7rem;
+    padding-block: 0;
+  }
+  .section-a-5 .div-a-s5 h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 {
+    gap: 0.5rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-1-s5 {
+    gap: 1rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-1-s5 div h2 {
+    font-size: 2rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-1-s5 div:nth-child(3) {
+    display: none;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-2-s5 {
+    gap: 1rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-2-s5 div h2 {
+    font-size: 2rem;
+  }
+  .section-a-5 .div-a-s5 .textarea-a-s5 .text-a-2-s5 div:nth-child(3) {
+    display: none;
+  }
+}
 
 footer {
   background-color: #1B2433;
