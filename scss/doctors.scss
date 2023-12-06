@@ -11,6 +11,12 @@ header{
 // Beginning of style for find doctor section
 .section-d-1{
     @include Section-d-1($textcolor1, $textcolor2);
+    @include mediaQuery(1024px, 768px){
+        @include Section-d-1-i;
+    };
+    @include mediaQuery(767px){
+        @include Section-d-1-p;
+    };
 }
 // End of style for find doctor section
 

@@ -214,3 +214,81 @@
     }
 }
 // End of mixin for sections
+
+@mixin mediaQuery($args...){
+    @if length($args)==1{
+        @media screen and (max-width: nth($args, 1)){
+            @content;
+        }
+    }
+    @if length($args)==2{
+        @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+            @content;
+        }
+    }
+
+}
+
+// Beginning of find doctor section media query for ipad
+@mixin Section-d-1-i{
+    height: 35vh;
+    padding-inline: $inline-i;
+    padding-block: 2rem;
+    // background-color: brown;
+    .div-d-s1{
+        gap: 2rem;
+        .textarea-d-s1{
+            align-items: center;
+            text-align: center;
+        }
+        .text-d-s1{
+            .options-d-s1{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 1rem;
+                select, input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// End of find doctor section media query for ipad
+
+
+// Beginning of find doctor section media query for phone
+@mixin Section-d-1-p{
+    height: 80vh;
+    padding-inline: $inline-p;
+    padding-block: 1.5rem;
+    // background-color: brown;
+    .div-d-s1{
+        gap: 1.5rem;
+        .textarea-d-s1{
+            align-items: center;
+            text-align: center;
+            gap: 0.8rem;
+            h1{
+                font-size: 2.3rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        .text-d-s1{
+            h3{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .options-d-s1{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 1rem;
+                select, input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// End of find doctor section media query for phone
