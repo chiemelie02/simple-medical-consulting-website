@@ -30,8 +30,20 @@ header{
 
 .section-ap-3{
     @include Appointment;
+    @include mediaQuery(1024px, 768px){
+        @include Appointment-i;
+    };
+    @include mediaQuery(767px){
+        @include Appointment-p;
+    };
 }
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
+    @include mediaQuery(1024px, 768px){
+        @include Footer-i;
+    }
+    @include mediaQuery(767px){
+        @include Footer-p;
+    }
 }

@@ -409,7 +409,7 @@
     height: 178vh;
     padding-inline: $inline-p;
     padding-block: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
     .div-ap-s2{
         flex-direction: column;
         justify-content: flex-start;
@@ -441,3 +441,83 @@
     }
 }
 // End of doctors detail section media query for phone
+
+// Beginning of appointment form section media query for ipad
+@mixin Appointment-i{
+    height: 68vh;
+    padding-inline: $inline-i;
+    .div-ap-s3{
+        .left-ap-s3{
+            display: none;
+        }
+        form{
+            padding: 2rem;
+            padding-inline: 0;
+            gap: 2rem;
+            width: 100%;
+            // background-color: brown;
+            .formarea{
+                .label-input{
+                    .inputarea{
+                        input, textarea{
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of appointment form section media query for ipad
+
+
+// Beginning of appointment form section media query for phone
+@mixin Appointment-p{
+    
+    height: 95vh;
+    padding-inline: $inline-p;
+    padding-block: 0rem;
+    .div-ap-s3{
+        .left-ap-s3{
+            display: none;
+        }
+        form{
+            padding: 1rem;
+            padding-inline: 0;
+            // padding-top: 0.6rem;
+            gap: 2rem;
+            width: 100%;
+            // background-color: brown;
+            .formtitle{
+                gap: 0.8rem;
+                width: 100%;
+            }
+            .formarea{
+                gap: 1.5rem;
+                .label-input{
+                    .inputarea{
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: first baseline;
+                        gap: 0.6rem;
+                        input, textarea{
+                            width: 100%;
+                        }
+                    }
+                }
+                .cta-ap-s3{
+                    gap: 0.8rem;
+                    margin-top: 0.3rem;
+                    a{
+                        width: 100%;
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+// End of appointment form section media query for phone
