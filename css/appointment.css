@@ -176,7 +176,7 @@ header .cta .login:hover {
           align-items: center;
   border-bottom: 1px solid #999999;
 }
-.section-ap-1 a button {
+.section-ap-1 .back-ap a button {
   border: none;
   outline: none;
   padding: 12px;
@@ -195,23 +195,42 @@ header .cta .login:hover {
   border-radius: 5px;
   width: 200px;
 }
-.section-ap-1 a button:hover {
+.section-ap-1 .back-ap a button:hover {
   background-color: white;
   border: 1.5px solid #2C97FD;
   color: #2C97FD;
 }
-.section-ap-1 a button p {
+.section-ap-1 .back-ap a button p {
   font-size: 0.85rem;
   color: white;
 }
-.section-ap-1 a button p i {
+.section-ap-1 .back-ap a button p i {
   color: white;
 }
-.section-ap-1 a button:hover i {
+.section-ap-1 .back-ap a button:hover i {
   color: #2C97FD;
 }
-.section-ap-1 a button:hover p {
+.section-ap-1 .back-ap a button:hover p {
   color: #2C97FD;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-ap-1 {
+    padding-inline: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-ap-1 {
+    padding-inline: 1.5rem;
+    height: 70px;
+  }
+  .section-ap-1 .back-ap {
+    border-bottom: 0.1px solid #999999;
+  }
+  .section-ap-1 .back-ap a button {
+    width: 150px;
+    padding-inline: 15px;
+    padding-block: 11px;
+  }
 }
 
 .section-ap-2 {
@@ -301,7 +320,7 @@ header .cta .login:hover {
   color: #2C97FD;
 }
 .section-ap-2 .div-ap-s2 .textarea-ap-s2 {
-  width: 700px;
+  width: 750px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,7 +341,7 @@ header .cta .login:hover {
   margin-bottom: 1.6rem;
 }
 .section-ap-2 .div-ap-s2 .textarea-ap-s2 p {
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   color: #999999;
   line-height: 1.5rem;
 }

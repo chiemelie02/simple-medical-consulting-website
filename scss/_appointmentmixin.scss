@@ -16,7 +16,6 @@
     justify-content: flex-end;
     align-items: center;
     border-bottom: 1px solid $textcolor2;
-    }
     a{
         button{
             @include Button1($blue, $textcolor1);
@@ -40,6 +39,7 @@
                         }
                     }
         }
+    }
     }
 }
 // End of mixin for back to doctor section
@@ -107,7 +107,7 @@
             }
         }
         .textarea-ap-s2{
-            width: 700px;
+            width: 750px;
             display: flex;
             flex-direction: column;
             gap: 0.3rem;
@@ -122,7 +122,7 @@
                 margin-bottom: 1.6rem;
             }
             p{
-                font-size: 0.98rem;
+                font-size: 0.95rem;
                 color: $textcolor2;
                 line-height: 1.5rem;
             }
@@ -332,3 +332,43 @@
     }
 }
 // End of mixin for appointment form section
+
+
+// Beginning of media query 
+@mixin mediaQuery($args...){
+    @if length($args)==1{
+        @media screen and (max-width: nth($args, 1)){
+            @content;
+        }
+    }
+    @if length($args)==2{
+        @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+            @content;
+        }
+    }
+
+}
+
+// Beginning of back to doctor section media query for ipad  
+@mixin Backbutton-i{
+    padding-inline: $inline-i;
+}
+// End of back to doctor section media query for ipad 
+
+
+// Beginning of back to doctor section media query for phone
+@mixin Backbutton-p{
+    padding-inline: $inline-p;
+    height: 70px;
+    .back-ap{
+        border-bottom: 0.1px solid $textcolor2;
+        a{
+            button{
+                width: 150px;
+                padding-inline: 15px;
+                padding-block: 11px;
+            }
+        }
+    }
+}
+// End of back to doctor section media query for phone

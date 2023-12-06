@@ -10,6 +10,12 @@ header{
 
 .section-ap-1{
     @include Backbutton;
+    @include mediaQuery(1024px, 768px){
+        @include Backbutton-i;
+    };
+    @include mediaQuery(767px){
+        @include Backbutton-p;
+    };
 }
 
 .section-ap-2{
