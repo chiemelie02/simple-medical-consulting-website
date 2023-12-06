@@ -20,6 +20,12 @@ header{
 
 .section-ap-2{
     @include Docdetail;
+    @include mediaQuery(1024px, 768px){
+        @include Docdetail-i;
+    };
+    @include mediaQuery(767px){
+        @include Docdetail-p;
+    };
 }
 
 .section-ap-3{
