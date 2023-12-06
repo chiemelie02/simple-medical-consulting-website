@@ -260,7 +260,7 @@ header .cta .login:hover {
 }
 @media screen and (max-width: 767px) {
   .section-d-1 {
-    height: 80vh;
+    height: 72vh;
     padding-inline: 1.5rem;
     padding-block: 1.5rem;
   }
@@ -279,6 +279,7 @@ header .cta .login:hover {
   }
   .section-d-1 .div-d-s1 .textarea-d-s1 p {
     font-size: 1rem;
+    color: #999999;
   }
   .section-d-1 .div-d-s1 .text-d-s1 h3 {
     font-size: 1.5rem;
@@ -470,6 +471,71 @@ header .cta .login:hover {
 }
 .section-d-2 .div-d-s2 a button:hover p {
   color: #2C97FD;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-d-2 {
+    height: 55vh;
+    padding-inline: 2rem;
+  }
+  .section-d-2 .div-d-s2 {
+    gap: 2rem;
+  }
+  .section-d-2 .div-d-s2 .textarea-d-s2 {
+    height: 70px;
+  }
+  .section-d-2 .div-d-s2 .textarea-d-s2 h1 {
+    font-size: 2.2rem;
+  }
+  .section-d-2 .div-d-s2 .cards-d-s2 {
+    margin-top: 1rem;
+  }
+  .section-d-2 .div-d-s2 .cards-d-s2 div:last-child {
+    display: none;
+  }
+  .section-d-2 .div-d-s2 .cards-d-s2 .dcard-d-s2 {
+    width: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-d-2 {
+    height: 120vh;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+  }
+  .section-d-2 .div-d-s2 {
+    gap: 1.5rem;
+  }
+  .section-d-2 .div-d-s2 .textarea-d-s2 {
+    height: 57px;
+    background-color: white;
+    padding-left: 0;
+  }
+  .section-d-2 .div-d-s2 .textarea-d-s2 h1 {
+    font-size: 2.3rem;
+    color: #2C97FD;
+    text-align: center;
+  }
+  .section-d-2 .div-d-s2 .cards-d-s2 {
+    margin-top: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-d-2 .div-d-s2 .cards-d-s2 div:last-child {
+    display: none;
+  }
+  .section-d-2 .div-d-s2 .cards-d-s2 .dcard-d-s2 {
+    width: 95%;
+    height: 330px;
+  }
+  .section-d-2 .div-d-s2 .cards-d-s2 .dcard-d-s2 .text-d-s2 {
+    gap: 0.4rem;
+  }
 }
 
 footer {

@@ -258,7 +258,7 @@
 
 // Beginning of find doctor section media query for phone
 @mixin Section-d-1-p{
-    height: 80vh;
+    height: 72vh;
     padding-inline: $inline-p;
     padding-block: 1.5rem;
     // background-color: brown;
@@ -273,6 +273,7 @@
             }
             p{
                 font-size: 1rem;
+                color: $textcolor2;
             }
         }
         .text-d-s1{
@@ -292,3 +293,68 @@
     }
 }
 // End of find doctor section media query for phone
+
+// Beginning of cardiologist section media query for ipad 
+@mixin Section-d-2-i{
+    // background-color: brown;
+    height: 55vh;
+    padding-inline: $inline-i;
+    .div-d-s2{
+        gap: 2rem;
+        .textarea-d-s2{
+            height: 70px;
+            h1{
+                font-size: 2.2rem;
+            }
+        }
+        .cards-d-s2{
+            margin-top: 1rem;
+            div:last-child{
+                display: none;
+            }
+            .dcard-d-s2{
+                width: 370px;
+            }
+        }
+    }
+}
+// End of cardiologist section media query for ipad 
+
+
+// Beginning of cardiologist section media query for phone
+@mixin Section-d-2-p{
+    // background-color: brown;
+    height: 120vh;
+    padding-inline: $inline-p;
+    padding-block: 1.5rem;
+    .div-d-s2{
+        gap: 1.5rem;
+        .textarea-d-s2{
+            height: 57px;
+            background-color: white;
+            padding-left: 0;
+            h1{
+                font-size: 2.3rem;
+                color: $blue;
+                text-align: center;
+            }
+        }
+        .cards-d-s2{
+            margin-top: 1rem;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            div:last-child{
+                display: none;
+            }
+            .dcard-d-s2{
+                width: 95%;
+                height: 330px;
+                .text-d-s2{
+                    gap: 0.4rem;
+                }
+            }
+        }
+    }
+}
+// End of cardiologist section media query for phone

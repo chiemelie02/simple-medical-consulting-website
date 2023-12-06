@@ -23,6 +23,12 @@ header{
 // Beginning of style for cardiologist section 
 .section-d-2{
     @include Section-d-2;
+    @include mediaQuery(1024px, 768px){
+        @include Section-d-2-i;
+    };
+    @include mediaQuery(767px){
+        @include Section-d-2-p;
+    };
 }
 // End of style for cardiologist section 
 
