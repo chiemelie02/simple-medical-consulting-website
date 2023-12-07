@@ -114,10 +114,13 @@ header .searchbar input {
   font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
+header .search-icon {
+  display: none;
+}
 header .cta .signup {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -138,7 +141,7 @@ header .cta .signup:hover {
 header .cta .login {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: white;
@@ -155,6 +158,73 @@ header .cta .login {
 header .cta .login:hover {
   background-color: #2C97FD;
   color: white;
+}
+header .hamburger {
+  display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  header {
+    height: 80px;
+    padding-inline: 2rem;
+  }
+  header .logo a div {
+    width: 100px;
+  }
+  header .navlist {
+    display: none;
+  }
+  header .searchbar input {
+    width: 250px;
+  }
+  header .search-icon {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .hamburger i {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 53px;
+    padding-inline: 1.5rem;
+  }
+  header .logo a div {
+    width: 100px;
+  }
+  header .navlist {
+    display: none;
+  }
+  header .searchbar {
+    display: none;
+  }
+  header .search-icon {
+    display: block;
+    cursor: pointer;
+  }
+  header .search-icon i {
+    font-size: 1.6rem;
+    color: #333333;
+    cursor: pointer;
+  }
+  header .cta {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  header .hamburger i {
+    font-size: 1.7rem;
+    color: #333333;
+    cursor: pointer;
+  }
 }
 
 .section-ap-1 {
@@ -179,7 +249,7 @@ header .cta .login:hover {
 .section-ap-1 .back-ap a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -285,7 +355,7 @@ header .cta .login:hover {
 .section-ap-2 .div-ap-s2 .dp-ap-s2 a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -479,7 +549,7 @@ header .cta .login:hover {
 .section-ap-3 .div-ap-s3 .left-ap-s3 .cover-ap-s3 a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -640,7 +710,7 @@ header .cta .login:hover {
 .section-ap-3 .div-ap-s3 form .formarea .cta-ap-s3 a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -824,7 +894,7 @@ footer .cfooter .newsletter .subscribe .button-f {
   font-weight: 200;
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;

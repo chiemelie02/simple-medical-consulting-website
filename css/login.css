@@ -82,10 +82,13 @@ header .searchbar input {
   font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
+header .search-icon {
+  display: none;
+}
 header .cta .signup {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -106,7 +109,7 @@ header .cta .signup:hover {
 header .cta .login {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: white;
@@ -123,6 +126,9 @@ header .cta .login {
 header .cta .login:hover {
   background-color: #2C97FD;
   color: white;
+}
+header .hamburger {
+  display: none;
 }
 
 footer {
@@ -205,7 +211,7 @@ footer .cfooter .newsletter .subscribe .button-f {
   font-weight: 200;
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;

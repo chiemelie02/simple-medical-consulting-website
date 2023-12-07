@@ -82,10 +82,13 @@ header .searchbar input {
   font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
+header .search-icon {
+  display: none;
+}
 header .cta .signup {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -106,7 +109,7 @@ header .cta .signup:hover {
 header .cta .login {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: white;
@@ -124,10 +127,77 @@ header .cta .login:hover {
   background-color: #2C97FD;
   color: white;
 }
+header .hamburger {
+  display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  header {
+    height: 80px;
+    padding-inline: 2rem;
+  }
+  header .logo a div {
+    width: 100px;
+  }
+  header .navlist {
+    display: none;
+  }
+  header .searchbar input {
+    width: 250px;
+  }
+  header .search-icon {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .hamburger i {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 53px;
+    padding-inline: 1.5rem;
+  }
+  header .logo a div {
+    width: 100px;
+  }
+  header .navlist {
+    display: none;
+  }
+  header .searchbar {
+    display: none;
+  }
+  header .search-icon {
+    display: block;
+    cursor: pointer;
+  }
+  header .search-icon i {
+    font-size: 1.6rem;
+    color: #333333;
+    cursor: pointer;
+  }
+  header .cta {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  header .hamburger i {
+    font-size: 1.7rem;
+    color: #333333;
+    cursor: pointer;
+  }
+}
 
 .section-1 {
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   background-color: #dde8ff;
   padding-inline: 5rem;
   padding-block: 3rem;
@@ -185,7 +255,7 @@ header .cta .login:hover {
 .section-1 .div-s1 .textarea-1 .cta-s1 .button1-s1 {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -220,7 +290,7 @@ header .cta .login:hover {
 .section-1 .div-s1 .textarea-1 .cta-s1 .button2-s1 {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: white;
@@ -281,21 +351,21 @@ header .cta .login:hover {
   font-size: 0.85rem;
 }
 .section-1 .div-s1 .imgwrap-s1 {
-  width: 700px;
+  width: 600px;
   height: 100%;
   position: relative;
 }
 .section-1 .div-s1 .imgwrap-s1 img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .section-1 .div-s1 .imgwrap-s1 .miniTextarea {
   width: 260px;
   height: 235px;
   position: absolute;
-  left: -3rem;
+  left: -10rem;
   top: 38%;
   background-color: white;
   padding: 1rem;
@@ -308,8 +378,8 @@ header .cta .login:hover {
           flex-direction: column;
   border-radius: 20px;
   gap: 1rem;
-  -webkit-box-shadow: 0px 0px 15px rgba(70, 93, 226, 0.6);
-          box-shadow: 0px 0px 15px rgba(70, 93, 226, 0.6);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .section-1 .div-s1 .imgwrap-s1 .miniTextarea .step-s1 {
   display: -webkit-box;
@@ -362,7 +432,7 @@ header .cta .login:hover {
 .section-1 .div-s1 .imgwrap-s1 .miniTextarea .cta-1-s1 .button3-s1 {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -429,6 +499,10 @@ header .cta .login:hover {
   .section-1 .div-s1 .imgwrap-s1 {
     width: 380px;
   }
+  .section-1 .div-s1 .imgwrap-s1 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .section-1 .div-s1 .imgwrap-s1 .miniTextarea {
     top: 42%;
     left: -4.8rem;
@@ -452,6 +526,10 @@ header .cta .login:hover {
     height: 500px;
     -ms-grid-column-align: first baseline;
         justify-self: first baseline;
+  }
+  .section-1 .div-s1 .imgwrap-s1 img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .section-1 .div-s1 .imgwrap-s1 .miniTextarea {
     left: 1.8rem;
@@ -575,8 +653,8 @@ header .cta .login:hover {
   text-align: center;
   gap: 0.8rem;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 8px rgba(70, 93, 226, 0.6);
-          box-shadow: 0px 0px 8px rgba(70, 93, 226, 0.6);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 .section-2 .div-s2 .grid-s2 .card-s2 .imgwrap-s2 {
   width: 80px;
@@ -602,7 +680,7 @@ header .cta .login:hover {
   color: #999999;
 }
 .section-2 .div-s2 .grid-s2 .card-s2 a button {
-  padding: 10px;
+  padding: 8px;
   padding-inline: 40px;
   border: none;
   outline: none;
@@ -610,7 +688,7 @@ header .cta .login:hover {
   background-color: #2C97FD;
   color: white;
   border-radius: 30px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   -webkit-transition: 600ms;
   transition: 600ms;
 }
@@ -727,15 +805,15 @@ header .cta .login:hover {
   padding: 1rem;
   gap: 0.9rem;
   background-color: white;
-  -webkit-box-shadow: 0 0 4px #2C97FD;
-          box-shadow: 0 0 4px #2C97FD;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   z-index: 2;
   position: absolute;
-  right: -4rem;
+  right: -10rem;
   bottom: 3rem;
-  width: 230px;
-  height: 260px;
-  border-radius: 30px;
+  width: 280px;
+  height: 220px;
+  border-radius: 15px;
 }
 .section-3 .div-s3 .imgwrap-s3 .minitext-s3 .toptext-s3 h3 {
   color: #333333;
@@ -757,8 +835,8 @@ header .cta .login:hover {
           align-items: center;
 }
 .section-3 .div-s3 .imgwrap-s3 .minitext-s3 .column-s3 .icon-s3 {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
   border-radius: 50%;
 }
@@ -786,8 +864,7 @@ header .cta .login:hover {
 }
 .section-3 .div-s3 .imgwrap-s3 .minitext-s3 .column-s3 .writeup-s3 p {
   color: #999999;
-  font-size: 0.9rem;
-  font-weight: 700;
+  font-size: 0.85rem;
 }
 .section-3 .div-s3 .imgwrap-s3 .minitext-s3 .cta-s3 {
   -ms-flex-item-align: center;
@@ -797,7 +874,7 @@ header .cta .login:hover {
 .section-3 .div-s3 .imgwrap-s3 .minitext-s3 .cta-s3 a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -832,8 +909,9 @@ header .cta .login:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   padding-block: 2rem;
+  z-index: 2;
 }
 .section-3 .div-s3 .textarea-s3 h1 {
   font-size: 2.5rem;
@@ -862,7 +940,7 @@ header .cta .login:hover {
 }
 .section-3 .div-s3 .textarea-s3 ul li {
   list-style: none;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
 }
 .section-3 .div-s3 .textarea-s3 ul li p {
   color: #333333;
@@ -873,10 +951,10 @@ header .cta .login:hover {
   font-size: 1.3rem;
   margin-right: 0.5rem;
 }
-.section-3 .div-s3 .textarea-s3 .button-s3 {
+.section-3 .div-s3 .textarea-s3 a .button-s3 {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -890,22 +968,22 @@ header .cta .login:hover {
   padding-block: 8px;
   padding-inline: 25px;
 }
-.section-3 .div-s3 .textarea-s3 .button-s3:hover {
+.section-3 .div-s3 .textarea-s3 a .button-s3:hover {
   background-color: white;
   border: 1.5px solid #2C97FD;
   color: #2C97FD;
 }
-.section-3 .div-s3 .textarea-s3 .button-s3 p {
+.section-3 .div-s3 .textarea-s3 a .button-s3 p {
   font-size: 0.85rem;
   color: white;
 }
-.section-3 .div-s3 .textarea-s3 .button-s3 p i {
+.section-3 .div-s3 .textarea-s3 a .button-s3 p i {
   color: white;
 }
-.section-3 .div-s3 .textarea-s3 .button-s3:hover i {
+.section-3 .div-s3 .textarea-s3 a .button-s3:hover i {
   color: #2C97FD;
 }
-.section-3 .div-s3 .textarea-s3 .button-s3:hover p {
+.section-3 .div-s3 .textarea-s3 a .button-s3:hover p {
   color: #2C97FD;
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -964,8 +1042,9 @@ header .cta .login:hover {
 .section-4 {
   padding-inline: 5rem;
   padding-block: 3rem;
+  padding-bottom: 2rem;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
 }
 .section-4 .div-s4 {
   width: 100%;
@@ -1019,19 +1098,18 @@ header .cta .login:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-weight: 600;
 }
 .section-4 .div-s4 .scroll-s4 {
   overflow: scroll;
   width: 100%;
-  height: 300px;
+  height: 380px;
   border-radius: 20px;
 }
 .section-4 .div-s4 .scroll-s4::-webkit-scrollbar {
   display: none;
 }
 .section-4 .div-s4 .scroll-s4 .carousel-d-s4 {
-  width: 300%;
+  width: 310%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,8 +1122,8 @@ header .cta .login:hover {
           align-items: center;
 }
 .section-4 .div-s4 .scroll-s4 .carousel-d-s4 .card-s4 {
-  height: 90%;
-  width: 250px;
+  height: 95%;
+  width: 280px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1056,8 +1134,8 @@ header .cta .login:hover {
           flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 4px #2C97FD;
-          box-shadow: 0 0 4px #2C97FD;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .section-4 .div-s4 .scroll-s4 .carousel-d-s4 .card-s4 .imgwrap-s4 {
   width: 100%;
@@ -1077,7 +1155,7 @@ header .cta .login:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
   padding: 0.5rem;
   padding-top: 0.7rem;
   -webkit-box-pack: center;
@@ -1132,7 +1210,7 @@ header .cta .login:hover {
 .section-4 .div-s4 .cta-s4 a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -1287,12 +1365,12 @@ header .cta .login:hover {
   padding-inline: 0.5rem;
 }
 .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 {
-  width: 350px;
-  height: 90%;
+  width: 360px;
+  height: 85%;
   background-color: white;
   border-radius: 8px;
-  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   padding-top: 2rem;
   text-align: center;
@@ -1303,12 +1381,11 @@ header .cta .login:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 .text-s5 p {
-  font-size: 0.97rem;
+  font-size: 0.99rem;
   color: #333333;
-  font-weight: 600;
   line-height: 1.8;
 }
 .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 .text-i-s5 {
@@ -1324,8 +1401,8 @@ header .cta .login:hover {
           justify-content: center;
 }
 .section-5 .div-s5 .scroll-s5 .carousel-s5 .card-s5 .text-i-s5 .icon-s5 {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: -ms-grid;
   display: grid;
@@ -1427,7 +1504,7 @@ header .cta .login:hover {
 
 .section-6 {
   width: 100%;
-  height: 231vh;
+  height: 225vh;
   padding-inline: 5rem;
   padding-block: 3rem;
 }
@@ -1507,7 +1584,10 @@ header .cta .login:hover {
   place-items: center;
   gap: 2rem;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 {
+.section-6 .div-s6 .grid-s6 a {
+  text-decoration: none;
+}
+.section-6 .div-s6 .grid-s6 a .card-s6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1518,24 +1598,24 @@ header .cta .login:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 370px;
-  width: 350px;
+  height: 350px;
+  width: 340px;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .imgwrap-s6 {
-  height: 65%;
+.section-6 .div-s6 .grid-s6 a .card-s6 .imgwrap-s6 {
+  height: 62%;
   width: 100%;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .imgwrap-s6 img {
+.section-6 .div-s6 .grid-s6 a .card-s6 .imgwrap-s6 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 {
   padding: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1546,7 +1626,7 @@ header .cta .login:hover {
           flex-direction: column;
   gap: 0.6rem;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 h3 {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 h3 {
   font-size: 1rem;
   color: #333333;
   -webkit-transition: 700ms;
@@ -1554,10 +1634,10 @@ header .cta .login:hover {
   letter-spacing: 0.7px;
   cursor: pointer;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 h3:hover {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 h3:hover {
   color: #2C97FD;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 .flex-s6 {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 .flex-s6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1566,28 +1646,28 @@ header .cta .login:hover {
           align-items: center;
   gap: 1rem;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 .flex-s6 .icon-s6 {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 .flex-s6 .icon-s6 {
   width: 35px;
   height: 35px;
   border-radius: 50%;
   overflow: hidden;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 .flex-s6 .icon-s6 img {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 .flex-s6 .icon-s6 img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 .flex-s6 p {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 .flex-s6 p {
   font-weight: 600;
   font-size: 0.8rem;
   color: #999999;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 .flex-s6 p span {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 .flex-s6 p span {
   color: #2C97FD;
   cursor: pointer;
 }
-.section-6 .div-s6 .grid-s6 .card-s6 .text-s6 h5 {
+.section-6 .div-s6 .grid-s6 a .card-s6 .text-s6 h5 {
   font-size: 0.9rem;
   background-color: #dde8ff;
   color: #333333;
@@ -1604,7 +1684,7 @@ header .cta .login:hover {
 .section-6 .div-s6 .cta-s6 a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -1709,7 +1789,7 @@ header .cta .login:hover {
   position: absolute;
   top: 0;
   padding-inline: 5rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .section-7 .div-s7 .cover-s7 .textarea-s7 {
   color: white;
@@ -1742,7 +1822,7 @@ header .cta .login:hover {
 .section-7 .div-s7 .cover-s7 .textarea-s7 a button {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -2004,7 +2084,7 @@ footer .cfooter .newsletter .subscribe .button-f {
   font-weight: 200;
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;

@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BHealth | Login</title>
-    <link rel="stylesheet" href="css/login.css">
+    <title>BHealth | Hospitals</title>
+    <link rel="stylesheet" href="css/logindemo.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="img/Bhealth no background.png">
 </head>
 <body>
     <!-- Beginning of header for navbar -->
     <header>
+        <div class="hamburger">
+            <i class="ri-menu-fill"></i>
+        </div>
         <div class="logo">
             <a href="./index.html">
                 <div>
@@ -29,12 +33,76 @@
         <div class="searchbar">
             <input type="text" placeholder="Search...">
         </div>
+        <div class="search-icon">
+            <i class="ri-search-line"></i>
+        </div>
         <div class="cta">
-            <a href="./login.html"><button class="signup">Sign Up</button></a>
-            <a href="./login.html"><button class="login">Login</button></a>
+            <a href="./signup.html"><button class="signup">Sign Up</button></a>
+            <a href="./logindemo.html"><button class="login">Login</button></a>
         </div>
     </header>
     <!-- End of header for navbar -->
+
+
+    <!-- Beginning of login and sign up section  -->
+    <section class="login-signup">
+        <div class="white">
+            <div class="left">
+                <div></div>
+                
+            </div>
+            <div class="right">
+                <div></div>
+                
+            </div>
+        </div>
+        <div class="login">
+            <form action="" class="login-m">
+                <div class="main-form">
+                    <div class="title">
+                        <div class="imgwrap">
+                            <img src="img/Bhealth no background.png" alt="">
+                        </div>
+                        <h3>Create an account</h3>
+                    </div>
+                    <div class="label-input">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="label-input">
+                        <label for="Password">Password</label>
+                        <input type="password" placeholder="********">
+                    </div>
+                    <div class="checkboxarea">
+                        <div class="check">
+                            <input type="checkbox"> <label for="remember-me">Remember me</label>
+                        </div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="#">
+                            <button>Sign Up</button>
+                        </a>
+                        <div class="line-or">
+                            <div></div>
+                            <p>or</p>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="foot">
+                        <div class="icon">
+                            <div><i class="ri-google-fill"></i></div>
+                            <div><i class="ri-facebook-circle-fill"></i></div>
+                            <div><i class="ri-apple-fill"></i></div>
+                        </div>
+                        <div class="span">
+                            <p>Already have an Account? <a href="logindemo.html" id="signupbtn">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End of login and sign up section  -->
 
 
     <!-- Beginning of Footer -->
@@ -100,5 +168,8 @@
         </div>
     </footer>
     <!-- End of footer -->
+
+    
+    <script src="js/form.js"></script>
 </body>
 </html>

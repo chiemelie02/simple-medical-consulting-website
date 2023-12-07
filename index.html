@@ -6,10 +6,14 @@
     <title>BHealth</title>
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="img/Bhealth no background.png">
 </head>
 <body>
     <!-- Beginning of header for navbar -->
     <header>
+        <div class="hamburger">
+            <i class="ri-menu-fill"></i>
+        </div>
         <div class="logo">
             <a href="./index.html">
                 <div>
@@ -29,10 +33,14 @@
         <div class="searchbar">
             <input type="text" placeholder="Search...">
         </div>
-        <div class="cta">
-            <a href="./login.html"><button class="signup">Sign Up</button></a>
-            <a href="./login.html"><button class="login">Login</button></a>
+        <div class="search-icon">
+            <i class="ri-search-line"></i>
         </div>
+        <div class="cta">
+            <a href="./signup.html"><button class="signup">Sign Up</button></a>
+            <a href="./logindemo.html"><button class="login">Login</button></a>
+        </div>
+        
     </header>
     <!-- End of header for navbar -->
 
@@ -45,7 +53,7 @@
                 <h1>Find your Doctor and make an appointment.</h1>
                 <p class="second-p">Talk to online doctors now and get medical advice, online prescription, refills, and medical notes within minutes. On demand healthcare services at your fingertips.</p>
                 <div class="cta-s1">
-                    <a href="#"><button class="button1-s1"><p><i class="ri-calendar-check-fill"></i> Book Appointment</p></button></a>
+                    <a href="doctors.html"><button class="button1-s1"><p><i class="ri-calendar-check-fill"></i> Book Appointment</p></button></a>
                     <a href="#"><button class="button2-s1"><p><i class="ri-download-2-fill"></i> Download App</p></button></a>
                 </div>
                 <div class="grid-s1">
@@ -64,7 +72,7 @@
                 </div>
             </div>
             <div class="imgwrap-s1">
-                <img src="img/Doctors-rafiki.png" alt="">
+                <img src="img/Doctors.gif" alt="">
                 <div class="miniTextarea">
                     <div class="step-s1">
                         <div class="icon-1">
@@ -94,7 +102,7 @@
                         </div>
                     </div>
                     <div class="cta-1-s1">
-                        <a href="#">
+                        <a href="doctors.html">
                             <button class="button3-s1"><p>Book Appointment</p></button>
                         </a>
                     </div>
@@ -198,7 +206,7 @@
                         </div>
                     </div>
                     <div class="cta-s3">
-                        <a href="#">
+                        <a href="doctors.html">
                             <button>
                                 <p>Choose Doctor</p>
                             </button>
@@ -223,7 +231,7 @@
                         <p><i class="ri-checkbox-circle-fill"></i> Enrollment Easy and Quick</p>
                     </li>
                 </ul>
-                <a href="#">
+                <a href="doctors.html">
                     <button class="button-s3">
                         <p><i class="ri-calendar-check-fill"></i> Book Appointment</p>
                     </button>
@@ -417,7 +425,7 @@
             </div>
             
             <div class="cta-s4">
-                <a href="#">
+                <a href="doctors.html">
                     <button>
                         <p>Choose a Doctor</p>
                     </button>
@@ -507,142 +515,160 @@
                 <h3><i class="ri-checkbox-circle-fill"></i> Reviewed by <span>BHealth Medical Editorial Board</span></h3>
             </div>
             <div class="grid-s6">
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://drohealth.com/wp-content/uploads/2023/04/hush-naidoo-jade-photography-yo01Z-9HQAw-unsplash-700x393.jpg" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>Need a doctor's note? BHealth online doctor can help.</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
-                            </div>
-                            <p>By <span>Dr Robert Kwok</span></p>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://drohealth.com/wp-content/uploads/2023/04/hush-naidoo-jade-photography-yo01Z-9HQAw-unsplash-700x393.jpg" alt="">
                         </div>
-                        <h5>Online Doctor</h5>
-                    </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://drohealth.com/wp-content/uploads/2020/09/5f6a3a3ebc3d0-610x610.png" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>Choose your own doctor with BHealth Primary Care.</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/sean.447a052c.png" alt="">
+                        <div class="text-s6">
+                            <h3>Need a doctor's note? BHealth online doctor can help.</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                                </div>
+                                <p>By <span>Dr Robert Kwok</span></p>
                             </div>
-                            <p>By <span>Dr Sean Mehra</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://business.amwell.com/siteassets/content-with-media-or-image/1024x612_bucketimg_digitalfirstsolutions.png" alt="">
-                    </div>
-                    
-                    <div class="text-s6">
-                        <h3>Introducing free texting with your doctor.</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="img/Bhealth background.jpg" alt="">
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://drohealth.com/wp-content/uploads/2020/09/5f6a3a3ebc3d0-610x610.png" alt="">
+                        </div>
+                        <div class="text-s6">
+                            <h3>Choose your own doctor with BHealth Primary Care.</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/sean.447a052c.png" alt="">
+                                </div>
+                                <p>By <span>Dr Sean Mehra</span></p>
                             </div>
-                            <p>By <span>BHealth Editors</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://images.pexels.com/photos/3752834/pexels-photo-3752834.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>Can Antibiotics make you tired and drowsy?</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/diLaura-2x.e099a39f.webp" alt="">
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://business.amwell.com/siteassets/content-with-media-or-image/1024x612_bucketimg_digitalfirstsolutions.png" alt="">
+                        </div>
+                        
+                        <div class="text-s6">
+                            <h3>Introducing free texting with your doctor.</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="img/Bhealth background.jpg" alt="">
+                                </div>
+                                <p>By <span>BHealth Editors</span></p>
                             </div>
-                            <p>By <span>Dr Angela DiLaura</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>Can you get Theophylline over the counter?</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://images.pexels.com/photos/3752834/pexels-photo-3752834.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="text-s6">
+                            <h3>Can Antibiotics make you tired and drowsy?</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/diLaura-2x.e099a39f.webp" alt="">
+                                </div>
+                                <p>By <span>Dr Angela DiLaura</span></p>
                             </div>
-                            <p>By <span>Dr Robert Kwok</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://business.amwell.com/siteassets/content-with-media-or-image/730x544_d_cfmt16_beyondtelehealth.png" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>What is considered High Blood pressure?</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/sean.447a052c.png" alt="">
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://images.pexels.com/photos/159211/headache-pain-pills-medication-159211.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="text-s6">
+                            <h3>Can you get Theophylline over the counter?</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                                </div>
+                                <p>By <span>Dr Robert Kwok</span></p>
                             </div>
-                            <p>By <span>Dr Robert Kwok</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://images.pexels.com/photos/806427/pexels-photo-806427.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>Need a doctor's note? BHealth online doctor can help.</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://business.amwell.com/siteassets/content-with-media-or-image/730x544_d_cfmt16_beyondtelehealth.png" alt="">
+                        </div>
+                        <div class="text-s6">
+                            <h3>What is considered High Blood pressure?</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/sean.447a052c.png" alt="">
+                                </div>
+                                <p>By <span>Dr Robert Kwok</span></p>
                             </div>
-                            <p>By <span>Dr Robert Kwok</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://images.pexels.com/photos/4047077/pexels-photo-4047077.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>Need a doctor's note? BHealth online doctor can help.</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://images.pexels.com/photos/806427/pexels-photo-806427.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="text-s6">
+                            <h3>Need a doctor's note? BHealth online doctor can help.</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                                </div>
+                                <p>By <span>Dr Robert Kwok</span></p>
                             </div>
-                            <p>By <span>Dr Robert Kwok</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
-                <div class="card-s6">
-                    <div class="imgwrap-s6">
-                        <img src="https://images.pexels.com/photos/3602778/pexels-photo-3602778.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-                    </div>
-                    <div class="text-s6">
-                        <h3>Need a doctor's note? BHealth online doctor can help.</h3>
-                        <div class="flex-s6">
-                            <div class="icon-s6">
-                                <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://images.pexels.com/photos/4047077/pexels-photo-4047077.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="text-s6">
+                            <h3>Need a doctor's note? BHealth online doctor can help.</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                                </div>
+                                <p>By <span>Dr Robert Kwok</span></p>
                             </div>
-                            <p>By <span>Dr Robert Kwok</span></p>
+                            <h5>Online Doctor</h5>
                         </div>
-                        <h5>Online Doctor</h5>
                     </div>
-                </div>
+                </a>
+                <a href="#">
+                    <div class="card-s6">
+                        <div class="imgwrap-s6">
+                            <img src="https://images.pexels.com/photos/3602778/pexels-photo-3602778.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="text-s6">
+                            <h3>Need a doctor's note? BHealth online doctor can help.</h3>
+                            <div class="flex-s6">
+                                <div class="icon-s6">
+                                    <img src="https://www.healthtap.com/_next/static/media/kwok-2x.33aafaf2.webp" alt="">
+                                </div>
+                                <p>By <span>Dr Robert Kwok</span></p>
+                            </div>
+                            <h5>Online Doctor</h5>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="cta-s6">
                 <a href="#">
@@ -665,7 +691,7 @@
                     <p><span>BHealth</span> is available to all healthcare providers including practitioners, specialists, therapists, counsellors and more.</p>
                     <p>Need more information about doctors on <span>BHealth</span>? Contact our doctor liaison team at liaison@bhealth.com</p>
                     <p>If you are interested in providing healthcare services, click the join us button below!</p>
-                    <a href="">
+                    <a href="signup.html">
                         <button>Join BHealth</button>
                     </a>
                 </div>

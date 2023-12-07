@@ -14,16 +14,6 @@ header{
     };
 }
 
-.login-signup{
-    @include section;
-    @include mediaQuery(1024px, 768px){
-        @include section-i;
-    }
-    @include mediaQuery(767px){
-        @include section-p;
-    };
-}
-
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);

@@ -6,6 +6,12 @@
 
 header{
     @include NavBar($blue, $textcolor1);
+    @include mediaQuery(1024px, 768px){
+        @include NavBar-i;
+    }
+    @include mediaQuery(767px){
+        @include NavBar-p;
+    };
 }
 
 // Beginning of style for find doctor section
