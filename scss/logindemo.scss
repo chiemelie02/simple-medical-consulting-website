@@ -1,0 +1,36 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./mixin";
+@import "./logindemomixins";
+
+header{
+    @include NavBar($blue, $textcolor1);
+    @include mediaQuery(1024px, 768px){
+        @include NavBar-i;
+    }
+    @include mediaQuery(767px){
+        @include NavBar-p;
+    };
+}
+
+.login-signup{
+    @include section;
+    @include mediaQuery(1024px, 768px){
+        @include section-i;
+    }
+    @include mediaQuery(767px){
+        @include section-p;
+    };
+}
+
+
+footer{
+    @include Footer($darkblue, $primarycolor, #999999);
+    @include mediaQuery(1024px, 768px){
+        @include Footer-i;
+    }
+    @include mediaQuery(767px){
+        @include Footer-p;
+    }
+}

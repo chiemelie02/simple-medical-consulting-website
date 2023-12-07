@@ -30,6 +30,38 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,6 +161,70 @@ header .cta .login:hover {
 }
 header .hamburger {
   display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  header {
+    height: 80px;
+    padding-inline: 2rem;
+  }
+  header .logo a div {
+    width: 100px;
+  }
+  header .navlist {
+    display: none;
+  }
+  header .searchbar input {
+    width: 250px;
+  }
+  header .search-icon {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  header .hamburger i {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    height: 53px;
+    padding-inline: 1.5rem;
+  }
+  header .logo a div {
+    width: 100px;
+  }
+  header .navlist {
+    display: none;
+  }
+  header .searchbar {
+    display: none;
+  }
+  header .search-icon {
+    display: block;
+    cursor: pointer;
+  }
+  header .search-icon i {
+    font-size: 1.6rem;
+    color: #333333;
+    cursor: pointer;
+  }
+  header .cta {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  header .hamburger i {
+    font-size: 1.7rem;
+    color: #333333;
+    cursor: pointer;
+  }
 }
 
 footer {
@@ -318,4 +414,77 @@ footer .copyright .socials-f div i {
 footer .copyright .socials-f div:hover {
   background-color: white;
   color: #2C97FD;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  footer {
+    padding-inline: 2rem;
+    height: 38vh;
+  }
+  footer .cfooter {
+    gap: 0rem;
+  }
+  footer .cfooter .newsletter {
+    padding-right: 1rem;
+    width: 390px;
+  }
+  footer .cfooter .footerlist {
+    padding-top: 1rem;
+  }
+  footer .cfooter .footerlist .f-list ul li {
+    margin-bottom: 0.8rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    height: 128vh;
+    padding-inline: 1.5rem;
+    padding-block: 1.5rem;
+    padding-bottom: 0.8rem;
+  }
+  footer .cfooter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  footer .cfooter .newsletter {
+    width: 100%;
+    padding-right: 0;
+  }
+  footer .cfooter .newsletter p {
+    width: 100%;
+  }
+  footer .cfooter .newsletter h3 {
+    width: 100%;
+  }
+  footer .cfooter .newsletter .subscribe {
+    width: 100%;
+  }
+  footer .cfooter .newsletter .subscribe input {
+    width: 100%;
+  }
+  footer .cfooter .footerlist {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0.5rem 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding-top: 0.4rem;
+  }
+  footer .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-right: 0rem;
+    padding-block: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+  }
+  footer .copyright .copy-f p {
+    font-size: 0.78rem;
+  }
 }

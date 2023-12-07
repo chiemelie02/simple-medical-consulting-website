@@ -1,0 +1,55 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./mixin";
+@import "./appointmentmixin";
+
+header{
+    @include NavBar($blue, $textcolor1);
+    @include mediaQuery(1024px, 768px){
+        @include NavBar-i;
+    }
+    @include mediaQuery(767px){
+        @include NavBar-p;
+    };
+}
+
+.section-ap-1{
+    @include Backbutton;
+    @include mediaQuery(1024px, 768px){
+        @include Backbutton-i;
+    };
+    @include mediaQuery(767px){
+        @include Backbutton-p;
+    };
+}
+
+.section-ap-2{
+    @include Docdetail;
+    @include mediaQuery(1024px, 768px){
+        @include Docdetail-i;
+    };
+    @include mediaQuery(767px){
+        @include Docdetail-p;
+    };
+}
+
+.section-ap-3{
+    @include Appointment;
+    @include mediaQuery(1024px, 768px){
+        @include Appointment-i;
+    };
+    @include mediaQuery(767px){
+        @include Appointment-p;
+    };
+}
+
+footer{
+    @include Footer($darkblue, $primarycolor, #999999);
+    @include mediaQuery(1024px, 768px){
+        @include Footer-i;
+    }
+    @include mediaQuery(767px){
+        @include Footer-p;
+    }
+}

@@ -82,10 +82,13 @@ header .searchbar input {
   font-size: 0.85rem;
   letter-spacing: 0.5px;
 }
+header .search-icon {
+  display: none;
+}
 header .cta .signup {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -106,7 +109,7 @@ header .cta .signup:hover {
 header .cta .login {
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: white;
@@ -123,6 +126,9 @@ header .cta .login {
 header .cta .login:hover {
   background-color: #2C97FD;
   color: white;
+}
+header .hamburger {
+  display: none;
 }
 
 footer {
@@ -180,7 +186,7 @@ footer .cfooter .newsletter p {
   font-size: 0.85rem;
 }
 footer .cfooter .newsletter h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: white;
   margin-top: 0.5rem;
 }
@@ -205,7 +211,7 @@ footer .cfooter .newsletter .subscribe .button-f {
   font-weight: 200;
   border: none;
   outline: none;
-  padding: 12px;
+  padding: 10px;
   padding-inline: 35px;
   border-radius: 35px;
   background-color: #2C97FD;
@@ -283,7 +289,6 @@ footer .copyright {
 footer .copyright .copy-f p {
   color: #999999;
   letter-spacing: 0.6px;
-  font-weight: 700;
   font-size: 0.8rem;
 }
 footer .copyright .socials-f {
@@ -298,12 +303,19 @@ footer .copyright .socials-f {
   font-size: 1.3rem;
 }
 footer .copyright .socials-f div {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 1px solid white;
   display: -ms-grid;
   display: grid;
   place-items: center;
   cursor: pointer;
+}
+footer .copyright .socials-f div i {
+  font-size: 0.8rem;
+}
+footer .copyright .socials-f div:hover {
+  background-color: white;
+  color: #2C97FD;
 }

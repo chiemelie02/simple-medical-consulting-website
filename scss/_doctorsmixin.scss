@@ -57,7 +57,7 @@
                 width: 100%;
                 select, input{
                     width: 270px;
-                    height: 45px;
+                    height: 42px;
                     border-radius: 10px;
                     border: 1px solid $blue;
                     outline: none;
@@ -70,3 +70,291 @@
     }
 }
 // End of mixin for find doctor section
+
+
+// Beginning of mixin for doctor card
+@mixin Doctorcard{
+        height: 380px;
+        width: 350px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        // gap: 1rem;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        .imgwrap-d-s2{
+            width: 100%;
+            height: 55%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text-d-s2{
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            gap: 0.8rem;
+            padding: 1rem;
+            padding-top: 0.7rem;
+            justify-content: center;
+            a{
+                font-size: 1.1rem;
+                color: $textcolor1;
+                letter-spacing: 0.8px;
+                cursor: pointer;
+                transition: 600ms;
+                text-decoration: none;
+                align-self: flex-start;
+                &:hover{
+                    color: $blue;
+                }
+            }
+            h4{
+                font-size: 0.9rem;
+                color: $textcolor2;
+                letter-spacing: 0.5px;
+                font-weight: 100;
+            }
+            ul{
+                list-style: none;
+                li{
+                    p{
+                        font-size: 0.9rem;
+                        color: $textcolor1;
+                        i{
+                            color: $blue;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+            h5{
+                font-size: 0.85rem;
+                color: $textcolor2;
+                letter-spacing: 0.3px;
+                font-weight: 100;
+                i{
+                    font-size: 0.9rem;
+                    color: #f3b71e;
+                    margin-right: 0.3rem;
+                    font-weight: 600;
+                }
+                .ri-star-line{
+                    color: $textcolor1;
+                }
+            }
+        }
+}
+// End of mixin for doctor card
+
+
+// Beginning of mixin for sections 
+@mixin Section-d-2{
+    height: 100vh;
+    width: 100%;
+    padding-inline: $inline;
+    padding-block: 2rem;
+    // border-top: 1px solid $textcolor2;
+    .div-d-s2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        .textarea-d-s2{
+            background-color: $blue;
+            padding-left: 2rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            h1{
+                font-size: 2.5rem;
+                color: white;
+            }
+        }
+        .cards-d-s2{
+            // background-color: brown;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            .dcard-d-s2{
+                @include Doctorcard;
+            }
+        }
+        a{
+            align-self: center;
+            button{
+                @include Button1($blue, $textcolor1);
+                    padding-block: 13px;
+                    padding-inline: 25px;
+                    border-radius: 5px;
+                    width: 200px;
+                    p{
+                        font-size: 0.85rem;
+                        color: white;
+                        i{
+                            color: white;
+                        }
+                    }
+                    &:hover{
+                        i{
+                            color: $blue;
+                        }
+                        p{
+                            color: $blue;
+                        }
+                    }
+            }
+        }
+    }
+}
+// End of mixin for sections
+
+@mixin mediaQuery($args...){
+    @if length($args)==1{
+        @media screen and (max-width: nth($args, 1)){
+            @content;
+        }
+    }
+    @if length($args)==2{
+        @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+            @content;
+        }
+    }
+
+}
+
+// Beginning of find doctor section media query for ipad
+@mixin Section-d-1-i{
+    height: 35vh;
+    padding-inline: $inline-i;
+    padding-block: 2rem;
+    // background-color: brown;
+    .div-d-s1{
+        gap: 2rem;
+        .textarea-d-s1{
+            align-items: center;
+            text-align: center;
+        }
+        .text-d-s1{
+            .options-d-s1{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 1rem;
+                select, input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// End of find doctor section media query for ipad
+
+
+// Beginning of find doctor section media query for phone
+@mixin Section-d-1-p{
+    height: 72vh;
+    padding-inline: $inline-p;
+    padding-block: 1.5rem;
+    // background-color: brown;
+    .div-d-s1{
+        gap: 1.5rem;
+        .textarea-d-s1{
+            align-items: center;
+            text-align: center;
+            gap: 0.8rem;
+            h1{
+                font-size: 2.3rem;
+            }
+            p{
+                font-size: 1rem;
+                color: $textcolor2;
+            }
+        }
+        .text-d-s1{
+            h3{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .options-d-s1{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 1rem;
+                select, input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+// End of find doctor section media query for phone
+
+// Beginning of cardiologist section media query for ipad 
+@mixin Section-d-2-i{
+    // background-color: brown;
+    height: 55vh;
+    padding-inline: $inline-i;
+    .div-d-s2{
+        gap: 2rem;
+        .textarea-d-s2{
+            height: 70px;
+            h1{
+                font-size: 2.2rem;
+            }
+        }
+        .cards-d-s2{
+            margin-top: 1rem;
+            div:last-child{
+                display: none;
+            }
+            .dcard-d-s2{
+                width: 370px;
+            }
+        }
+    }
+}
+// End of cardiologist section media query for ipad 
+
+
+// Beginning of cardiologist section media query for phone
+@mixin Section-d-2-p{
+    // background-color: brown;
+    height: 120vh;
+    padding-inline: $inline-p;
+    padding-block: 1.5rem;
+    .div-d-s2{
+        gap: 1.5rem;
+        .textarea-d-s2{
+            height: 57px;
+            background-color: white;
+            padding-left: 0;
+            h1{
+                font-size: 2.3rem;
+                color: $blue;
+                text-align: center;
+            }
+        }
+        .cards-d-s2{
+            margin-top: 1rem;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            div:last-child{
+                display: none;
+            }
+            .dcard-d-s2{
+                width: 95%;
+                height: 330px;
+                .text-d-s2{
+                    gap: 0.4rem;
+                }
+            }
+        }
+    }
+}
+// End of cardiologist section media query for phone

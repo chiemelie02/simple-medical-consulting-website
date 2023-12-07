@@ -362,14 +362,8 @@
                     p{
                         font-size: 0.85rem;
                         color: white;
-                        i{
-                            color: white;
-                        }
                     }
                     &:hover{
-                        i{
-                            color: $blue;
-                        }
                         p{
                             color: $blue;
                         }
@@ -568,3 +562,397 @@
     }
 }
 // End of mixin for Bhealth in numbers section 
+
+
+// Beginning of media query 
+@mixin mediaQuery($args...){
+    @if length($args)==1{
+        @media screen and (max-width: nth($args, 1)){
+            @content;
+        }
+    }
+    @if length($args)==2{
+        @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+            @content;
+        }
+    }
+
+}
+
+// Beginning of About bhealth section media query for ipad
+@mixin Section-a-1-i{
+    padding-inline: $inline-i;
+    height: 40vh;
+    .div-a-s1{
+        .textarea-a-s1{
+            width: 380px;
+        }
+        .imgwrap-a-s1{
+            width: 400px;
+            div:first-child{
+                display: none;
+            }
+            div{
+                width: 100%;
+            }
+        }
+    }
+}
+// End of About bhealth section media query for ipad
+
+
+// Beginning of About bhealth section media query for phone
+@mixin Section-a-1-p{
+    padding-inline: $inline-p;
+    padding-block: 2rem;
+    height: 100vh;
+    .div-a-s1{
+        flex-direction: column;
+        .textarea-a-s1{
+            width: 100%;
+        }
+        .imgwrap-a-s1{
+            width: 100%;
+            div:first-child{
+                display: none;
+            }
+            div{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+// End of About bhealth section media query for phone
+
+// Beginning of mission and vision section media query for ipad
+@mixin Section-a-2-i{
+    height: 52vh;
+    padding-block: 2rem;
+    .div-a-s2{
+        padding-inline: $inline-i;
+        gap: 4rem;
+        .textarea-a-s2{
+            gap: 1.5rem;
+            h1{
+                font-size: 2.8rem;
+            }
+        }
+        .M-V{
+            height: 250px;
+            padding: 0.3rem;
+            div{
+                gap: 0.8rem;
+                h2{
+                    font-size: 1.8rem;
+                    &::before{
+                        bottom: -0.4rem;
+                    }
+                }
+                p{
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+// End of mission and vision section media query for ipad
+
+
+// Beginning of mission and vision section media query for phone
+@mixin Section-a-2-p{
+    height: 105vh;
+    padding-block: 2rem;
+    .div-a-s2{
+        padding-inline: $inline-p;
+        gap: 3rem;
+        .textarea-a-s2{
+            gap: 1rem;
+            text-align: center;
+            h1{
+                font-size: 2.3rem;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        .M-V{
+            height: 250px;
+            width: 100%;
+            padding: 0.3rem;
+            flex-direction: column;
+            div{
+                gap: 0.8rem;
+                width: 100%;
+                h2{
+                    font-size: 1.5rem;
+                    &::before{
+                        bottom: -0.4rem;
+                    }
+                }
+                p{
+                    line-height: 1.5;
+                    font-size: 0.9r5em;
+                }
+            }
+        }
+    }
+}
+// End of mission and vision section media query for phone
+
+// Beginning of Meet our founders section media query for ipad
+@mixin Section-a-3-i{
+    // height: 80vh;
+    padding-inline: $inline-i;
+    .div-a-s3{
+        .grid-a-s3{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            place-items: center;
+            gap: 2rem;
+            height: 100%;
+        }
+    }
+}
+// End of Meet our founders section media query for ipad
+
+
+// Beginning of Meet our founders section media query for phone
+@mixin Section-a-3-p{
+    height: 195vh;
+    padding-inline: $inline-p;
+    .div-a-s3{
+        gap: 3rem;
+        .textarea-a-s3{
+            gap: 1rem;
+            text-align: center;
+            h1{
+                font-size: 2rem;
+                width: 100%;
+                &::before{
+                    bottom: -0.4rem;
+                }
+            }
+        }
+        .grid-a-s3{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            place-items: center;
+            gap: 2rem;
+            height: 100%;
+            .card-a-s3{
+                width: 100%;
+                height: 400px;
+                .imgwrap-a-s3{
+                    height: 57%;
+                }
+            }
+        }
+    }
+}
+// End of Meet our founders section media query for phone
+
+// Beginning of Contact us section media query for ipad
+@mixin Section-a-4-i{
+    height: 117vh;
+    padding-inline: $inline-i;
+    padding-block: 3rem;
+    gap: 3rem;
+    .contactus{
+        gap: 1rem;
+    }
+    .div-a-s4{
+        flex-direction: column;
+        .form-a-s4{
+            height: 600px;
+            width: 90%;
+        }
+        .needhelp{
+            height: 450px;
+            width: 90%;
+            right: $inline-i;
+        }
+    }
+}
+// End of Contact us section media query for ipad
+
+
+// Beginning of Contact us section media query for phone
+@mixin Section-a-4-p{
+    height: 128vh;
+    padding-inline: $inline-p;
+    padding-block: 2rem;
+    gap: 3rem;
+    .contactus{
+        gap: 1rem;
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .div-a-s4{
+        flex-direction: column;
+        .form-a-s4{
+            height: 490px;
+            width: 100%;
+            gap: 0.3rem;
+            width: 100%;
+            padding-inline: 1.5rem;
+            border-radius: 5px;
+            padding-block: 1rem;
+            justify-content: center;
+            // align-items: center;
+            h1{
+                font-size: 1.4rem;
+            }
+            label{
+                margin-bottom: 0.3rem;
+            }
+            input{
+                height: 42px;
+                font-weight: 100;
+                border: 0.8px solid $textcolor2;
+            }
+            textarea{
+                font-weight: 100;
+                border: 0.8px solid $textcolor2;
+            }
+            a{
+                width: 100%;
+                button{
+                    width: 100%;
+                    padding-block: 12px;
+                }
+            }
+        }
+        .needhelp{
+            height: 300px;
+            width: 100%;
+            // right: $inline-p;
+            padding-inline: 1.5rem;
+            padding-block: 0.8rem;
+            gap: 0.5rem;
+            .cta-a-s4{
+                gap: 0.5rem;
+                h3{
+                    font-size: 1rem;
+                }
+                a{
+                    width: 100%;
+                    .btn-1{
+                        width: 100%;
+                        padding-block: 12px;
+                    }
+                    .btn-2{
+                        width: 100%;
+                        padding-block: 12px;
+                    }
+                }
+            }
+            .visitus{
+                padding-top: 0.5rem;
+                gap: 0.7rem;
+                // background-color: brown;
+                justify-content: center;
+                height: 50%;
+                border: none;
+                h1{
+                    font-size: 1rem;
+                }
+                .list-a-s4{
+                    justify-content: space-between;
+                    gap: 0;
+                    div{
+                        // background-color: brown;
+                        gap: 0.5rem;
+                        h4{
+                            font-size: 1rem;
+                        }
+                        h5{
+                            font-size: 0.9rem;
+                        }
+                        ul{
+                            li{
+                                font-size: 0.9rem;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of Contact us section media query for phone
+
+
+// Beginning of Bhealth in numbers section media query for ipad 
+@mixin Section-a-5-i{
+    height: 50vh;
+    .div-a-s5{
+        padding-inline: $inline-i;
+        height: 50%;
+        h1{}
+        .textarea-a-s5{
+            .text-a-1-s5{
+                gap: 3rem;
+                div{
+                    h2{
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+            .text-a-2-s5{
+                gap: 3rem;
+                div{
+                    h2{
+                        font-size: 2.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of Bhealth in numbers section media query for ipad 
+
+
+// Beginning of Bhealth in numbers section media query for phone
+@mixin Section-a-5-p{
+    height: 50vh;
+    .div-a-s5{
+        padding-inline: $inline-i;
+        height: 50%;
+        // background-color: brown;
+        gap: 0.7rem;
+        padding-block: 0;
+        h1{
+            font-size: 2.3rem;
+            text-align: center;
+        }
+        .textarea-a-s5{
+            gap: 0.5rem;
+            .text-a-1-s5{
+                gap: 1rem;
+                div{
+                    h2{
+                        font-size: 2rem;
+                    }
+                }
+                div:nth-child(3){
+                    display: none;
+                }
+            }
+            .text-a-2-s5{
+                gap: 1rem;
+                div{
+                    h2{
+                        font-size: 2rem;
+                    }
+                }
+                div:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+// End of Bhealth in numbers section media query for phone
