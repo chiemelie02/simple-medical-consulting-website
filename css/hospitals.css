@@ -58,7 +58,7 @@ header .navlist ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.3rem;
   list-style: none;
 }
 header .navlist ul li a {
@@ -69,13 +69,43 @@ header .navlist ul li a {
   color: #333333;
   -webkit-transition: 600ms;
   transition: 600ms;
+  position: relative;
+  overflow: hidden;
 }
 header .navlist ul li a:hover {
   color: #2C97FD;
 }
+header .navlist ul li a::before {
+  content: "";
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: -0.4rem;
+  left: -100%;
+  background-color: #2C97FD;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+header .navlist ul li a:hover::before {
+  left: 0;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
 header .searchbar input {
   padding: 8px;
-  width: 200px;
+  width: 250px;
   outline: none;
   border: 1.5px solid #2C97FD;
   border-radius: 30px;

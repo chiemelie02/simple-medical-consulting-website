@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BHealth | Hospitals</title>
-    <link rel="stylesheet" href="css/hospitals.css">
+    <link rel="stylesheet" href="css/hospitaldemo.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="img/Bhealth no background.png">
 </head>
 <body>
-    <!-- Beginning of header for navbar -->
+    <!-- Beginning of header for laptop navbar -->
     <header>
+        <div class="hamburger">
+            <i class="ri-menu-fill"></i>
+        </div>
         <div class="logo">
             <a href="./index.html">
                 <div>
@@ -22,22 +26,70 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./doctors.html">Doctors</a></li>
                 <li><a href="">Topics</a></li>
-                <li><a href="./hospitals.html">Top Hospitals</a></li>
+                <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
             </ul>
         </div>
         <div class="searchbar">
             <input type="text" placeholder="Search...">
         </div>
+        <div class="search-icon">
+            <i class="ri-search-line"></i>
+        </div>
         <div class="cta">
-            <a href="./login.html"><button class="signup">Sign Up</button></a>
-            <a href="./login.html"><button class="login">Login</button></a>
-            <div class="hamburber">
-                <i class="ri-menu-fill"></i>
+            <a href="./signup.html"><button class="signup">Sign Up</button></a>
+            <a href="./logindemo.html"><button class="login">Login</button></a>
+        </div>
+        
+    </header>
+    <!-- End of header for laptop navbar -->
+
+    <!-- Beginning of mobile navbar  -->
+    <header class="mobile-navbar">
+        <div class="content">
+            <div class="close-m">
+                <i class="ri-close-fill"></i>
+            </div>
+            <div class="logo-m">
+                <a href="./index.html">
+                    <div>
+                        <img src="img/Bhealth no background.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="navlist-m">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+                    <li><a href="">Topics</a></li>
+                    <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-m">
+                <a href="./signup.html"><button class="signup">Sign Up</button></a>
+                <a href="./logindemo.html"><button class="login">Login</button></a>
             </div>
         </div>
     </header>
-    <!-- End of header for navbar -->
+    <!-- End of mobile navbar  -->
+
+    <!-- Beginning of descrition section  -->
+    <section class="section-h-1">
+        <div class="div-h-s1">
+            <div class="imgwrap-h-s1">
+                <img src="https://infocopse.com/wp-content/uploads/2021/09/Top-10-Best-Hospitals-in-Nigeria.jpg" alt="">
+                <div class="cover-h-1">
+                    <h1>Top rated hospitals in Nigeria.</h1>
+                </div>
+            </div>
+            <div class="textarea-h-s1">
+                <h2>List of the top rated hospitals in Nigeria.</h2>
+                <p>Nigeria has the 42nd highest population density in the world. The healthcare system in the country is highly fragmented. Many private hospitals are always in the news for their medical services, but they are very few in number. The government now can provide healthcare for all, which is great news for Nigerians. However, not everyone can afford to pay for healthcare, which is why there are hospitals that cater to the poor. These hospitals are often called “government hospitals”, but many of them are privately owned. While government hospitals may be great for government employees, the same cannot be said for private hospitals. While most of us know that Nigeria has hospitals, clinics, and health centers with advanced medical equipment and facilities, most Nigerians don’t know of the best hospitals in Nigeria. We have therefore decided to make a list of the Top rated Hospitals in Nigeria by analyzing the number of beds, the technology available, the quality of medical services, and the sources of referrals.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of descrition section  -->
 
 
     <!-- Beginning of Footer -->
@@ -103,5 +155,7 @@
         </div>
     </footer>
     <!-- End of footer -->
+
+    <script src="js/navbar-m.js"></script>
 </body>
 </html>

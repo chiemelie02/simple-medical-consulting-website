@@ -1,0 +1,60 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./mixin";
+
+@mixin Section-h-1{
+    height: auto;
+    // padding-inline: $inline;
+    width: 100%;
+    padding-bottom: 2rem;
+    .div-h-s1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .imgwrap-h-s1{
+            height: 80vh;
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .cover-h-1{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.8);
+                display: grid;
+                place-items: center;
+                h1{
+                    font-size: 3rem;
+                    color: #f0efef;
+                    // color: $blue;
+                }
+            }
+        }
+        .textarea-h-s1{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding-inline: $inline;
+            h2{
+                font-size: 2.5rem;
+                color: $darkblue;
+            }
+            p{
+                // width: 90%;
+                font-size: 0.99rem;
+                color: $textcolor2;
+                line-height: 1.8;
+                letter-spacing: 0.7px;
+                text-align: justify;
+            }
+        }
+    }
+}

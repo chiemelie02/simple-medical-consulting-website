@@ -68,9 +68,10 @@
     .navlist{
         ul{
             display: flex;
-            gap: 1.5rem;
+            gap: 1.3rem;
             list-style: none;
             li{
+                // overflow: hidden;
                 a{
                     text-decoration: none;
                     letter-spacing: 0.6px;
@@ -78,8 +79,29 @@
                     font-size: 0.88rem;
                     color: $textcolor1;
                     transition: 600ms;
+                    position: relative;
+                    overflow: hidden;
                     &:hover{
                         color: $buttoncolor;
+                    }
+                    &::before{
+                        content: "";
+                        height: 5px;
+                        width: 100%;
+                        position: absolute;
+                        bottom: -0.4rem;
+                        left: -100%;
+                        background-color: $blue;
+                        transition: 800ms;
+                        transition: transform 0.8s;
+                        transform-origin: right;  
+                        transform: scaleX(0);
+                    }
+                    &:hover::before{
+                        left: 0;
+                        transition: 800ms;
+                        transform-origin: left;
+                        transform: scaleX(1);
                     }
                 }
             }
@@ -88,7 +110,7 @@
     .searchbar{
         input{
             padding: 8px;
-            width: 200px;
+            width: 250px;
             outline: none;
             border: 1.5px solid $buttoncolor;
             border-radius: 30px;
@@ -114,6 +136,9 @@
         display: none;
     }
 }
+@mixin mobileNav{
+    display: none;
+}
 
 @mixin Section1($bgcolor, $textcolor1){
     width: 100%;
@@ -124,8 +149,9 @@
     .div-s1{
         width: 100%;
         height: 100%;
+        // margin-inline: auto;
         display: flex;
-        // gap: 3rem;
+        // gap: 16rem;
         justify-content: space-between;
         .textarea-1{
             display: flex;
@@ -133,6 +159,8 @@
             align-items: flex-start;
             gap: 1rem;
             width: 500px;
+            // height: 100%;
+            // background-color: brown;
             p{
                 font-size: 1.3rem;
                 font-weight: 200;
@@ -230,6 +258,8 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+                position: absolute;
+                right: 0;
             }
             .miniTextarea{
                 width: 260px;
@@ -347,6 +377,7 @@
             display: grid;
             grid-template-columns: repeat(3,1fr);
             gap: 2rem;
+            place-items: center;
             .card-s2{
                 width: 350px;
                 height: 250px;
@@ -543,7 +574,7 @@
                     height: 3px;
                     border-radius: 2px;
                     position: absolute;
-                    bottom: -1rem;
+                    bottom: -0.7rem;
                     left: 0;
                 }
                 span{
@@ -657,13 +688,13 @@
                 width: 100%;
                 // overflow: hidden;
                 height: 400px;
-                display: flex;
+                // display: flex;
                 // flex-direction: column;
                 // background-color: cyan;
                 // gap: 2.8rem;
-                justify-content: center;
-                align-items: center;
-                padding-left: 0.5rem;
+                // justify-content: center;
+                // align-items: center;
+                padding-inline: 0.5rem;
                 .card-s4{
                     height: 370px;
                     // width: 280px;
@@ -674,7 +705,8 @@
                     border-radius: 10px;
                     overflow: hidden;
                     margin-block: 0.3rem;
-                    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+                    // box-shadow: 0 0 6px rgba(0,0,0,0.2);
+                    border: 1.7px solid $blue;
                     .imgwrap-s4{
                         width: 100%;
                         height: 230px;
@@ -687,16 +719,21 @@
                     .text-s4{
                         display: flex;
                         flex-direction: column;
-                        height: 45%;
+                        height: 140px;
                         // justify-content: space-between;
                         gap: 1rem;
                         padding: 0.5rem;
                         padding-top: 0.7rem;
                         justify-content: center;
-                        h3{
+                        a{
                             font-size: 1.1rem;
-                            color: $textcolor1;
+                            color: $blue;
                             letter-spacing: 0.8px;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+
                         }
                         h4{
                             font-size: 0.9rem;
@@ -943,10 +980,16 @@
                     .imgwrap-s6{
                         height: 62%;
                         width: 100%;
+                        transition: 1s all;
+                        overflow: hidden;
                         img{
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+                            // transition: 1s all;
+                            // &:hover{
+                            //     transform: scale(1.1);
+                            // }
                         }
                     }
                     .text-s6{
@@ -1360,11 +1403,15 @@
         order: 2;
         i{
             font-size: 1.8rem;
+            &:hover{
+                color: $blue;
+            }
         }
     }
+
 }
 // End of navbar media query for ipad
-// Beginning of navbar media query for ipad 
+// Beginning of navbar media query for phone
 @mixin NavBar-p{
     height: 53px;
     // background-color: brown;
@@ -1401,10 +1448,184 @@
             font-size: 1.7rem;
             color: $textcolor1;
             cursor: pointer;
+            &:hover{
+                color: $blue;
+            }
         }
     }
 }
-// End of navbar media query for ipad
+// End of navbar media query for phone
+
+@mixin mobileNav-i{
+    display: block;
+    height: 100vh;
+    width: 50%;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    // background-color: cyan;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    left: -100%;
+    transition: 800ms;
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        // background-color: brown;
+        .close-m{
+            // background-color: brown;
+            i{
+                font-size: 3rem;
+                cursor: pointer;
+                transition: 600ms;
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
+        .logo-m{
+            // background-color: brown;
+            a{
+                div{
+                    width: 200px;
+                    height: 120px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .navlist-m{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1.8rem;
+                list-style: none;
+                // background-color: brown;
+                li{
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        letter-spacing: 0.6px;
+                        font-weight: 700;
+                        font-size: 1.3rem;
+                        color: $textcolor1;
+                        transition: 600ms;
+                        &:hover{
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+        .cta-m{
+            .signup{
+                @include Button1($blue, $textcolor1);
+                font-size: 0.88rem;
+            }
+            .login{
+                @include Button2($blue, $textcolor1);
+                font-size: 0.88rem;
+            }
+        }
+    }
+}
+@mixin mobileNav-p{
+    
+    display: block;
+    height: 100vh;
+    width: 100%;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    // background-color: cyan;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    left: -100%;
+    transition: 800ms;
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex start;
+        gap: 4rem;
+        // background-color: brown;
+        .close-m{
+            // background-color: brown;
+            i{
+                font-size: 2rem;
+                cursor: pointer;
+                transition: 600ms;
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
+        .logo-m{
+            // background-color: brown;
+            width: 120px;
+            height: 70px;
+            a{
+                div{
+                    width: 120px;
+                    height: 70px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .navlist-m{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1.8rem;
+                list-style: none;
+                // background-color: brown;
+                li{
+                    // text-align: center;
+                    a{
+                        text-decoration: none;
+                        letter-spacing: 0.6px;
+                        font-weight: 700;
+                        font-size: 0.95rem;
+                        color: $textcolor1;
+                        transition: 600ms;
+                        &:hover{
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+        .cta-m{
+            display: flex;
+            gap: 1.5rem;
+            .signup{
+                @include Button1($blue, $textcolor1);
+                font-size: 0.88rem;
+                padding-inline: 38px;
+            }
+            .login{
+                @include Button2($blue, $textcolor1);
+                font-size: 0.88rem;
+                padding-inline: 38px;
+            }
+        }
+    }
+
+}
 
 
 // Beginning of Section 1 media query for ipad
@@ -1605,6 +1826,11 @@
             // width: 400px;
             // gap: 1.7rem;
             align-self: center;
+            h1{
+                &::before{
+                    bottom: -0.5rem;
+                }
+            }
             p{
                 line-height: 1.5;
                 font-weight: 300;
@@ -1700,7 +1926,7 @@
                 // flex-direction: column;
                 // flex-wrap: wrap;
                 .card-s4{
-                    width: 260px;
+                    width: 300px;
                 }
             }
         }
@@ -1800,14 +2026,11 @@
 @mixin Section-6-i{
     padding-inline: $inline-i;
     padding-block: 2rem;
-    height: 143vh;
+    height: auto;
     .div-s6{
         gap: 3rem;
         .grid-s6{
             grid-template-columns: repeat(2,1fr);
-            div:nth-child(7), div:nth-child(8), div:nth-child(9){
-                display: none;
-            }
         }
     }
 }
@@ -1817,7 +2040,8 @@
 @mixin Section-6-p{
     padding-inline: $inline-p;
     padding-block: 2rem;
-    height: 252vh;
+    height: auto;
+    // background-color: brown;
     .div-s6{
         gap: 2rem;
         .textarea-s6{
@@ -1840,14 +2064,18 @@
         }
         .grid-s6{
             grid-template-columns: repeat(1,1fr);
+            place-items: center;
             div:nth-child(5), div:nth-child(6), div:nth-child(7), div:nth-child(8), div:nth-child(9){
                 display: none;
             }
-            .card-s6{
-                height: 355px;
-                width: 320px;
-                .imgwrap-s6{
-                    height: 63%;
+            a{
+                .card-s6{
+                    height: 355px;
+                    width: 320px;
+                    // background-color: brown;
+                    .imgwrap-s6{
+                        height: 63%;
+                    }
                 }
             }
         }

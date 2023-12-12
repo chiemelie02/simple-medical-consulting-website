@@ -474,7 +474,7 @@
 // Beginning of appointment form section media query for phone
 @mixin Appointment-p{
     
-    height: 95vh;
+    height: auto;
     padding-inline: $inline-p;
     padding-block: 0rem;
     .div-ap-s3{

@@ -13,6 +13,15 @@ header{
         @include NavBar-p;
     };
 }
+.mobile-navbar{
+    @include mobileNav;
+    @include mediaQuery(1024px, 768px){
+        @include mobileNav-i;
+    }
+    @include mediaQuery(767px){
+        @include mobileNav-p;
+    };
+}
 
 .login-signup{
     @include section;

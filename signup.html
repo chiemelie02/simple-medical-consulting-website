@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BHealth | Hospitals</title>
+    <title>BHealth | SignUp</title>
     <link rel="stylesheet" href="css/logindemo.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="img/Bhealth no background.png">
 </head>
 <body>
-    <!-- Beginning of header for navbar -->
+    <!-- Beginning of header for laptop navbar -->
     <header>
         <div class="hamburger">
             <i class="ri-menu-fill"></i>
@@ -26,7 +26,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./doctors.html">Doctors</a></li>
                 <li><a href="">Topics</a></li>
-                <li><a href="./hospitals.html">Top Hospitals</a></li>
+                <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
             </ul>
         </div>
@@ -40,8 +40,39 @@
             <a href="./signup.html"><button class="signup">Sign Up</button></a>
             <a href="./logindemo.html"><button class="login">Login</button></a>
         </div>
+        
     </header>
-    <!-- End of header for navbar -->
+    <!-- End of header for laptop navbar -->
+
+    <!-- Beginning of mobile navbar  -->
+    <header class="mobile-navbar">
+        <div class="content">
+            <div class="close-m">
+                <i class="ri-close-fill"></i>
+            </div>
+            <div class="logo-m">
+                <a href="./index.html">
+                    <div>
+                        <img src="img/Bhealth no background.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="navlist-m">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+                    <li><a href="">Topics</a></li>
+                    <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-m">
+                <a href="./signup.html"><button class="signup">Sign Up</button></a>
+                <a href="./logindemo.html"><button class="login">Login</button></a>
+            </div>
+        </div>
+    </header>
+    <!-- End of mobile navbar  -->
 
 
     <!-- Beginning of login and sign up section  -->
@@ -170,6 +201,6 @@
     <!-- End of footer -->
 
     
-    <script src="js/form.js"></script>
+    <script src="js/navbar-m.js"></script>
 </body>
 </html>
