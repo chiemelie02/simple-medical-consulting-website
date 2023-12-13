@@ -578,7 +578,7 @@ header .hamburger {
 }
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .section-h-1 {
-    height: auto;
+    height: 90vh;
     padding-inline: 2rem;
     padding-block: 2rem;
   }
@@ -587,6 +587,7 @@ header .hamburger {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
   }
   .section-h-1 .div-h-s1 .imgwrap-h-s1 {
     width: 100%;
@@ -598,7 +599,7 @@ header .hamburger {
 }
 @media screen and (max-width: 767px) {
   .section-h-1 {
-    height: auto;
+    height: 140vh;
     padding-inline: 1.5rem;
     padding-block: 2rem;
   }
@@ -608,6 +609,7 @@ header .hamburger {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
   }
   .section-h-1 .div-h-s1 .imgwrap-h-s1 {
     width: 100%;
@@ -761,6 +763,21 @@ header .hamburger {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-h-2 {
+    padding-inline: 2rem;
+    height: 60vh;
+  }
+  .section-h-2 .div-h-s2 {
+    height: 50vh;
+  }
+  .section-h-2 .div-h-s2 .textarea-h-s2 {
+    -webkit-box-pack: first baseline;
+        -ms-flex-pack: first baseline;
+            justify-content: first baseline;
+    gap: 1.2rem;
+  }
+}
 
 .section-h-3 {
   height: auto;
@@ -907,6 +924,27 @@ header .hamburger {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .section-h-3 {
+    padding-inline: 2rem;
+    height: 60vh;
+  }
+  .section-h-3 .div-h-s2 {
+    height: 50vh;
+  }
+  .section-h-3 .div-h-s2 .textarea-h-s2 {
+    -webkit-box-pack: first baseline;
+        -ms-flex-pack: first baseline;
+            justify-content: first baseline;
+    gap: 1.2rem;
+  }
+  .section-h-3 .div-h-s2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 footer {
