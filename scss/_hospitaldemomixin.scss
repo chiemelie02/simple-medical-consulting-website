@@ -3,57 +3,99 @@
 @import "./mediaqueries";
 @import "./mixin";
 
+@mixin mediaQuery($args...){
+    @if length($args)==1{
+        @media screen and (max-width: nth($args, 1)){
+            @content;
+        }
+    }
+    @if length($args)==2{
+        @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+            @content;
+        }
+    }
+
+}
+
 @mixin Section-h-1{
-    height: auto;
-    // padding-inline: $inline;
+    height: 90vh;
+    padding-inline: $inline;
     width: 100%;
-    padding-bottom: 2rem;
+    padding-block: 3rem;
     .div-h-s1{
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         gap: 2rem;
         .imgwrap-h-s1{
-            height: 80vh;
-            width: 100%;
-            position: relative;
+            // height: 80vh;
+            width: 50%;
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-            .cover-h-1{
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0,0,0,0.8);
-                display: grid;
-                place-items: center;
-                h1{
-                    font-size: 3rem;
-                    color: #f0efef;
-                    // color: $blue;
-                }
-            }
         }
         .textarea-h-s1{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 1.5rem;
-            padding-inline: $inline;
+            // padding-inline: $inline;
+            width: 50%;
+            // background-color: brown;
             h2{
                 font-size: 2.5rem;
                 color: $darkblue;
             }
             p{
                 // width: 90%;
-                font-size: 0.99rem;
+                font-size: 0.95rem;
                 color: $textcolor2;
                 line-height: 1.8;
-                letter-spacing: 0.7px;
+                // letter-spacing: 0.7px;
                 text-align: justify;
+            }
+        }
+    }
+}
+
+@mixin Section-h-1-i{
+    height: auto;
+    // background-color: brown;
+    padding-inline: $inline-i;
+    padding-block: 2rem;
+    .div-h-s1{
+        flex-direction: column;
+        .imgwrap-h-s1{
+            width: 100%;
+            height: 520px;
+            // background-color: brown;
+        }
+        .textarea-h-s1{
+            width: 100%;
+        }
+    }
+}
+
+@mixin Section-h-1-p{
+    height: auto;
+    // background-color: brown;
+    padding-inline: $inline-p;
+    padding-block: 2rem;
+    .div-h-s1{
+        gap: 1.5rem;
+        flex-direction: column;
+        .imgwrap-h-s1{
+            width: 100%;
+            height: 300px;
+            // background-color: brown;
+        }
+        .textarea-h-s1{
+            width: 100%;
+            p{
+                line-height: 1.5;
             }
         }
     }

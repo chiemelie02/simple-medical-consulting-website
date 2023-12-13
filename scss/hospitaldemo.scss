@@ -25,6 +25,12 @@ header{
 
 .section-h-1{
     @include Section-h-1;
+    @include mediaQuery(1024px, 768px){
+        @include Section-h-1-i;
+    }
+    @include mediaQuery(767px){
+        @include Section-h-1-p;
+    }
 }
 
 

@@ -78,7 +78,7 @@
                     font-weight: 700;
                     font-size: 0.88rem;
                     color: $textcolor1;
-                    transition: 600ms;
+                    transition: 800ms;
                     position: relative;
                     overflow: hidden;
                     &:hover{
@@ -86,14 +86,15 @@
                     }
                     &::before{
                         content: "";
-                        height: 5px;
+                        height: 3px;
+                        border-radius: 2px;
                         width: 100%;
                         position: absolute;
-                        bottom: -0.4rem;
+                        bottom: -0.3rem;
                         left: -100%;
                         background-color: $blue;
                         transition: 800ms;
-                        transition: transform 0.8s;
+                        // transition: transform 0.8s;
                         transform-origin: right;  
                         transform: scaleX(0);
                     }
