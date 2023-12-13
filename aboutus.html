@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/aboutus.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="img/Bhealth no background.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Beginning of header for laptop navbar -->
@@ -82,7 +83,8 @@
                 <h1>BHealth</h1>
                 <p><span>BHealth</span> is a healthcare solution aimed at providing all round quality healthcare on the go with your smart device. We recruit some of the most compassionate and knowledgeable doctors who want to build long-term, trusted relationships with their patients to take care of ongoing health needs holistically.</p>
             </div>
-            <div class="imgwrap-a-s1">
+            <div class="imgwrap-a-s1" data-aos="fade-up"
+            data-aos-duration="2000">
                 <div>
                     <img src="img/Data points.gif" alt="">
                 </div>
@@ -182,7 +184,9 @@
                     <button>Send Your Message</button>
                 </a>
             </form>
-            <div class="needhelp">
+            <div class="needhelp" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <div class="cta-a-s4">
                     <h3>Need Some Help?</h3>
                     <a href="#">
@@ -333,5 +337,9 @@
     <!-- End of footer -->
 
     <script src="js/navbar-m.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

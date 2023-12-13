@@ -9,6 +9,7 @@
     <link rel="icon" href="img/Bhealth no background.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- Beginning of header for laptop navbar -->
@@ -105,7 +106,8 @@
             </div>
             <div class="imgwrap-s1">
                 <img src="img/Doctors.gif" alt="">
-                <div class="miniTextarea">
+                <div class="miniTextarea" data-aos="fade-up"
+                data-aos-duration="2000">
                     <div class="step-s1">
                         <div class="icon-1">
                             <i class="ri-user-follow-line"></i>
@@ -212,7 +214,8 @@
         <div class="div-s3">
             <div class="imgwrap-s3">
                 <img src="img/Online Doctor-rafiki.png" alt="">
-                <div class="minitext-s3">
+                <div class="minitext-s3" data-aos="fade-up"
+                data-aos-duration="2000">
                     <div class="toptext-s3">
                         <h3>Available Doctor</h3>
                         <p>Select Doctor</p>
@@ -475,8 +478,8 @@
                 <h3>What Our Users Say</h3>
             </div>
             <div class="scroll-s5">
-                <div class="carousel-s5">
-                    <div class="card-s5">
+                <div class="carousel-s5 owl-carousel owl-theme">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>Smooth sign-up process. Well designed layout. I ordered medication and got it in time.</p>
                         </div>
@@ -485,7 +488,7 @@
                             <h4>Euginho Cortez</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>I love this app. It's very efficient. I won't also fail to add that it makes it easy to talk with a doctor at ones convenience.</p>
                         </div>
@@ -494,7 +497,7 @@
                             <h4>Chinaza Arinzechukwu</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>It was very smooth, I enjoyed the appointment and the doctor was very nice and gave me my prescription.</p>
                         </div>
@@ -503,7 +506,7 @@
                             <h4>Kareem Habeebah</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>Very welcome concept consulted with Medical Consultant within minutes. Very easy to navigate.</p>
                         </div>
@@ -512,16 +515,16 @@
                             <h4>Harrison Yohanna</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
-                            <p>This app helps busy people like me to get to a doctor at a very cheap price. I love the fact that you can video a doctor remotely.</p>
+                            <p>This app helps busy people like me to get to a doctor at a very cheap price. I love the fact that you can video call a doctor remotely.</p>
                         </div>
                         <div class="text-i-s5">
                             <div class="icon-s5">D</div>
                             <h4>Daniel Igwe</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>Easy to open, easy to use. Doctors keep to schedule and are polite. I highly recommend.</p>
                         </div>
@@ -824,5 +827,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/navbar-m.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
