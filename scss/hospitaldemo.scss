@@ -2,7 +2,7 @@
 @import "./base";
 @import "./mediaqueries";
 @import "./mixin";
-@import "./appointmentmixin";
+@import "./hospitaldemomixin";
 
 header{
     @include NavBar($blue, $textcolor1);
@@ -23,35 +23,36 @@ header{
     };
 }
 
-.section-ap-1{
-    @include Backbutton;
+.section-h-1{
+    @include Section-h-1;
     @include mediaQuery(1024px, 768px){
-        @include Backbutton-i;
-    };
+        @include Section-h-1-i;
+    }
     @include mediaQuery(767px){
-        @include Backbutton-p;
-    };
+        @include Section-h-1-p;
+    }
 }
 
-.section-ap-2{
-    @include Docdetail;
+.section-h-2{
+    @include prototype-1;
     @include mediaQuery(1024px, 768px){
-        @include Docdetail-i;
-    };
+        @include prototype-1-i;
+    }
     @include mediaQuery(767px){
-        @include Docdetail-p;
-    };
+        @include prototype-1-p;
+    }
 }
 
-.section-ap-3{
-    @include Appointment;
+.section-h-3{
+    @include prototype-2;
     @include mediaQuery(1024px, 768px){
-        @include Appointment-i;
-    };
+        @include prototype-2-i;
+    }
     @include mediaQuery(767px){
-        @include Appointment-p;
-    };
+        @include prototype-1-p;
+    }
 }
+
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);

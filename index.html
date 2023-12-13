@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="icon" href="img/Bhealth no background.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!-- Beginning of header for navbar -->
+    <!-- Beginning of header for laptop navbar -->
     <header>
         <div class="hamburger">
             <i class="ri-menu-fill"></i>
@@ -26,7 +29,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./doctors.html">Doctors</a></li>
                 <li><a href="">Topics</a></li>
-                <li><a href="./hospitals.html">Top Hospitals</a></li>
+                <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
             </ul>
         </div>
@@ -42,7 +45,37 @@
         </div>
         
     </header>
-    <!-- End of header for navbar -->
+    <!-- End of header for laptop navbar -->
+
+    <!-- Beginning of mobile navbar  -->
+    <header class="mobile-navbar">
+        <div class="content">
+            <div class="close-m">
+                <i class="ri-close-fill"></i>
+            </div>
+            <div class="logo-m">
+                <a href="./index.html">
+                    <div>
+                        <img src="img/Bhealth no background.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="navlist-m">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+                    <li><a href="">Topics</a></li>
+                    <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-m">
+                <a href="./signup.html"><button class="signup">Sign Up</button></a>
+                <a href="./logindemo.html"><button class="login">Login</button></a>
+            </div>
+        </div>
+    </header>
+    <!-- End of mobile navbar  -->
 
 
     <!-- Beginning of the first section -->
@@ -73,7 +106,8 @@
             </div>
             <div class="imgwrap-s1">
                 <img src="img/Doctors.gif" alt="">
-                <div class="miniTextarea">
+                <div class="miniTextarea" data-aos="fade-up"
+                data-aos-duration="2000">
                     <div class="step-s1">
                         <div class="icon-1">
                             <i class="ri-user-follow-line"></i>
@@ -180,7 +214,8 @@
         <div class="div-s3">
             <div class="imgwrap-s3">
                 <img src="img/Online Doctor-rafiki.png" alt="">
-                <div class="minitext-s3">
+                <div class="minitext-s3" data-aos="fade-up"
+                data-aos-duration="2000">
                     <div class="toptext-s3">
                         <h3>Available Doctor</h3>
                         <p>Select Doctor</p>
@@ -251,13 +286,13 @@
                 <p>Choose and keep one doctor you love for ongoing advice and prescriptions by video or text — affordable with or without great insurance or benefits! We recruit some of the most compassionate and knowledgeable doctors who want to build long-term, trusted relationships with their patients.</p>
             </div>
             <div class="scroll-s4">
-                <div class="carousel-d-s4">
-                    <div class="card-s4">
+                <div class="carousel-d-s4 owl-carousel owl-theme">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/5452291/pexels-photo-5452291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Kalu Chibuike</h3>
+                            <a href="appointment.html">Dr Kalu Chibuike</a>
                             <h4>General Surgeons</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Lagos</p>
@@ -266,12 +301,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.9</span> (1978 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/6129452/pexels-photo-6129452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr John Walker</h3>
+                            <a href="appointment.html">Dr John Walker</a>
                             <h4>Neurosurgeon</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Abuja</p>
@@ -280,13 +315,13 @@
                             <h5><i class="ri-star-fill"></i> <span>4.8</span> (1540 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/5207104/pexels-photo-5207104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                             
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Darrell Stella</h3>
+                            <a href="appointment.html">Dr Darrell Stella</a>
                             <h4>Dermatologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Ibadan</p>
@@ -295,12 +330,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.6</span> (1120 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/8376193/pexels-photo-8376193.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Richard Stone</h3>
+                            <a href="appointment.html">Dr Richard Stone</a>
                             <h4>Cardiologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Lagos</p>
@@ -309,12 +344,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.8</span> (1800 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/5722163/pexels-photo-5722163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Joe Ming</h3>
+                            <a href="appointment.html">Dr Joe Ming</a>
                             <h4>Ophthalmologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Anambra</p>
@@ -323,12 +358,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.7</span> (1608 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/15962796/pexels-photo-15962796/free-photo-of-doctor-in-scrubs-and-a-stethoscope-around-her-neck.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Kate Jin</h3>
+                            <a href="appointment.html">Dr Kate Jin</a>
                             <h4>Pediatrician</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Enugu</p>
@@ -337,12 +372,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.6</span> (1236 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Esther Keys</h3>
+                            <a href="appointment.html">Dr Esther Keys</a>
                             <h4>Oncologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Lagos</p>
@@ -351,12 +386,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.8</span> (1746 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/4989135/pexels-photo-4989135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Okafor Ifeanyi</h3>
+                            <a href="appointment.html">Dr Okafor Ifeanyi</a>
                             <h4>Psychiatrist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Jigawa</p>
@@ -365,12 +400,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.6</span> (1462 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/5738735/pexels-photo-5738735.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Ruth Peter</h3>
+                            <a href="appointment.html">Dr Ruth Peter</a>
                             <h4>Gynaecologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Lagos</p>
@@ -379,12 +414,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.5</span> (1698 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/8376258/pexels-photo-8376258.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Karen Maya</h3>
+                            <a href="appointment.html">Dr Karen Maya</a>
                             <h4>Urologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Kano</p>
@@ -393,12 +428,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.5</span> (1570 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/7579828/pexels-photo-7579828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Helen Kaya</h3>
+                            <a href="appointment.html">Dr Helen Kaya</a>
                             <h4>Radiologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Anambra</p>
@@ -407,12 +442,12 @@
                             <h5><i class="ri-star-fill"></i> <span>4.8</span> (1890 Reviews)</h5>
                         </div>
                     </div>
-                    <div class="card-s4">
+                    <div class="card-s4 item">
                         <div class="imgwrap-s4">
                             <img src="https://images.pexels.com/photos/10705020/pexels-photo-10705020.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
                         </div>
                         <div class="text-s4">
-                            <h3>Dr Priya Parash</h3>
+                            <a href="appointment.html">Dr Priya Parash</a>
                             <h4>Pathologist</h4>
                             <div>
                                 <p><i class="ri-map-pin-2-fill"></i> Jos</p>
@@ -443,8 +478,8 @@
                 <h3>What Our Users Say</h3>
             </div>
             <div class="scroll-s5">
-                <div class="carousel-s5">
-                    <div class="card-s5">
+                <div class="carousel-s5 owl-carousel owl-theme">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>Smooth sign-up process. Well designed layout. I ordered medication and got it in time.</p>
                         </div>
@@ -453,7 +488,7 @@
                             <h4>Euginho Cortez</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>I love this app. It's very efficient. I won't also fail to add that it makes it easy to talk with a doctor at ones convenience.</p>
                         </div>
@@ -462,7 +497,7 @@
                             <h4>Chinaza Arinzechukwu</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>It was very smooth, I enjoyed the appointment and the doctor was very nice and gave me my prescription.</p>
                         </div>
@@ -471,7 +506,7 @@
                             <h4>Kareem Habeebah</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>Very welcome concept consulted with Medical Consultant within minutes. Very easy to navigate.</p>
                         </div>
@@ -480,16 +515,16 @@
                             <h4>Harrison Yohanna</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
-                            <p>This app helps busy people like me to get to a doctor at a very cheap price. I love the fact that you can video a doctor remotely.</p>
+                            <p>This app helps busy people like me to get to a doctor at a very cheap price. I love the fact that you can video call a doctor remotely.</p>
                         </div>
                         <div class="text-i-s5">
                             <div class="icon-s5">D</div>
                             <h4>Daniel Igwe</h4>
                         </div>
                     </div>
-                    <div class="card-s5">
+                    <div class="card-s5 item">
                         <div class="text-s5">
                             <p>Easy to open, easy to use. Doctors keep to schedule and are polite. I highly recommend.</p>
                         </div>
@@ -788,5 +823,13 @@
     </footer>
     <!-- End of footer -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/navbar-m.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

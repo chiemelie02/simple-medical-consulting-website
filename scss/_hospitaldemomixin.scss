@@ -1,0 +1,293 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./mixin";
+
+@mixin mediaQuery($args...){
+    @if length($args)==1{
+        @media screen and (max-width: nth($args, 1)){
+            @content;
+        }
+    }
+    @if length($args)==2{
+        @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)){
+            @content;
+        }
+    }
+
+}
+
+// Beginning of description section mixin 
+@mixin Section-h-1{
+    height: auto;
+    padding-inline: $inline;
+    width: 100%;
+    padding-block: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // background-color: brown;
+    .div-h-s1{
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        // flex-direction: column;
+        // background-color: brown;
+        gap: 2rem;
+        padding-top: 1rem;
+        .imgwrap-h-s1{
+            height: 100%;
+            width: 45%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .textarea-h-s1{
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            gap: 1.5rem;
+            // padding-inline: $inline;
+            width: 55%;
+            // background-color: brown;
+            h2{
+                font-size: 2.5rem;
+                color: $darkblue;
+            }
+            p{
+                // width: 90%;
+                font-size: 0.95rem;
+                color: $textcolor2;
+                line-height: 1.8;
+                // letter-spacing: 0.7px;
+                text-align: justify;
+            }
+        }
+    }
+    .borderbottom{
+        height: 40px;
+        width: 100%;
+        background-color: $darkblue;
+        border-radius: 5px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+}
+
+// Beginning of description section media query for ipad
+@mixin Section-h-1-i{
+    height: 90vh;
+    // background-color: brown;
+    padding-inline: $inline-i;
+    padding-block: 2rem;
+    .div-h-s1{
+        flex-direction: column;
+        // background-color: brown;
+        height: 100%;
+        .imgwrap-h-s1{
+            width: 100%;
+            height: 520px;
+            // background-color: brown;
+        }
+        .textarea-h-s1{
+            width: 100%;
+        }
+    }
+}
+
+// Beginning of description section media query for phone
+@mixin Section-h-1-p{
+    height: 140vh;
+    // background-color: brown;
+    padding-inline: $inline-p;
+    padding-block: 2rem;
+    .div-h-s1{
+        gap: 1.5rem;
+        flex-direction: column;
+        height: 100%;
+        .imgwrap-h-s1{
+            width: 100%;
+            height: 300px;
+            // background-color: brown;
+        }
+        .textarea-h-s1{
+            width: 100%;
+            p{
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+// Beginning of prototype one mixin 
+@mixin prototype-1{
+    height: auto;
+    width: 100%;
+    padding-inline: $inline;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // background-color: brown;
+    .div-h-s2{
+        width: 100%;
+        height: 450px;
+        // background-color: brown;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding-top: 1rem;
+        .imgwrap-h-s2{
+            width: 45%;
+            height: 350px;
+            border: 2px solid $blue;
+            border-radius: 5px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .textarea-h-s2{
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            // gap: 1.2rem;
+            justify-content: space-between;
+            align-items: flex-start;
+            h2{
+                font-size: 2.2rem;
+                color: $blue;
+            }
+            .rating{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                h3{
+                    color: $textcolor1;
+                    font-size: 1rem;
+                }
+                p{
+                    color: goldenrod;
+                }
+            }
+            p{
+                font-size: 0.95rem;
+                text-align: justify;
+                color: $textcolor2;
+                line-height: 1.8;
+            }
+            ul{
+                list-style: none;
+                list-style-position: inside;
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                    i{
+                        color: $blue;
+                    }
+                    p{
+                        font-size: 0.95rem;
+                        text-align: justify;
+                        color: $textcolor1;
+                        // line-height: 0;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $blue;
+                font-size: 0.95rem;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            button{
+                @include Button1($blue, $textcolor1);
+                font-size: 0.88rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .borderbottom{
+        height: 40px;
+        width: 100%;
+        background-color: $darkblue;
+        border-radius: 5px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+}
+
+@mixin prototype-1-i{
+    // background-color: brown;
+    padding-inline: $inline-i;
+    height: 68vh;
+    // gap: 3rem;
+    .div-h-s2{
+        // height: 80%;
+        // background-color: brown;
+        height: 60vh;
+        .textarea-h-s2{
+            justify-content: first baseline;
+            gap: 1rem
+        }
+    }
+}
+
+@mixin prototype-1-p{
+    // background-color: brown;
+    padding-inline: $inline-p;
+    height: auto;
+    .div-h-s2{
+        flex-direction: column;
+        height: 100%;
+        // background-color: brown;
+        padding-top: 0;
+        .imgwrap-h-s2{
+            width: 100%;
+            height: 350px;
+        }
+        .textarea-h-s2{
+            width: 100%;
+            h2{
+                font-size: 1.8rem;
+            }
+            .rating{
+                margin-top: 0.6rem;
+            }
+            p{
+                margin-top: 0.6rem;
+            }
+            ul{
+                margin-top: 0.6rem;
+                li{
+                    p{
+                        margin-top: 0;
+                    }
+                }
+            }
+            a{
+                margin-top: 0.6rem;
+            }
+        }
+    }
+}
+
+// Beginning of prototype two mixin
+@mixin prototype-2{
+    @include prototype-1;
+    .div-h-s2{
+        flex-direction: row-reverse;
+    }
+}
+
+@mixin prototype-2-i{
+    @include prototype-1-i;
+    .div-h-s2{
+        flex-direction: row-reverse;
+    }
+}

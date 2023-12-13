@@ -90,7 +90,7 @@ header .navlist ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.3rem;
   list-style: none;
 }
 header .navlist ul li a {
@@ -99,15 +99,42 @@ header .navlist ul li a {
   font-weight: 700;
   font-size: 0.88rem;
   color: #333333;
-  -webkit-transition: 600ms;
-  transition: 600ms;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  position: relative;
+  overflow: hidden;
 }
 header .navlist ul li a:hover {
   color: #2C97FD;
 }
+header .navlist ul li a::before {
+  content: "";
+  height: 3px;
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -0.3rem;
+  left: -100%;
+  background-color: #2C97FD;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+header .navlist ul li a:hover::before {
+  left: 0;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
 header .searchbar input {
   padding: 8px;
-  width: 200px;
+  width: 250px;
   outline: none;
   border: 1.5px solid #2C97FD;
   border-radius: 30px;
@@ -189,6 +216,9 @@ header .hamburger {
   header .hamburger i {
     font-size: 1.8rem;
   }
+  header .hamburger i:hover {
+    color: #2C97FD;
+  }
 }
 @media screen and (max-width: 767px) {
   header {
@@ -224,6 +254,289 @@ header .hamburger {
     font-size: 1.7rem;
     color: #333333;
     cursor: pointer;
+  }
+  header .hamburger i:hover {
+    color: #2C97FD;
+  }
+}
+
+.mobile-navbar {
+  display: none;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .mobile-navbar {
+    display: block;
+    height: 100vh;
+    width: 50%;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    left: -100%;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+  }
+  .mobile-navbar .content {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6rem;
+  }
+  .mobile-navbar .content .close-m i {
+    font-size: 3rem;
+    cursor: pointer;
+    -webkit-transition: 600ms;
+    transition: 600ms;
+  }
+  .mobile-navbar .content .close-m i:hover {
+    color: #2C97FD;
+  }
+  .mobile-navbar .content .logo-m a div {
+    width: 200px;
+    height: 120px;
+  }
+  .mobile-navbar .content .logo-m a div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mobile-navbar .content .navlist-m ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.8rem;
+    list-style: none;
+  }
+  .mobile-navbar .content .navlist-m ul li {
+    text-align: center;
+  }
+  .mobile-navbar .content .navlist-m ul li a {
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #333333;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    position: relative;
+    overflow: hidden;
+  }
+  .mobile-navbar .content .navlist-m ul li a:hover {
+    color: #2C97FD;
+  }
+  .mobile-navbar .content .navlist-m ul li a::before {
+    content: "";
+    height: 3px;
+    border-radius: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -0.3rem;
+    left: -100%;
+    background-color: #2C97FD;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  .mobile-navbar .content .navlist-m ul li a:hover::before {
+    left: 0;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .mobile-navbar .content .cta-m .signup {
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-inline: 35px;
+    border-radius: 35px;
+    background-color: #2C97FD;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 0.88rem;
+  }
+  .mobile-navbar .content .cta-m .signup:hover {
+    background-color: white;
+    border: 1.5px solid #2C97FD;
+    color: #2C97FD;
+  }
+  .mobile-navbar .content .cta-m .login {
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-inline: 35px;
+    border-radius: 35px;
+    background-color: white;
+    border: 1.5px solid #2C97FD;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2C97FD;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 0.88rem;
+  }
+  .mobile-navbar .content .cta-m .login:hover {
+    background-color: #2C97FD;
+    color: white;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mobile-navbar {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    left: -100%;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+  }
+  .mobile-navbar .content {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: flex start;
+        -ms-flex-align: flex start;
+            align-items: flex start;
+    gap: 4rem;
+  }
+  .mobile-navbar .content .close-m i {
+    font-size: 2rem;
+    cursor: pointer;
+    -webkit-transition: 600ms;
+    transition: 600ms;
+  }
+  .mobile-navbar .content .close-m i:hover {
+    color: #2C97FD;
+  }
+  .mobile-navbar .content .logo-m {
+    width: 120px;
+    height: 70px;
+  }
+  .mobile-navbar .content .logo-m a div {
+    width: 120px;
+    height: 70px;
+  }
+  .mobile-navbar .content .logo-m a div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mobile-navbar .content .navlist-m ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.8rem;
+    list-style: none;
+  }
+  .mobile-navbar .content .navlist-m ul li a {
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #333333;
+    -webkit-transition: 600ms;
+    transition: 600ms;
+  }
+  .mobile-navbar .content .navlist-m ul li a:hover {
+    color: #2C97FD;
+  }
+  .mobile-navbar .content .cta-m {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .mobile-navbar .content .cta-m .signup {
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-inline: 35px;
+    border-radius: 35px;
+    background-color: #2C97FD;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding-inline: 38px;
+  }
+  .mobile-navbar .content .cta-m .signup:hover {
+    background-color: white;
+    border: 1.5px solid #2C97FD;
+    color: #2C97FD;
+  }
+  .mobile-navbar .content .cta-m .login {
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-inline: 35px;
+    border-radius: 35px;
+    background-color: white;
+    border: 1.5px solid #2C97FD;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2C97FD;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 0.88rem;
+    padding-inline: 38px;
+  }
+  .mobile-navbar .content .cta-m .login:hover {
+    background-color: #2C97FD;
+    color: white;
   }
 }
 

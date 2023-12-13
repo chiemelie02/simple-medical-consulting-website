@@ -9,7 +9,7 @@
     <link rel="icon" href="img/Bhealth no background.png">
 </head>
 <body>
-    <!-- Beginning of header for navbar -->
+    <!-- Beginning of header for laptop navbar -->
     <header>
         <div class="hamburger">
             <i class="ri-menu-fill"></i>
@@ -26,7 +26,7 @@
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./doctors.html">Doctors</a></li>
                 <li><a href="">Topics</a></li>
-                <li><a href="./hospitals.html">Top Hospitals</a></li>
+                <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
             </ul>
         </div>
@@ -42,7 +42,37 @@
         </div>
         
     </header>
-    <!-- End of header for navbar -->
+    <!-- End of header for laptop navbar -->
+
+    <!-- Beginning of mobile navbar  -->
+    <header class="mobile-navbar">
+        <div class="content">
+            <div class="close-m">
+                <i class="ri-close-fill"></i>
+            </div>
+            <div class="logo-m">
+                <a href="./index.html">
+                    <div>
+                        <img src="img/Bhealth no background.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="navlist-m">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+                    <li><a href="">Topics</a></li>
+                    <li><a href="./hospitaldemo.html">Top Hospitals</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-m">
+                <a href="./signup.html"><button class="signup">Sign Up</button></a>
+                <a href="./logindemo.html"><button class="login">Login</button></a>
+            </div>
+        </div>
+    </header>
+    <!-- End of mobile navbar  -->
 
     <!-- Beginning of back to doctor section  -->
     <section class="section-ap-1">
@@ -113,15 +143,15 @@
                     <div class="label-input">
                         <label for="name">Enter your Name</label>
                         <div class="inputarea">
-                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="First Name" required>
                             <input type="text" placeholder="Last Name">
                         </div>
                     </div>
                     <div class="label-input">
                         <label for="email">Enter your Email & Phone</label>
                         <div class="inputarea">
-                            <input type="email" placeholder="Email">
-                            <input type="text" placeholder="Phone">
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Phone" required>
                         </div>
                     </div>
                     <div class="label-input">
@@ -139,8 +169,8 @@
                         <p>Female</p>
                     </div>
                     <div class="cta-ap-s3">
-                        <a href="">
-                            <button>Submit</button>
+                        <a href="appointment.html">
+                            <button type="submit">Submit</button>
                         </a>
                         <p>&copy; 2023 BHealth. All rights reserved.</p>
                     </div>
@@ -213,5 +243,7 @@
         </div>
     </footer>
     <!-- End of footer -->
+
+    <script src="js/navbar-m.js"></script>
 </body>
 </html>
