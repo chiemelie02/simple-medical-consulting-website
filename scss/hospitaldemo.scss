@@ -38,15 +38,18 @@ header{
     @include mediaQuery(1024px, 768px){
         @include prototype-1-i;
     }
-    // @include mediaQuery(767px){
-    //     @include Section-h-1-p;
-    // }
+    @include mediaQuery(767px){
+        @include prototype-1-p;
+    }
 }
 
 .section-h-3{
     @include prototype-2;
     @include mediaQuery(1024px, 768px){
         @include prototype-2-i;
+    }
+    @include mediaQuery(767px){
+        @include prototype-1-p;
     }
 }
 
