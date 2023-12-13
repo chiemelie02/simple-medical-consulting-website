@@ -17,20 +17,28 @@
 
 }
 
+// Beginning of description section mixin 
 @mixin Section-h-1{
-    height: 90vh;
+    height: auto;
     padding-inline: $inline;
     width: 100%;
     padding-block: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // background-color: brown;
     .div-h-s1{
         width: 100%;
-        height: 100%;
+        height: 65vh;
         display: flex;
         // flex-direction: column;
+        // background-color: brown;
         gap: 2rem;
+        padding-top: 1rem;
         .imgwrap-h-s1{
-            // height: 80vh;
-            width: 50%;
+            height: 100%;
+            width: 45%;
             img{
                 width: 100%;
                 height: 100%;
@@ -40,10 +48,10 @@
         .textarea-h-s1{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            // justify-content: center;
             gap: 1.5rem;
             // padding-inline: $inline;
-            width: 50%;
+            width: 55%;
             // background-color: brown;
             h2{
                 font-size: 2.5rem;
@@ -59,8 +67,16 @@
             }
         }
     }
+    .borderbottom{
+        height: 40px;
+        width: 100%;
+        background-color: $darkblue;
+        border-radius: 5px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
 }
 
+// Beginning of description section media query for ipad
 @mixin Section-h-1-i{
     height: auto;
     // background-color: brown;
@@ -79,6 +95,7 @@
     }
 }
 
+// Beginning of description section media query for phone
 @mixin Section-h-1-p{
     height: auto;
     // background-color: brown;
@@ -98,5 +115,114 @@
                 line-height: 1.5;
             }
         }
+    }
+}
+
+// Beginning of prototype one mixin 
+@mixin prototype-1{
+    height: auto;
+    width: 100%;
+    padding-inline: $inline;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // background-color: brown;
+    .div-h-s2{
+        width: 100%;
+        height: 440px;
+        // background-color: brown;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding-top: 1rem;
+        .imgwrap-h-s2{
+            width: 45%;
+            height: 350px;
+            border: 2px solid $blue;
+            border-radius: 5px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .textarea-h-s2{
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            // gap: 1.2rem;
+            justify-content: space-between;
+            align-items: flex-start;
+            h2{
+                font-size: 2.2rem;
+                color: $blue;
+            }
+            .rating{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                h3{
+                    color: $textcolor1;
+                    font-size: 1rem;
+                }
+                p{
+                    color: goldenrod;
+                }
+            }
+            p{
+                font-size: 0.95rem;
+                text-align: justify;
+                color: $textcolor2;
+                line-height: 1.8;
+            }
+            ul{
+                list-style: none;
+                list-style-position: inside;
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8rem;
+                    i{
+                        color: $blue;
+                    }
+                    p{
+                        font-size: 0.95rem;
+                        text-align: justify;
+                        color: $textcolor1;
+                        // line-height: 0;
+                    }
+                }
+            }
+            a{
+                text-decoration: none;
+                color: $blue;
+                font-size: 0.95rem;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            button{
+                @include Button1($blue, $textcolor1);
+                font-size: 0.88rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .borderbottom{
+        height: 40px;
+        width: 100%;
+        background-color: $darkblue;
+        border-radius: 5px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.4);
+    }
+}
+
+// Beginning of prototype two mixin
+@mixin prototype-2{
+    @include prototype-1;
+    .div-h-s2{
+        flex-direction: row-reverse;
     }
 }

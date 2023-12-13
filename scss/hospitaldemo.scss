@@ -33,6 +33,14 @@ header{
     }
 }
 
+.section-h-2{
+    @include prototype-1;
+}
+
+.section-h-3{
+    @include prototype-2;
+}
+
 
 footer{
     @include Footer($darkblue, $primarycolor, #999999);
