@@ -62,6 +62,70 @@ body {
   min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,6 +590,8 @@ header .hamburger {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  height: 100vh;
+  height: 88vh;
 }
 .login-signup .white {
   width: 100%;
@@ -587,13 +653,13 @@ header .hamburger {
   z-index: 1;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .login-signup .login .login-m {
   width: 100%;
   height: 100%;
-  background-color: #fdfdfd;
+  background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,12 +900,42 @@ header .hamburger {
 .login-signup .login .login-m .main-form .foot .span p a:hover {
   text-decoration: underline;
 }
+.login-signup .login {
+  height: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+}
+.login-signup .login .left {
+  height: 100%;
+  width: 50%;
+}
+.login-signup .login .left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.login-signup .login .login-m {
+  width: 50%;
+}
+.login-signup .login {
+  height: 530px;
+}
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .login-signup {
     height: 56vh;
+    height: 70vh;
   }
   .login-signup .login .login-m .main-form .title h3 {
     font-size: 1.15rem;
+  }
+  .login-signup .login {
+    width: 750px;
+  }
+  .login-signup .login .left {
+    background-color: white;
   }
 }
 @media screen and (max-width: 767px) {
@@ -855,6 +951,12 @@ header .hamburger {
   }
   .login-signup .login .login-m .main-form .title h3 {
     font-size: 1rem;
+  }
+  .login-signup .login .left {
+    display: none;
+  }
+  .login-signup .login .login-m {
+    width: 100%;
   }
 }
 

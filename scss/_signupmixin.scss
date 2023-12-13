@@ -1,0 +1,55 @@
+@import "./variables";
+@import "./base";
+@import "./mediaqueries";
+@import "./mixin";
+@import "./logindemomixins";
+// @import "./signupmixin";
+
+@mixin section-s{
+    @include section;
+    // background-color: brown;
+    height: 100vh;
+    .login{
+        height: 620px;
+        display: flex;
+        width: 800px;
+        .left{
+            height: 100%;
+            width: 50%;
+            // background-color: brown;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .login-m{
+            width: 50%;
+        }
+    }
+}
+
+@mixin section-s-i{
+    @include section-i;
+    // background-color: brown;
+    height: 70vh;
+    .login{
+        width: 750px;
+        .left{
+            background-color: white;
+        }
+    }
+}
+
+@mixin section-s-p{
+    @include section-p;
+    // background-color: brown;
+    .login{
+        .left{
+            display: none;
+        }
+        .login-m{
+            width: 100%;
+        }
+    }
+}

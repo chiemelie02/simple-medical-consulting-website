@@ -3,6 +3,7 @@
 @import "./mediaqueries";
 @import "./mixin";
 @import "./logindemomixins";
+@import "./signupmixin";
 
 header{
     @include NavBar($blue, $textcolor1);
@@ -24,12 +25,17 @@ header{
 }
 
 .login-signup{
-    @include section;
+    @include section-s;
+    height: 88vh;
+    .login{
+        height: 530px;
+        // background-color: brown;
+    }
     @include mediaQuery(1024px, 768px){
-        @include section-i;
+        @include section-s-i;
     }
     @include mediaQuery(767px){
-        @include section-p;
+        @include section-s-p;
     };
 }
 
