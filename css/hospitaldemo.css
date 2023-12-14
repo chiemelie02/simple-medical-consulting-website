@@ -482,11 +482,38 @@ header .hamburger {
     font-weight: 700;
     font-size: 0.95rem;
     color: #333333;
-    -webkit-transition: 600ms;
-    transition: 600ms;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    position: relative;
+    overflow: hidden;
   }
   .mobile-navbar .content .navlist-m ul li a:hover {
     color: #2C97FD;
+  }
+  .mobile-navbar .content .navlist-m ul li a::before {
+    content: "";
+    height: 3px;
+    border-radius: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -0.3rem;
+    left: -100%;
+    background-color: #2C97FD;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  .mobile-navbar .content .navlist-m ul li a:hover::before {
+    left: 0;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   .mobile-navbar .content .cta-m {
     display: -webkit-box;
